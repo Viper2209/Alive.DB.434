@@ -10,7 +10,7 @@
 /*!40014 SET @OLD_FOREIGN_KEY_CHECKS=@@FOREIGN_KEY_CHECKS, FOREIGN_KEY_CHECKS=0 */;
 /*!40101 SET @OLD_SQL_MODE=@@SQL_MODE, SQL_MODE='NO_AUTO_VALUE_ON_ZERO' */;
 
--- Exportiere Struktur von Tabelle world2.playercreateinfo_action
+-- Exportiere Struktur von Tabelle world3.playercreateinfo_action
 DROP TABLE IF EXISTS `playercreateinfo_action`;
 CREATE TABLE IF NOT EXISTS `playercreateinfo_action` (
   `race` tinyint(3) unsigned NOT NULL DEFAULT '0',
@@ -22,7 +22,7 @@ CREATE TABLE IF NOT EXISTS `playercreateinfo_action` (
   KEY `playercreateinfo_race_class_index` (`race`,`class`)
 ) ENGINE=MyISAM DEFAULT CHARSET=utf8;
 
--- Exportiere Daten aus Tabelle world2.playercreateinfo_action: 451 rows
+-- Exportiere Daten aus Tabelle world3.playercreateinfo_action: 451 rows
 DELETE FROM `playercreateinfo_action`;
 /*!40000 ALTER TABLE `playercreateinfo_action` DISABLE KEYS */;
 INSERT INTO `playercreateinfo_action` (`race`, `class`, `button`, `action`, `type`) VALUES
@@ -156,7 +156,7 @@ INSERT INTO `playercreateinfo_action` (`race`, `class`, `button`, `action`, `typ
 	(6, 7, 0, 403, 0),
 	(6, 7, 9, 20549, 0),
 	(6, 7, 75, 20549, 0),
-	(6, 11, 0, 403, 0),
+	(6, 11, 0, 5176, 0),
 	(6, 11, 9, 20549, 0),
 	(6, 11, 72, 6603, 0),
 	(6, 11, 75, 20549, 0),

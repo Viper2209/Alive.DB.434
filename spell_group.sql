@@ -10,7 +10,7 @@
 /*!40014 SET @OLD_FOREIGN_KEY_CHECKS=@@FOREIGN_KEY_CHECKS, FOREIGN_KEY_CHECKS=0 */;
 /*!40101 SET @OLD_SQL_MODE=@@SQL_MODE, SQL_MODE='NO_AUTO_VALUE_ON_ZERO' */;
 
--- Exportiere Struktur von Tabelle world2.spell_group
+-- Exportiere Struktur von Tabelle world3.spell_group
 DROP TABLE IF EXISTS `spell_group`;
 CREATE TABLE IF NOT EXISTS `spell_group` (
   `id` int(10) unsigned NOT NULL DEFAULT '0',
@@ -18,7 +18,7 @@ CREATE TABLE IF NOT EXISTS `spell_group` (
   PRIMARY KEY (`id`,`spell_id`)
 ) ENGINE=MyISAM DEFAULT CHARSET=utf8 ROW_FORMAT=FIXED COMMENT='Spell System';
 
--- Exportiere Daten aus Tabelle world2.spell_group: 589 rows
+-- Exportiere Daten aus Tabelle world3.spell_group: 592 rows
 DELETE FROM `spell_group`;
 /*!40000 ALTER TABLE `spell_group` DISABLE KEYS */;
 INSERT INTO `spell_group` (`id`, `spell_id`) VALUES
@@ -587,6 +587,9 @@ INSERT INTO `spell_group` (`id`, `spell_id`) VALUES
 	(1337, 31801),
 	(1500, 588),
 	(1500, 73413),
+	(1501, 81206),
+	(1501, 81208),
+	(1501, 81209),
 	(2004, 12880),
 	(2004, 57514),
 	(2004, 57518),

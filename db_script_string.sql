@@ -10,7 +10,7 @@
 /*!40014 SET @OLD_FOREIGN_KEY_CHECKS=@@FOREIGN_KEY_CHECKS, FOREIGN_KEY_CHECKS=0 */;
 /*!40101 SET @OLD_SQL_MODE=@@SQL_MODE, SQL_MODE='NO_AUTO_VALUE_ON_ZERO' */;
 
--- Exportiere Struktur von Tabelle world2.db_script_string
+-- Exportiere Struktur von Tabelle world3.db_script_string
 DROP TABLE IF EXISTS `db_script_string`;
 CREATE TABLE IF NOT EXISTS `db_script_string` (
   `entry` int(10) unsigned NOT NULL DEFAULT '0',
@@ -26,7 +26,7 @@ CREATE TABLE IF NOT EXISTS `db_script_string` (
   PRIMARY KEY (`entry`)
 ) ENGINE=MyISAM DEFAULT CHARSET=utf8;
 
--- Exportiere Daten aus Tabelle world2.db_script_string: 305 rows
+-- Exportiere Daten aus Tabelle world3.db_script_string: 305 rows
 DELETE FROM `db_script_string`;
 /*!40000 ALTER TABLE `db_script_string` DISABLE KEYS */;
 INSERT INTO `db_script_string` (`entry`, `content_default`, `content_loc1`, `content_loc2`, `content_loc3`, `content_loc4`, `content_loc5`, `content_loc6`, `content_loc7`, `content_loc8`) VALUES

@@ -10,7 +10,7 @@
 /*!40014 SET @OLD_FOREIGN_KEY_CHECKS=@@FOREIGN_KEY_CHECKS, FOREIGN_KEY_CHECKS=0 */;
 /*!40101 SET @OLD_SQL_MODE=@@SQL_MODE, SQL_MODE='NO_AUTO_VALUE_ON_ZERO' */;
 
--- Exportiere Struktur von Tabelle world2.spell_phase
+-- Exportiere Struktur von Tabelle world3.spell_phase
 DROP TABLE IF EXISTS `spell_phase`;
 CREATE TABLE IF NOT EXISTS `spell_phase` (
   `id` mediumint(7) unsigned NOT NULL DEFAULT '0',
@@ -19,7 +19,7 @@ CREATE TABLE IF NOT EXISTS `spell_phase` (
   PRIMARY KEY (`id`)
 ) ENGINE=MyISAM DEFAULT CHARSET=utf8;
 
--- Exportiere Daten aus Tabelle world2.spell_phase: 0 rows
+-- Exportiere Daten aus Tabelle world3.spell_phase: 0 rows
 DELETE FROM `spell_phase`;
 /*!40000 ALTER TABLE `spell_phase` DISABLE KEYS */;
 /*!40000 ALTER TABLE `spell_phase` ENABLE KEYS */;

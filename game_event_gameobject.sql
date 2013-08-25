@@ -10,7 +10,7 @@
 /*!40014 SET @OLD_FOREIGN_KEY_CHECKS=@@FOREIGN_KEY_CHECKS, FOREIGN_KEY_CHECKS=0 */;
 /*!40101 SET @OLD_SQL_MODE=@@SQL_MODE, SQL_MODE='NO_AUTO_VALUE_ON_ZERO' */;
 
--- Exportiere Struktur von Tabelle world2.game_event_gameobject
+-- Exportiere Struktur von Tabelle world3.game_event_gameobject
 DROP TABLE IF EXISTS `game_event_gameobject`;
 CREATE TABLE IF NOT EXISTS `game_event_gameobject` (
   `eventEntry` tinyint(4) NOT NULL COMMENT 'Entry of the game event. Put negative entry to remove during event.',
@@ -18,7 +18,7 @@ CREATE TABLE IF NOT EXISTS `game_event_gameobject` (
   PRIMARY KEY (`guid`,`eventEntry`)
 ) ENGINE=MyISAM DEFAULT CHARSET=utf8;
 
--- Exportiere Daten aus Tabelle world2.game_event_gameobject: 28.513 rows
+-- Exportiere Daten aus Tabelle world3.game_event_gameobject: 28.506 rows
 DELETE FROM `game_event_gameobject`;
 /*!40000 ALTER TABLE `game_event_gameobject` DISABLE KEYS */;
 INSERT INTO `game_event_gameobject` (`eventEntry`, `guid`) VALUES
@@ -1157,9 +1157,7 @@ INSERT INTO `game_event_gameobject` (`eventEntry`, `guid`) VALUES
 	(12, 21709),
 	(12, 21710),
 	(1, 22029),
-	(1, 22031),
 	(1, 22040),
-	(1, 22149),
 	(1, 22151),
 	(5, 22174),
 	(18, 22183),
@@ -1798,10 +1796,6 @@ INSERT INTO `game_event_gameobject` (`eventEntry`, `guid`) VALUES
 	(40, 36708),
 	(40, 36728),
 	(40, 36729),
-	(1, 37401),
-	(1, 37402),
-	(1, 37404),
-	(1, 37406),
 	(1, 37415),
 	(1, 37416),
 	(1, 37417),
@@ -3810,7 +3804,6 @@ INSERT INTO `game_event_gameobject` (`eventEntry`, `guid`) VALUES
 	(2, 60259),
 	(2, 60260),
 	(2, 64753),
-	(2, 64754),
 	(2, 64788),
 	(12, 65110),
 	(12, 65111),

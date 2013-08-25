@@ -10,7 +10,7 @@
 /*!40014 SET @OLD_FOREIGN_KEY_CHECKS=@@FOREIGN_KEY_CHECKS, FOREIGN_KEY_CHECKS=0 */;
 /*!40101 SET @OLD_SQL_MODE=@@SQL_MODE, SQL_MODE='NO_AUTO_VALUE_ON_ZERO' */;
 
--- Exportiere Struktur von Tabelle world2.character_banned
+-- Exportiere Struktur von Tabelle world3.character_banned
 DROP TABLE IF EXISTS `character_banned`;
 CREATE TABLE IF NOT EXISTS `character_banned` (
   `guid` int(11) NOT NULL DEFAULT '0' COMMENT 'Account id',
@@ -22,7 +22,7 @@ CREATE TABLE IF NOT EXISTS `character_banned` (
   PRIMARY KEY (`guid`,`bandate`)
 ) ENGINE=MyISAM DEFAULT CHARSET=utf8 ROW_FORMAT=DYNAMIC COMMENT='ArkDB Ban List';
 
--- Exportiere Daten aus Tabelle world2.character_banned: 0 rows
+-- Exportiere Daten aus Tabelle world3.character_banned: 0 rows
 DELETE FROM `character_banned`;
 /*!40000 ALTER TABLE `character_banned` DISABLE KEYS */;
 /*!40000 ALTER TABLE `character_banned` ENABLE KEYS */;

@@ -10,7 +10,7 @@
 /*!40014 SET @OLD_FOREIGN_KEY_CHECKS=@@FOREIGN_KEY_CHECKS, FOREIGN_KEY_CHECKS=0 */;
 /*!40101 SET @OLD_SQL_MODE=@@SQL_MODE, SQL_MODE='NO_AUTO_VALUE_ON_ZERO' */;
 
--- Exportiere Struktur von Tabelle world2.game_event_prerequisite
+-- Exportiere Struktur von Tabelle world3.game_event_prerequisite
 DROP TABLE IF EXISTS `game_event_prerequisite`;
 CREATE TABLE IF NOT EXISTS `game_event_prerequisite` (
   `eventEntry` tinyint(3) unsigned NOT NULL COMMENT 'Entry of the game event',
@@ -18,7 +18,7 @@ CREATE TABLE IF NOT EXISTS `game_event_prerequisite` (
   PRIMARY KEY (`eventEntry`,`prerequisite_event`)
 ) ENGINE=MyISAM DEFAULT CHARSET=utf8 COMMENT='ArkDB Game Event Prerequisite';
 
--- Exportiere Daten aus Tabelle world2.game_event_prerequisite: 0 rows
+-- Exportiere Daten aus Tabelle world3.game_event_prerequisite: 0 rows
 DELETE FROM `game_event_prerequisite`;
 /*!40000 ALTER TABLE `game_event_prerequisite` DISABLE KEYS */;
 /*!40000 ALTER TABLE `game_event_prerequisite` ENABLE KEYS */;

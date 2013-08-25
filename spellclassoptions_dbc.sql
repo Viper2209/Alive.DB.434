@@ -10,7 +10,7 @@
 /*!40014 SET @OLD_FOREIGN_KEY_CHECKS=@@FOREIGN_KEY_CHECKS, FOREIGN_KEY_CHECKS=0 */;
 /*!40101 SET @OLD_SQL_MODE=@@SQL_MODE, SQL_MODE='NO_AUTO_VALUE_ON_ZERO' */;
 
--- Exportiere Struktur von Tabelle world2.spellclassoptions_dbc
+-- Exportiere Struktur von Tabelle world3.spellclassoptions_dbc
 DROP TABLE IF EXISTS `spellclassoptions_dbc`;
 CREATE TABLE IF NOT EXISTS `spellclassoptions_dbc` (
   `Id` int(10) unsigned NOT NULL DEFAULT '0',
@@ -23,7 +23,7 @@ CREATE TABLE IF NOT EXISTS `spellclassoptions_dbc` (
   PRIMARY KEY (`Id`)
 ) ENGINE=MyISAM DEFAULT CHARSET=utf8;
 
--- Exportiere Daten aus Tabelle world2.spellclassoptions_dbc: 0 rows
+-- Exportiere Daten aus Tabelle world3.spellclassoptions_dbc: 0 rows
 DELETE FROM `spellclassoptions_dbc`;
 /*!40000 ALTER TABLE `spellclassoptions_dbc` DISABLE KEYS */;
 /*!40000 ALTER TABLE `spellclassoptions_dbc` ENABLE KEYS */;

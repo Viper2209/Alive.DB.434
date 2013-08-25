@@ -10,7 +10,7 @@
 /*!40014 SET @OLD_FOREIGN_KEY_CHECKS=@@FOREIGN_KEY_CHECKS, FOREIGN_KEY_CHECKS=0 */;
 /*!40101 SET @OLD_SQL_MODE=@@SQL_MODE, SQL_MODE='NO_AUTO_VALUE_ON_ZERO' */;
 
--- Exportiere Struktur von Tabelle world2.spell_required
+-- Exportiere Struktur von Tabelle world3.spell_required
 DROP TABLE IF EXISTS `spell_required`;
 CREATE TABLE IF NOT EXISTS `spell_required` (
   `spell_id` mediumint(8) NOT NULL DEFAULT '0',
@@ -18,7 +18,7 @@ CREATE TABLE IF NOT EXISTS `spell_required` (
   PRIMARY KEY (`spell_id`,`req_spell`)
 ) ENGINE=MyISAM DEFAULT CHARSET=utf8 ROW_FORMAT=FIXED COMMENT='Spell Additinal Data';
 
--- Exportiere Daten aus Tabelle world2.spell_required: 23 rows
+-- Exportiere Daten aus Tabelle world3.spell_required: 23 rows
 DELETE FROM `spell_required`;
 /*!40000 ALTER TABLE `spell_required` DISABLE KEYS */;
 INSERT INTO `spell_required` (`spell_id`, `req_spell`) VALUES

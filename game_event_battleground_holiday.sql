@@ -10,7 +10,7 @@
 /*!40014 SET @OLD_FOREIGN_KEY_CHECKS=@@FOREIGN_KEY_CHECKS, FOREIGN_KEY_CHECKS=0 */;
 /*!40101 SET @OLD_SQL_MODE=@@SQL_MODE, SQL_MODE='NO_AUTO_VALUE_ON_ZERO' */;
 
--- Exportiere Struktur von Tabelle world2.game_event_battleground_holiday
+-- Exportiere Struktur von Tabelle world3.game_event_battleground_holiday
 DROP TABLE IF EXISTS `game_event_battleground_holiday`;
 CREATE TABLE IF NOT EXISTS `game_event_battleground_holiday` (
   `eventEntry` tinyint(3) unsigned NOT NULL COMMENT 'Entry of the game event',
@@ -18,7 +18,7 @@ CREATE TABLE IF NOT EXISTS `game_event_battleground_holiday` (
   PRIMARY KEY (`eventEntry`)
 ) ENGINE=MyISAM DEFAULT CHARSET=utf8 COMMENT='CTDB Game event battlegrounds';
 
--- Exportiere Daten aus Tabelle world2.game_event_battleground_holiday: 0 rows
+-- Exportiere Daten aus Tabelle world3.game_event_battleground_holiday: 0 rows
 DELETE FROM `game_event_battleground_holiday`;
 /*!40000 ALTER TABLE `game_event_battleground_holiday` DISABLE KEYS */;
 /*!40000 ALTER TABLE `game_event_battleground_holiday` ENABLE KEYS */;

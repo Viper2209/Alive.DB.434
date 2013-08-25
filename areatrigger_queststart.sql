@@ -10,7 +10,7 @@
 /*!40014 SET @OLD_FOREIGN_KEY_CHECKS=@@FOREIGN_KEY_CHECKS, FOREIGN_KEY_CHECKS=0 */;
 /*!40101 SET @OLD_SQL_MODE=@@SQL_MODE, SQL_MODE='NO_AUTO_VALUE_ON_ZERO' */;
 
--- Exportiere Struktur von Tabelle world2.areatrigger_queststart
+-- Exportiere Struktur von Tabelle world3.areatrigger_queststart
 DROP TABLE IF EXISTS `areatrigger_queststart`;
 CREATE TABLE IF NOT EXISTS `areatrigger_queststart` (
   `trigger_ID` mediumint(8) unsigned NOT NULL DEFAULT '0' COMMENT 'Identifier',
@@ -18,7 +18,7 @@ CREATE TABLE IF NOT EXISTS `areatrigger_queststart` (
   PRIMARY KEY (`trigger_ID`)
 ) ENGINE=MyISAM DEFAULT CHARSET=latin1;
 
--- Exportiere Daten aus Tabelle world2.areatrigger_queststart: 0 rows
+-- Exportiere Daten aus Tabelle world3.areatrigger_queststart: 0 rows
 DELETE FROM `areatrigger_queststart`;
 /*!40000 ALTER TABLE `areatrigger_queststart` DISABLE KEYS */;
 /*!40000 ALTER TABLE `areatrigger_queststart` ENABLE KEYS */;

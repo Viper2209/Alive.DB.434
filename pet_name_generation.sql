@@ -10,7 +10,7 @@
 /*!40014 SET @OLD_FOREIGN_KEY_CHECKS=@@FOREIGN_KEY_CHECKS, FOREIGN_KEY_CHECKS=0 */;
 /*!40101 SET @OLD_SQL_MODE=@@SQL_MODE, SQL_MODE='NO_AUTO_VALUE_ON_ZERO' */;
 
--- Exportiere Struktur von Tabelle world2.pet_name_generation
+-- Exportiere Struktur von Tabelle world3.pet_name_generation
 DROP TABLE IF EXISTS `pet_name_generation`;
 CREATE TABLE IF NOT EXISTS `pet_name_generation` (
   `id` mediumint(8) unsigned NOT NULL AUTO_INCREMENT,
@@ -20,7 +20,7 @@ CREATE TABLE IF NOT EXISTS `pet_name_generation` (
   PRIMARY KEY (`id`)
 ) ENGINE=MyISAM AUTO_INCREMENT=314 DEFAULT CHARSET=utf8;
 
--- Exportiere Daten aus Tabelle world2.pet_name_generation: 313 rows
+-- Exportiere Daten aus Tabelle world3.pet_name_generation: 313 rows
 DELETE FROM `pet_name_generation`;
 /*!40000 ALTER TABLE `pet_name_generation` DISABLE KEYS */;
 INSERT INTO `pet_name_generation` (`id`, `word`, `entry`, `half`) VALUES

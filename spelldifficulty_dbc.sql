@@ -10,7 +10,7 @@
 /*!40014 SET @OLD_FOREIGN_KEY_CHECKS=@@FOREIGN_KEY_CHECKS, FOREIGN_KEY_CHECKS=0 */;
 /*!40101 SET @OLD_SQL_MODE=@@SQL_MODE, SQL_MODE='NO_AUTO_VALUE_ON_ZERO' */;
 
--- Exportiere Struktur von Tabelle world2.spelldifficulty_dbc
+-- Exportiere Struktur von Tabelle world3.spelldifficulty_dbc
 DROP TABLE IF EXISTS `spelldifficulty_dbc`;
 CREATE TABLE IF NOT EXISTS `spelldifficulty_dbc` (
   `id` int(11) unsigned NOT NULL DEFAULT '0',
@@ -21,7 +21,7 @@ CREATE TABLE IF NOT EXISTS `spelldifficulty_dbc` (
   PRIMARY KEY (`id`)
 ) ENGINE=MyISAM DEFAULT CHARSET=utf8;
 
--- Exportiere Daten aus Tabelle world2.spelldifficulty_dbc: 37 rows
+-- Exportiere Daten aus Tabelle world3.spelldifficulty_dbc: 48 rows
 DELETE FROM `spelldifficulty_dbc`;
 /*!40000 ALTER TABLE `spelldifficulty_dbc` DISABLE KEYS */;
 INSERT INTO `spelldifficulty_dbc` (`id`, `spellid0`, `spellid1`, `spellid2`, `spellid3`) VALUES
@@ -61,7 +61,18 @@ INSERT INTO `spelldifficulty_dbc` (`id`, `spellid0`, `spellid1`, `spellid2`, `sp
 	(51363, 51363, 59016, 0, 0),
 	(61693, 61693, 61694, 0, 0),
 	(57058, 57058, 60073, 0, 0),
-	(56272, 56272, 60072, 0, 0);
+	(56272, 56272, 60072, 0, 0),
+	(48849, 48849, 59422, 0, 0),
+	(49618, 49618, 59809, 0, 0),
+	(49555, 49555, 59807, 0, 0),
+	(49380, 49380, 59803, 0, 0),
+	(49381, 49381, 59805, 0, 0),
+	(49527, 49527, 59972, 0, 0),
+	(49518, 49518, 59971, 0, 0),
+	(49528, 49528, 59973, 0, 0),
+	(49544, 49544, 59965, 0, 0),
+	(49537, 49537, 59963, 0, 0),
+	(49548, 49548, 59969, 0, 0);
 /*!40000 ALTER TABLE `spelldifficulty_dbc` ENABLE KEYS */;
 /*!40101 SET SQL_MODE=IFNULL(@OLD_SQL_MODE, '') */;
 /*!40014 SET FOREIGN_KEY_CHECKS=IF(@OLD_FOREIGN_KEY_CHECKS IS NULL, 1, @OLD_FOREIGN_KEY_CHECKS) */;

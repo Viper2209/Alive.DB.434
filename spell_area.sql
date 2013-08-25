@@ -10,7 +10,7 @@
 /*!40014 SET @OLD_FOREIGN_KEY_CHECKS=@@FOREIGN_KEY_CHECKS, FOREIGN_KEY_CHECKS=0 */;
 /*!40101 SET @OLD_SQL_MODE=@@SQL_MODE, SQL_MODE='NO_AUTO_VALUE_ON_ZERO' */;
 
--- Exportiere Struktur von Tabelle world2.spell_area
+-- Exportiere Struktur von Tabelle world3.spell_area
 DROP TABLE IF EXISTS `spell_area`;
 CREATE TABLE IF NOT EXISTS `spell_area` (
   `spell` mediumint(8) unsigned NOT NULL DEFAULT '0',
@@ -26,7 +26,7 @@ CREATE TABLE IF NOT EXISTS `spell_area` (
   PRIMARY KEY (`spell`,`area`,`quest_start`,`aura_spell`,`racemask`,`gender`)
 ) ENGINE=MyISAM DEFAULT CHARSET=utf8;
 
--- Exportiere Daten aus Tabelle world2.spell_area: 658 rows
+-- Exportiere Daten aus Tabelle world3.spell_area: 663 rows
 DELETE FROM `spell_area`;
 /*!40000 ALTER TABLE `spell_area` DISABLE KEYS */;
 INSERT INTO `spell_area` (`spell`, `area`, `quest_start`, `quest_end`, `aura_spell`, `racemask`, `gender`, `autocast`, `quest_start_status`, `quest_end_status`) VALUES
@@ -175,8 +175,8 @@ INSERT INTO `spell_area` (`spell`, `area`, `quest_start`, `quest_end`, `aura_spe
 	(75207, 5145, 0, 0, 8326, 0, 2, 1, 64, 11),
 	(74789, 1637, 13189, 13189, 0, 0, 2, 1, 74, 11),
 	(60815, 1519, 13188, 13188, 0, 0, 2, 1, 74, 11),
-	(59087, 4522, 13386, 13392, 0, 1101, 2, 1, 74, 11),
-	(59087, 4522, 13258, 13282, 0, 690, 2, 1, 74, 11),
+	(59073, 4522, 13386, 13392, 0, 1101, 2, 1, 66, 43),
+	(59087, 4522, 13258, 13282, 0, 690, 2, 1, 66, 43),
 	(75207, 5146, 0, 0, 8326, 0, 2, 1, 64, 11),
 	(55164, 5473, 0, 0, 8326, 0, 2, 1, 64, 11),
 	(55164, 51, 0, 0, 8326, 0, 2, 1, 64, 11),
@@ -303,7 +303,7 @@ INSERT INTO `spell_area` (`spell`, `area`, `quest_start`, `quest_end`, `aura_spe
 	(48739, 3537, 0, 0, 0, 0, 2, 0, 64, 11),
 	(48739, 495, 0, 0, 0, 0, 2, 0, 64, 11),
 	(48739, 65, 0, 0, 0, 0, 2, 0, 64, 11),
-	(49416, 4537, 13304, 13362, 0, 0, 2, 1, 64, 11),
+	(49416, 4537, 13393, 13394, 0, 1101, 2, 1, 64, 9),
 	(49416, 4622, 13304, 13362, 0, 0, 2, 1, 64, 11),
 	(49416, 4533, 13304, 13362, 0, 0, 2, 1, 64, 11),
 	(55858, 4439, 12924, 12924, 0, 0, 2, 1, 74, 11),
@@ -659,8 +659,8 @@ INSERT INTO `spell_area` (`spell`, `area`, `quest_start`, `quest_end`, `aura_spe
 	(55773, 4273, 0, 0, 0, 690, 2, 1, 64, 11),
 	(55773, 4265, 0, 0, 0, 690, 2, 1, 64, 11),
 	(55773, 4177, 0, 0, 0, 690, 2, 1, 64, 11),
-	(49417, 4537, 13393, 13393, 0, 1101, 2, 1, 74, 11),
-	(49417, 4537, 13304, 13304, 0, 690, 2, 1, 74, 11),
+	(49417, 4537, 13393, 13393, 0, 1101, 2, 1, 11, 11),
+	(49417, 4537, 13304, 13304, 0, 690, 2, 1, 11, 11),
 	(49417, 4519, 13360, 13362, 0, 0, 2, 1, 74, 11),
 	(46999, 4172, 12474, 0, 0, 1101, 2, 1, 74, 11),
 	(46999, 4172, 12224, 0, 0, 690, 2, 1, 74, 11),
@@ -687,7 +687,12 @@ INSERT INTO `spell_area` (`spell`, `area`, `quest_start`, `quest_end`, `aura_spe
 	(35480, 2367, 0, 0, 0, 690, 0, 1, 64, 11),
 	(30181, 4477, 0, 12896, 0, 1101, 2, 1, 64, 11),
 	(30181, 4477, 0, 12897, 0, 690, 2, 1, 64, 11),
-	(68132, 4741, 0, 0, 0, 0, 2, 1, 64, 11);
+	(68132, 4741, 0, 0, 0, 0, 2, 1, 64, 11),
+	(49416, 4537, 13304, 13305, 0, 690, 2, 1, 64, 9),
+	(89521, 980, 28557, 27003, 0, 946, 2, 1, 74, 11),
+	(89521, 980, 28296, 27003, 0, 946, 2, 1, 74, 11),
+	(89521, 980, 28558, 27003, 0, 2098253, 2, 1, 74, 11),
+	(89521, 980, 28295, 27003, 0, 2098253, 2, 1, 74, 11);
 /*!40000 ALTER TABLE `spell_area` ENABLE KEYS */;
 /*!40101 SET SQL_MODE=IFNULL(@OLD_SQL_MODE, '') */;
 /*!40014 SET FOREIGN_KEY_CHECKS=IF(@OLD_FOREIGN_KEY_CHECKS IS NULL, 1, @OLD_FOREIGN_KEY_CHECKS) */;

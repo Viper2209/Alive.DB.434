@@ -10,7 +10,7 @@
 /*!40014 SET @OLD_FOREIGN_KEY_CHECKS=@@FOREIGN_KEY_CHECKS, FOREIGN_KEY_CHECKS=0 */;
 /*!40101 SET @OLD_SQL_MODE=@@SQL_MODE, SQL_MODE='NO_AUTO_VALUE_ON_ZERO' */;
 
--- Exportiere Struktur von Tabelle world2.vehicle_scaling_info
+-- Exportiere Struktur von Tabelle world3.vehicle_scaling_info
 DROP TABLE IF EXISTS `vehicle_scaling_info`;
 CREATE TABLE IF NOT EXISTS `vehicle_scaling_info` (
   `entry` mediumint(8) unsigned NOT NULL DEFAULT '0',
@@ -19,7 +19,7 @@ CREATE TABLE IF NOT EXISTS `vehicle_scaling_info` (
   PRIMARY KEY (`entry`)
 ) ENGINE=MyISAM DEFAULT CHARSET=utf8 ROW_FORMAT=FIXED COMMENT='ArkDB Vehicle Scaling Info';
 
--- Exportiere Daten aus Tabelle world2.vehicle_scaling_info: 3 rows
+-- Exportiere Daten aus Tabelle world3.vehicle_scaling_info: 3 rows
 DELETE FROM `vehicle_scaling_info`;
 /*!40000 ALTER TABLE `vehicle_scaling_info` DISABLE KEYS */;
 INSERT INTO `vehicle_scaling_info` (`entry`, `baseItemLevel`, `scalingFactor`) VALUES

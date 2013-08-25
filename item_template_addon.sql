@@ -10,7 +10,7 @@
 /*!40014 SET @OLD_FOREIGN_KEY_CHECKS=@@FOREIGN_KEY_CHECKS, FOREIGN_KEY_CHECKS=0 */;
 /*!40101 SET @OLD_SQL_MODE=@@SQL_MODE, SQL_MODE='NO_AUTO_VALUE_ON_ZERO' */;
 
--- Exportiere Struktur von Tabelle world2.item_template_addon
+-- Exportiere Struktur von Tabelle world3.item_template_addon
 DROP TABLE IF EXISTS `item_template_addon`;
 CREATE TABLE IF NOT EXISTS `item_template_addon` (
   `Id` int(10) unsigned NOT NULL,
@@ -22,7 +22,7 @@ CREATE TABLE IF NOT EXISTS `item_template_addon` (
   PRIMARY KEY (`Id`)
 ) ENGINE=MyISAM DEFAULT CHARSET=utf8 ROW_FORMAT=DYNAMIC;
 
--- Exportiere Daten aus Tabelle world2.item_template_addon: 539 rows
+-- Exportiere Daten aus Tabelle world3.item_template_addon: 539 rows
 DELETE FROM `item_template_addon`;
 /*!40000 ALTER TABLE `item_template_addon` DISABLE KEYS */;
 INSERT INTO `item_template_addon` (`Id`, `FlagsCu`, `FoodType`, `MinMoneyLoot`, `MaxMoneyLoot`, `SpellPPMChance`) VALUES

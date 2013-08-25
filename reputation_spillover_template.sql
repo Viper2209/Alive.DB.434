@@ -10,7 +10,7 @@
 /*!40014 SET @OLD_FOREIGN_KEY_CHECKS=@@FOREIGN_KEY_CHECKS, FOREIGN_KEY_CHECKS=0 */;
 /*!40101 SET @OLD_SQL_MODE=@@SQL_MODE, SQL_MODE='NO_AUTO_VALUE_ON_ZERO' */;
 
--- Exportiere Struktur von Tabelle world2.reputation_spillover_template
+-- Exportiere Struktur von Tabelle world3.reputation_spillover_template
 DROP TABLE IF EXISTS `reputation_spillover_template`;
 CREATE TABLE IF NOT EXISTS `reputation_spillover_template` (
   `faction` smallint(5) unsigned NOT NULL DEFAULT '0' COMMENT 'faction entry',
@@ -32,7 +32,7 @@ CREATE TABLE IF NOT EXISTS `reputation_spillover_template` (
   PRIMARY KEY (`faction`)
 ) ENGINE=MyISAM DEFAULT CHARSET=utf8 ROW_FORMAT=DYNAMIC COMMENT='Reputation spillover reputation gain';
 
--- Exportiere Daten aus Tabelle world2.reputation_spillover_template: 26 rows
+-- Exportiere Daten aus Tabelle world3.reputation_spillover_template: 26 rows
 DELETE FROM `reputation_spillover_template`;
 /*!40000 ALTER TABLE `reputation_spillover_template` DISABLE KEYS */;
 INSERT INTO `reputation_spillover_template` (`faction`, `faction1`, `rate_1`, `rank_1`, `faction2`, `rate_2`, `rank_2`, `faction3`, `rate_3`, `rank_3`, `faction4`, `rate_4`, `rank_4`, `faction5`, `rate_5`, `rank_5`) VALUES

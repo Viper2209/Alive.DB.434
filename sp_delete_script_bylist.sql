@@ -10,7 +10,7 @@
 /*!40014 SET @OLD_FOREIGN_KEY_CHECKS=@@FOREIGN_KEY_CHECKS, FOREIGN_KEY_CHECKS=0 */;
 /*!40101 SET @OLD_SQL_MODE=@@SQL_MODE, SQL_MODE='NO_AUTO_VALUE_ON_ZERO' */;
 
--- Exportiere Struktur von Prozedur world2.sp_delete_script_bylist
+-- Exportiere Struktur von Prozedur world3.sp_delete_script_bylist
 DROP PROCEDURE IF EXISTS `sp_delete_script_bylist`;
 DELIMITER //
 CREATE DEFINER=`root`@`localhost` PROCEDURE `sp_delete_script_bylist`(IN script_type VARCHAR(10), IN script_id_list LONGTEXT)

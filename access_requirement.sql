@@ -10,7 +10,7 @@
 /*!40014 SET @OLD_FOREIGN_KEY_CHECKS=@@FOREIGN_KEY_CHECKS, FOREIGN_KEY_CHECKS=0 */;
 /*!40101 SET @OLD_SQL_MODE=@@SQL_MODE, SQL_MODE='NO_AUTO_VALUE_ON_ZERO' */;
 
--- Exportiere Struktur von Tabelle world2.access_requirement
+-- Exportiere Struktur von Tabelle world3.access_requirement
 DROP TABLE IF EXISTS `access_requirement`;
 CREATE TABLE IF NOT EXISTS `access_requirement` (
   `mapId` mediumint(8) unsigned NOT NULL,
@@ -27,7 +27,7 @@ CREATE TABLE IF NOT EXISTS `access_requirement` (
   PRIMARY KEY (`mapId`,`difficulty`)
 ) ENGINE=MyISAM DEFAULT CHARSET=utf8 ROW_FORMAT=DYNAMIC COMMENT='Access Requirements';
 
--- Exportiere Daten aus Tabelle world2.access_requirement: 149 rows
+-- Exportiere Daten aus Tabelle world3.access_requirement: 149 rows
 DELETE FROM `access_requirement`;
 /*!40000 ALTER TABLE `access_requirement` DISABLE KEYS */;
 INSERT INTO `access_requirement` (`mapId`, `difficulty`, `level_min`, `level_max`, `item`, `item2`, `quest_done_A`, `quest_done_H`, `completed_achievement`, `quest_failed_text`, `comment`) VALUES
@@ -71,7 +71,7 @@ INSERT INTO `access_requirement` (`mapId`, `difficulty`, `level_min`, `level_max
 	(544, 0, 65, 0, 0, 0, 0, 0, 0, NULL, 'Magtheridon\'s Lair (Entrance)'),
 	(545, 0, 55, 0, 0, 0, 0, 0, 0, NULL, 'The Steamvault (Entrance)'),
 	(546, 0, 55, 0, 0, 0, 0, 0, 0, NULL, 'The Underbog (Entrance)'),
-	(754, 1, 85, 0, 0, 0, 0, 0, 0, NULL, 'Throne of the Four Winds (Entrance)'),
+	(754, 1, 85, 0, 0, 0, 0, 0, 4851, NULL, 'Throne of the Four Winds (Entrance)'),
 	(547, 0, 55, 0, 0, 0, 0, 0, 0, NULL, 'The Slave Pens (Entrance)'),
 	(548, 0, 68, 0, 0, 0, 0, 0, 0, NULL, 'Serpentshrine Cavern (Entrance)'),
 	(550, 0, 70, 0, 0, 0, 0, 0, 0, NULL, 'The Eye (Entrance)'),
@@ -122,7 +122,7 @@ INSERT INTO `access_requirement` (`mapId`, `difficulty`, `level_min`, `level_max
 	(615, 0, 80, 0, 0, 0, 0, 0, 0, NULL, 'Chamber of Aspects,Obsidian Sanctum (entrance)'),
 	(615, 1, 80, 0, 0, 0, 0, 0, 0, NULL, 'Chamber of Aspects,Obsidian Sanctum (entrance)'),
 	(616, 0, 80, 0, 0, 0, 0, 0, 0, NULL, 'The Eye of Eternity (entrance)'),
-	(616, 1, 80, 0, 0, 0, 0, 0, 0, NULL, 'The Eye of Eternity (entrance)'),
+	(616, 1, 80, 0, 0, 0, 0, 0, 6107, NULL, 'The Eye of Eternity (entrance)'),
 	(619, 0, 68, 0, 0, 0, 0, 0, 0, NULL, 'Ahn\'Kahet (entrance)'),
 	(619, 1, 80, 0, 0, 0, 0, 0, 0, NULL, 'Ahn\'Kahet (entrance)'),
 	(624, 0, 80, 0, 0, 0, 0, 0, 0, NULL, 'Vault of Archavon (Entrance)'),
@@ -149,13 +149,13 @@ INSERT INTO `access_requirement` (`mapId`, `difficulty`, `level_min`, `level_max
 	(724, 3, 80, 0, 0, 0, 0, 0, 0, NULL, 'The Ruby Sanctum (Entrance)'),
 	(671, 3, 85, 0, 0, 0, 0, 0, 4850, NULL, 'The Bastion of Twilight (Entrance) - 25H'),
 	(671, 2, 85, 0, 0, 0, 0, 0, 4850, NULL, 'The Bastion of Twilight (Entrance) - 10H'),
-	(671, 1, 85, 0, 0, 0, 0, 0, 0, NULL, 'The Bastion of Twilight (Entrance) - 25N'),
+	(671, 1, 85, 0, 0, 0, 0, 0, 4850, NULL, 'The Bastion of Twilight (Entrance) - 25N'),
 	(671, 0, 85, 0, 0, 0, 0, 0, 0, NULL, 'The Bastion of Twilight (Entrance) - 10N'),
 	(670, 1, 85, 0, 0, 0, 0, 0, 0, NULL, 'Grim Batol (Entrance)'),
 	(670, 0, 83, 0, 0, 0, 0, 0, 0, NULL, 'Grim Batol (Entrance)'),
 	(669, 3, 85, 0, 0, 0, 0, 0, 4842, NULL, 'Blackwing Descent (Entrance) - 25H'),
 	(669, 2, 85, 0, 0, 0, 0, 0, 4842, NULL, 'Blackwing Descent (Entrance) - 10H'),
-	(669, 1, 85, 0, 0, 0, 0, 0, 0, NULL, 'Blackwing Descent (Entrance) - 25N'),
+	(669, 1, 85, 0, 0, 0, 0, 0, 4842, NULL, 'Blackwing Descent (Entrance) - 25N'),
 	(669, 0, 85, 0, 0, 0, 0, 0, 0, NULL, 'Blackwing Descent (Entrance) - 10N'),
 	(657, 1, 85, 0, 0, 0, 0, 0, 0, NULL, 'The Vortex Pinnacle (Entrance)'),
 	(657, 0, 80, 0, 0, 0, 0, 0, 0, NULL, 'The Vortex Pinnacle (Entrance)'),

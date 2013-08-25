@@ -10,7 +10,7 @@
 /*!40014 SET @OLD_FOREIGN_KEY_CHECKS=@@FOREIGN_KEY_CHECKS, FOREIGN_KEY_CHECKS=0 */;
 /*!40101 SET @OLD_SQL_MODE=@@SQL_MODE, SQL_MODE='NO_AUTO_VALUE_ON_ZERO' */;
 
--- Exportiere Struktur von Tabelle world2.item_enchantment_template
+-- Exportiere Struktur von Tabelle world3.item_enchantment_template
 DROP TABLE IF EXISTS `item_enchantment_template`;
 CREATE TABLE IF NOT EXISTS `item_enchantment_template` (
   `entry` mediumint(8) unsigned NOT NULL DEFAULT '0',
@@ -19,7 +19,7 @@ CREATE TABLE IF NOT EXISTS `item_enchantment_template` (
   PRIMARY KEY (`entry`,`ench`)
 ) ENGINE=MyISAM DEFAULT CHARSET=utf8 ROW_FORMAT=FIXED COMMENT='Item Random Enchantment System';
 
--- Exportiere Daten aus Tabelle world2.item_enchantment_template: 29.343 rows
+-- Exportiere Daten aus Tabelle world3.item_enchantment_template: 29.343 rows
 DELETE FROM `item_enchantment_template`;
 /*!40000 ALTER TABLE `item_enchantment_template` DISABLE KEYS */;
 INSERT INTO `item_enchantment_template` (`entry`, `ench`, `chance`) VALUES

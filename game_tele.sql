@@ -10,7 +10,7 @@
 /*!40014 SET @OLD_FOREIGN_KEY_CHECKS=@@FOREIGN_KEY_CHECKS, FOREIGN_KEY_CHECKS=0 */;
 /*!40101 SET @OLD_SQL_MODE=@@SQL_MODE, SQL_MODE='NO_AUTO_VALUE_ON_ZERO' */;
 
--- Exportiere Struktur von Tabelle world2.game_tele
+-- Exportiere Struktur von Tabelle world3.game_tele
 DROP TABLE IF EXISTS `game_tele`;
 CREATE TABLE IF NOT EXISTS `game_tele` (
   `id` mediumint(8) unsigned NOT NULL AUTO_INCREMENT,
@@ -21,9 +21,9 @@ CREATE TABLE IF NOT EXISTS `game_tele` (
   `map` smallint(5) unsigned NOT NULL DEFAULT '0',
   `name` varchar(100) NOT NULL DEFAULT '',
   PRIMARY KEY (`id`)
-) ENGINE=MyISAM AUTO_INCREMENT=10026 DEFAULT CHARSET=utf8 COMMENT='Tele Command';
+) ENGINE=MyISAM AUTO_INCREMENT=10072 DEFAULT CHARSET=utf8 COMMENT='Tele Command';
 
--- Exportiere Daten aus Tabelle world2.game_tele: 1.773 rows
+-- Exportiere Daten aus Tabelle world3.game_tele: 1.818 rows
 DELETE FROM `game_tele`;
 /*!40000 ALTER TABLE `game_tele` DISABLE KEYS */;
 INSERT INTO `game_tele` (`id`, `position_x`, `position_y`, `position_z`, `orientation`, `map`, `name`) VALUES
@@ -1396,7 +1396,7 @@ INSERT INTO `game_tele` (`id`, `position_x`, `position_y`, `position_z`, `orient
 	(1368, 8442.72, -7611.23, 155.586, 1.86819, 530, 'ZebWatha'),
 	(1369, -1088.38, 2998.27, 8.18949, 2.73983, 530, 'ZeppelinCrash'),
 	(1370, -1005.37, 2030.91, 67.873, 3.12703, 530, 'ZethGor'),
-	(1371, -11916.9, -1248.36, 92.5334, 4.72417, 309, 'ZG'),
+	(10027, -5990.31, 6141.37, -803.235, 2.70851, 0, 'AbyssalDepth'),
 	(1372, -12659.8, -458.71, 29.312, 3.65797, 0, 'ZiatajaiRuins'),
 	(1422, 4682.07, -5569.67, 53.61, 3.85, 571, 'BloodmoonIsle'),
 	(1374, 6851.78, -7972.57, 179.242, 4.64691, 530, 'ZulAman'),
@@ -1799,7 +1799,52 @@ INSERT INTO `game_tele` (`id`, `position_x`, `position_y`, `position_z`, `orient
 	(10021, 8588.42, 791.888, 558.236, 3.23819, 571, 'TrialOfTheChampion'),
 	(10023, 3835.8, 1544.09, 89.7234, 4.88028, 571, 'AgmarsHammer'),
 	(10024, 3503.75, 2004.19, 65.143, 4.03686, 571, 'StarsRest'),
-	(10025, 3541.58, 271.559, 45.5999, 1.50002, 571, 'WyrmrestTemple');
+	(10025, 3541.58, 271.559, 45.5999, 1.50002, 571, 'WyrmrestTemple'),
+	(10026, 4607.71, -2091.05, 1236.92, 3.96529, 1, 'PortalFirelands'),
+	(10028, 2460.02, -5592.96, 367.395, 1.91974, 0, 'AcherusTheEbonHold'),
+	(10029, 4488.76, 5736.18, 80.0769, 5.45078, 571, 'BorgorokOutpost'),
+	(10030, -1146.63, 1659.83, 62.641, 3.67485, 1, 'CenarionWildlands'),
+	(10031, 3641.45, 282.75, -120.145, 3.325, 571, 'ChamberOfAspects'),
+	(10032, -4202.26, 6346.8, 9.7129, 3.25583, 974, 'DarkmoonFaire'),
+	(10033, -9469.56, -2467.28, 17.0011, 2.11647, 1, 'DawnriseExpedition'),
+	(10034, -7008.63, -2554.03, 241.714, 4.87685, 0, 'DragonsMouth'),
+	(10035, -8269.14, -4514.72, -219.44, 0.216964, 1, 'DragonSoul'),
+	(10036, -8296.45, -4458.88, -208.44, 0.375153, 1, 'EndTime'),
+	(10037, -2020.72, -2107.58, 91.9626, 5.49717, 1, 'FieldsOfBlood'),
+	(10038, -4184.38, -5650.3, 27.3267, 5.11639, 0, 'FirebeardsPatrol'),
+	(10039, 3987.92, -2945.83, 1002.55, 1.94685, 1, 'Firelands'),
+	(10040, -6119.92, -3879.47, 6.17747, 2.01436, 1, 'Fizzle&PozziksSpeedbarge'),
+	(10041, -8093.77, -1013.15, 132.81, 4.74436, 0, 'FlamestarPost'),
+	(10042, -926.41, 1639.02, 68.4227, 1.44215, 0, 'ForsakenForwardCommand'),
+	(10043, -8289.69, -4580.73, -225.664, 4.56163, 1, 'HourofTwilight'),
+	(10044, -6692.48, -2175.31, 283.453, 0.427571, 0, 'Kargath'),
+	(10045, -2808.37, -5380.95, 173.717, 0.34903, 0, 'Kirthaven'),
+	(10046, -6785.14, 4202.74, -480.919, 0.218087, 0, 'LegionsRest'),
+	(10047, -10679.7, -1307.1, 17.342, 3.40863, 1, 'LostCityoftheTol\'vir'),
+	(10048, -7551.99, -1560.2, -270.296, 2.27137, 1, 'MarshalsStand'),
+	(10049, -6985.64, -1055.36, -266.292, 0.0973038, 1, 'MossyPile'),
+	(10050, 5534.08, -3624.69, 1567.04, 5.20932, 1, 'MountHyjal'),
+	(10051, 60.5981, -2708.93, 91.6855, 1.33239, 1, 'NorthernBarrens'),
+	(10052, -12061.9, -611.914, 13.7046, 3.69646, 0, 'NorthStranglethorn'),
+	(10053, -853.221, -533.529, 9.98556, 0.242866, 0, 'RuinsOfSouthshore'),
+	(10054, -10679.1, 1049.4, 23.3868, 0.157086, 1, 'SchnottzsLanding'),
+	(10055, -6114.43, 4287.74, -349.123, 2.00952, 0, 'SilverTideHollow'),
+	(10056, 2647.67, -6200.57, 99.1108, 5.34884, 1, 'SouthernRocketway'),
+	(10057, -12346, -3019.36, 88.2151, 5.63504, 0, 'SunveilExcursion'),
+	(10058, 3464.17, 4087.16, 17.0561, 2.02607, 571, 'TaunkaleVillage'),
+	(10059, -6601.58, 6029.2, -673.447, 3.79629, 0, 'TenebrousCavern'),
+	(10060, -4888.41, -4239.17, 827.763, 2.14347, 0, 'TheBastionofTwilight'),
+	(10061, 5690.97, 2141.07, 798.054, 4.4344, 571, 'TheFrozenHalls'),
+	(10062, 8427.88, 2706.33, 655.095, 5.743, 571, 'TheShadowVault'),
+	(10063, -281.595, 1362.91, 22.7936, 1.84159, 732, 'TolBaradPeninsula'),
+	(10064, -9574.83, -924.954, 100.272, 3.13119, 1, 'Uldum'),
+	(10065, 2925.02, 4065.63, 1.46737, 3.56739, 571, 'Unupe'),
+	(10066, -6561.97, 6140.03, -671.059, 3.60665, 0, 'Vashj\'irAbyssalDepths'),
+	(10067, -5133.63, 3281.02, -118.449, 2.38226, 0, 'Vashj\'irKelp\'tharForest'),
+	(10068, -6114.38, 4292.36, -348.739, 2.93992, 0, 'Vashj\'irShimmeringExpanse'),
+	(10069, -8596.36, -4001.64, -205.546, 1.36386, 1, 'WellofEternity'),
+	(10070, 3376.86, 1013.05, 3.34387, 3.81699, 1, 'ZoramgarOutpost'),
+	(10071, 5560.23, -3211.66, 371.709, 5.55055, 571, 'ZulDrak');
 /*!40000 ALTER TABLE `game_tele` ENABLE KEYS */;
 /*!40101 SET SQL_MODE=IFNULL(@OLD_SQL_MODE, '') */;
 /*!40014 SET FOREIGN_KEY_CHECKS=IF(@OLD_FOREIGN_KEY_CHECKS IS NULL, 1, @OLD_FOREIGN_KEY_CHECKS) */;

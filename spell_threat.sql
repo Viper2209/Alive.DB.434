@@ -10,7 +10,7 @@
 /*!40014 SET @OLD_FOREIGN_KEY_CHECKS=@@FOREIGN_KEY_CHECKS, FOREIGN_KEY_CHECKS=0 */;
 /*!40101 SET @OLD_SQL_MODE=@@SQL_MODE, SQL_MODE='NO_AUTO_VALUE_ON_ZERO' */;
 
--- Exportiere Struktur von Tabelle world2.spell_threat
+-- Exportiere Struktur von Tabelle world3.spell_threat
 DROP TABLE IF EXISTS `spell_threat`;
 CREATE TABLE IF NOT EXISTS `spell_threat` (
   `entry` mediumint(8) unsigned NOT NULL,
@@ -20,7 +20,7 @@ CREATE TABLE IF NOT EXISTS `spell_threat` (
   PRIMARY KEY (`entry`)
 ) ENGINE=MyISAM DEFAULT CHARSET=utf8 ROW_FORMAT=FIXED;
 
--- Exportiere Daten aus Tabelle world2.spell_threat: 53 rows
+-- Exportiere Daten aus Tabelle world3.spell_threat: 53 rows
 DELETE FROM `spell_threat`;
 /*!40000 ALTER TABLE `spell_threat` DISABLE KEYS */;
 INSERT INTO `spell_threat` (`entry`, `flatMod`, `pctMod`, `apPctMod`) VALUES

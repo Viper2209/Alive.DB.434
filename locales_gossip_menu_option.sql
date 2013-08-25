@@ -10,7 +10,7 @@
 /*!40014 SET @OLD_FOREIGN_KEY_CHECKS=@@FOREIGN_KEY_CHECKS, FOREIGN_KEY_CHECKS=0 */;
 /*!40101 SET @OLD_SQL_MODE=@@SQL_MODE, SQL_MODE='NO_AUTO_VALUE_ON_ZERO' */;
 
--- Exportiere Struktur von Tabelle world2.locales_gossip_menu_option
+-- Exportiere Struktur von Tabelle world3.locales_gossip_menu_option
 DROP TABLE IF EXISTS `locales_gossip_menu_option`;
 CREATE TABLE IF NOT EXISTS `locales_gossip_menu_option` (
   `menu_id` smallint(6) unsigned NOT NULL DEFAULT '0',
@@ -34,7 +34,7 @@ CREATE TABLE IF NOT EXISTS `locales_gossip_menu_option` (
   PRIMARY KEY (`menu_id`,`id`)
 ) ENGINE=MyISAM DEFAULT CHARSET=utf8;
 
--- Exportiere Daten aus Tabelle world2.locales_gossip_menu_option: 0 rows
+-- Exportiere Daten aus Tabelle world3.locales_gossip_menu_option: 0 rows
 DELETE FROM `locales_gossip_menu_option`;
 /*!40000 ALTER TABLE `locales_gossip_menu_option` DISABLE KEYS */;
 /*!40000 ALTER TABLE `locales_gossip_menu_option` ENABLE KEYS */;

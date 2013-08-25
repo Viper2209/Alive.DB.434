@@ -10,7 +10,7 @@
 /*!40014 SET @OLD_FOREIGN_KEY_CHECKS=@@FOREIGN_KEY_CHECKS, FOREIGN_KEY_CHECKS=0 */;
 /*!40101 SET @OLD_SQL_MODE=@@SQL_MODE, SQL_MODE='NO_AUTO_VALUE_ON_ZERO' */;
 
--- Exportiere Struktur von Tabelle world2.creature_classlevelstats
+-- Exportiere Struktur von Tabelle world3.creature_classlevelstats
 DROP TABLE IF EXISTS `creature_classlevelstats`;
 CREATE TABLE IF NOT EXISTS `creature_classlevelstats` (
   `level` tinyint(4) NOT NULL,
@@ -24,7 +24,7 @@ CREATE TABLE IF NOT EXISTS `creature_classlevelstats` (
   PRIMARY KEY (`level`,`class`)
 ) ENGINE=MyISAM DEFAULT CHARSET=utf8;
 
--- Exportiere Daten aus Tabelle world2.creature_classlevelstats: 400 rows
+-- Exportiere Daten aus Tabelle world3.creature_classlevelstats: 400 rows
 DELETE FROM `creature_classlevelstats`;
 /*!40000 ALTER TABLE `creature_classlevelstats` DISABLE KEYS */;
 INSERT INTO `creature_classlevelstats` (`level`, `class`, `basehp0`, `basehp1`, `basehp2`, `basehp3`, `basemana`, `basearmor`) VALUES

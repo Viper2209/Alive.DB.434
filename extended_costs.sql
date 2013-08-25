@@ -10,7 +10,7 @@
 /*!40014 SET @OLD_FOREIGN_KEY_CHECKS=@@FOREIGN_KEY_CHECKS, FOREIGN_KEY_CHECKS=0 */;
 /*!40101 SET @OLD_SQL_MODE=@@SQL_MODE, SQL_MODE='NO_AUTO_VALUE_ON_ZERO' */;
 
--- Exportiere Struktur von Tabelle world2.extended_costs
+-- Exportiere Struktur von Tabelle world3.extended_costs
 DROP TABLE IF EXISTS `extended_costs`;
 CREATE TABLE IF NOT EXISTS `extended_costs` (
   `id` int(255) NOT NULL DEFAULT '0',
@@ -47,7 +47,7 @@ CREATE TABLE IF NOT EXISTS `extended_costs` (
   PRIMARY KEY (`id`)
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
--- Exportiere Daten aus Tabelle world2.extended_costs: ~1.217 rows (ungefähr)
+-- Exportiere Daten aus Tabelle world3.extended_costs: ~1.424 rows (ungefähr)
 DELETE FROM `extended_costs`;
 /*!40000 ALTER TABLE `extended_costs` DISABLE KEYS */;
 INSERT INTO `extended_costs` (`id`, `unk1`, `unk2`, `unk3`, `required_item1`, `required_item2`, `required_item3`, `unk7`, `unk8`, `required_item1_amount`, `required_item2_amount`, `required_item3_amount`, `unk12`, `unk13`, `required_arena_bg_rating`, `unk15`, `currency_type1`, `currency_type2`, `currency_type3`, `unk19`, `unk20`, `currency_quantity1`, `currency_quantity2`, `currency_quantity3`, `unk24`, `unk25`, `unk26`, `unk27`, `unk28`, `unk29`, `unk30`) VALUES

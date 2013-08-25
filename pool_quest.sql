@@ -10,7 +10,7 @@
 /*!40014 SET @OLD_FOREIGN_KEY_CHECKS=@@FOREIGN_KEY_CHECKS, FOREIGN_KEY_CHECKS=0 */;
 /*!40101 SET @OLD_SQL_MODE=@@SQL_MODE, SQL_MODE='NO_AUTO_VALUE_ON_ZERO' */;
 
--- Exportiere Struktur von Tabelle world2.pool_quest
+-- Exportiere Struktur von Tabelle world3.pool_quest
 DROP TABLE IF EXISTS `pool_quest`;
 CREATE TABLE IF NOT EXISTS `pool_quest` (
   `entry` int(10) unsigned NOT NULL DEFAULT '0',
@@ -20,7 +20,7 @@ CREATE TABLE IF NOT EXISTS `pool_quest` (
   KEY `idx_guid` (`entry`)
 ) ENGINE=MyISAM DEFAULT CHARSET=utf8;
 
--- Exportiere Daten aus Tabelle world2.pool_quest: 139 rows
+-- Exportiere Daten aus Tabelle world3.pool_quest: 183 rows
 DELETE FROM `pool_quest`;
 /*!40000 ALTER TABLE `pool_quest` DISABLE KEYS */;
 INSERT INTO `pool_quest` (`entry`, `pool_entry`, `description`) VALUES
@@ -162,7 +162,51 @@ INSERT INTO `pool_quest` (`entry`, `pool_entry`, `description`) VALUES
 	(29324, 536, 'The Sister\'s Pendant'),
 	(29359, 536, 'An Old Favorite'),
 	(29323, 536, 'Stocking Up'),
-	(29325, 536, 'A Slippery Snack');
+	(29325, 536, 'A Slippery Snack'),
+	(28680, 377, 'Boosting Morale'),
+	(28679, 377, 'Rattling Their Cages'),
+	(28678, 377, 'Captain P. Harris'),
+	(28721, 376, 'Walk A Mile In Their Shoes'),
+	(28687, 376, 'Teach A Man To Fish.... Or Steal'),
+	(28686, 376, 'Not The Friendliest Town'),
+	(28685, 376, 'Leave No Weapon Behind'),
+	(28682, 376, 'Claiming The Keep'),
+	(28050, 375, 'Shark Tank'),
+	(27972, 375, 'Boosting Morale'),
+	(27971, 375, 'Rattling Their Cages'),
+	(27970, 375, 'Captain P. Harris'),
+	(27948, 375, 'A Sticky Task'),
+	(27944, 375, 'Thinning the Brood'),
+	(28275, 374, 'Bombs Away!'),
+	(27991, 374, 'Taking the Overlook Back'),
+	(27987, 374, 'Cannonball!'),
+	(27978, 374, 'Ghostbuster'),
+	(27975, 374, 'WANTED: Foreman Wellson'),
+	(27973, 374, 'Watch Out For Splinters!'),
+	(28046, 373, 'Finish The Job'),
+	(27992, 373, 'Magnets, How Do They Work?'),
+	(27967, 373, 'First Lieutenant Connor'),
+	(27966, 373, 'Salvaging the Remains'),
+	(27949, 373, 'The Forgotten'),
+	(28137, 372, 'Teach A Man To Fish.... Or Steal'),
+	(28130, 372, 'Not The Friendliest Town'),
+	(28065, 372, 'Walk A Mile In Their Shoes'),
+	(28063, 372, 'Leave No Weapon Behind'),
+	(28059, 372, 'Claiming The Keep'),
+	(28681, 377, 'Shark Tank'),
+	(28683, 377, 'Thinning the Brood'),
+	(28684, 377, 'A Sticky Task'),
+	(28694, 378, 'Watch Out For Splinters!'),
+	(28695, 378, 'WANTED: Foreman Wellson'),
+	(28696, 378, 'Bombs Away!'),
+	(28697, 378, 'Ghostbuster'),
+	(28698, 378, 'Cannonball!'),
+	(28700, 378, 'Taking the Overlook Back'),
+	(28689, 379, 'The Forgotten'),
+	(28690, 379, 'Salvaging the Remains'),
+	(28691, 379, 'First Lieutenant Connor'),
+	(28692, 379, 'Magnets, How Do They Work?'),
+	(28693, 379, 'Finish The Job');
 /*!40000 ALTER TABLE `pool_quest` ENABLE KEYS */;
 /*!40101 SET SQL_MODE=IFNULL(@OLD_SQL_MODE, '') */;
 /*!40014 SET FOREIGN_KEY_CHECKS=IF(@OLD_FOREIGN_KEY_CHECKS IS NULL, 1, @OLD_FOREIGN_KEY_CHECKS) */;

@@ -10,7 +10,7 @@
 /*!40014 SET @OLD_FOREIGN_KEY_CHECKS=@@FOREIGN_KEY_CHECKS, FOREIGN_KEY_CHECKS=0 */;
 /*!40101 SET @OLD_SQL_MODE=@@SQL_MODE, SQL_MODE='NO_AUTO_VALUE_ON_ZERO' */;
 
--- Exportiere Struktur von Prozedur world2.sp_set_item_money_bylist
+-- Exportiere Struktur von Prozedur world3.sp_set_item_money_bylist
 DROP PROCEDURE IF EXISTS `sp_set_item_money_bylist`;
 DELIMITER //
 CREATE DEFINER=`root`@`localhost` PROCEDURE `sp_set_item_money_bylist`(IN item_entry TEXT, IN min_money INT, IN max_money INT)

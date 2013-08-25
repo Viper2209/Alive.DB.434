@@ -10,7 +10,7 @@
 /*!40014 SET @OLD_FOREIGN_KEY_CHECKS=@@FOREIGN_KEY_CHECKS, FOREIGN_KEY_CHECKS=0 */;
 /*!40101 SET @OLD_SQL_MODE=@@SQL_MODE, SQL_MODE='NO_AUTO_VALUE_ON_ZERO' */;
 
--- Exportiere Struktur von Tabelle world2.lfg_dungeon_rewards
+-- Exportiere Struktur von Tabelle world3.lfg_dungeon_rewards
 DROP TABLE IF EXISTS `lfg_dungeon_rewards`;
 CREATE TABLE IF NOT EXISTS `lfg_dungeon_rewards` (
   `dungeonId` int(10) unsigned NOT NULL DEFAULT '0' COMMENT 'Dungeon entry from dbc',
@@ -20,7 +20,7 @@ CREATE TABLE IF NOT EXISTS `lfg_dungeon_rewards` (
   PRIMARY KEY (`dungeonId`,`maxLevel`)
 ) ENGINE=MyISAM DEFAULT CHARSET=utf8;
 
--- Exportiere Daten aus Tabelle world2.lfg_dungeon_rewards: 24 rows
+-- Exportiere Daten aus Tabelle world3.lfg_dungeon_rewards: 24 rows
 DELETE FROM `lfg_dungeon_rewards`;
 /*!40000 ALTER TABLE `lfg_dungeon_rewards` DISABLE KEYS */;
 INSERT INTO `lfg_dungeon_rewards` (`dungeonId`, `maxLevel`, `firstQuestId`, `otherQuestId`) VALUES

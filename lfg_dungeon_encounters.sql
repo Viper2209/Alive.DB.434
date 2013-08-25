@@ -10,7 +10,7 @@
 /*!40014 SET @OLD_FOREIGN_KEY_CHECKS=@@FOREIGN_KEY_CHECKS, FOREIGN_KEY_CHECKS=0 */;
 /*!40101 SET @OLD_SQL_MODE=@@SQL_MODE, SQL_MODE='NO_AUTO_VALUE_ON_ZERO' */;
 
--- Exportiere Struktur von Tabelle world2.lfg_dungeon_encounters
+-- Exportiere Struktur von Tabelle world3.lfg_dungeon_encounters
 DROP TABLE IF EXISTS `lfg_dungeon_encounters`;
 CREATE TABLE IF NOT EXISTS `lfg_dungeon_encounters` (
   `achievementId` int(10) unsigned NOT NULL DEFAULT '0' COMMENT 'Achievement marking final boss completion',
@@ -18,7 +18,7 @@ CREATE TABLE IF NOT EXISTS `lfg_dungeon_encounters` (
   PRIMARY KEY (`achievementId`)
 ) ENGINE=MyISAM DEFAULT CHARSET=utf8 COMMENT='ArkDB LFG';
 
--- Exportiere Daten aus Tabelle world2.lfg_dungeon_encounters: 71 rows
+-- Exportiere Daten aus Tabelle world3.lfg_dungeon_encounters: 71 rows
 DELETE FROM `lfg_dungeon_encounters`;
 /*!40000 ALTER TABLE `lfg_dungeon_encounters` DISABLE KEYS */;
 INSERT INTO `lfg_dungeon_encounters` (`achievementId`, `dungeonId`) VALUES

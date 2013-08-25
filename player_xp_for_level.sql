@@ -10,7 +10,7 @@
 /*!40014 SET @OLD_FOREIGN_KEY_CHECKS=@@FOREIGN_KEY_CHECKS, FOREIGN_KEY_CHECKS=0 */;
 /*!40101 SET @OLD_SQL_MODE=@@SQL_MODE, SQL_MODE='NO_AUTO_VALUE_ON_ZERO' */;
 
--- Exportiere Struktur von Tabelle world2.player_xp_for_level
+-- Exportiere Struktur von Tabelle world3.player_xp_for_level
 DROP TABLE IF EXISTS `player_xp_for_level`;
 CREATE TABLE IF NOT EXISTS `player_xp_for_level` (
   `lvl` tinyint(3) unsigned NOT NULL,
@@ -18,7 +18,7 @@ CREATE TABLE IF NOT EXISTS `player_xp_for_level` (
   PRIMARY KEY (`lvl`)
 ) ENGINE=MyISAM DEFAULT CHARSET=utf8;
 
--- Exportiere Daten aus Tabelle world2.player_xp_for_level: 89 rows
+-- Exportiere Daten aus Tabelle world3.player_xp_for_level: 89 rows
 DELETE FROM `player_xp_for_level`;
 /*!40000 ALTER TABLE `player_xp_for_level` DISABLE KEYS */;
 INSERT INTO `player_xp_for_level` (`lvl`, `xp_for_next_level`) VALUES

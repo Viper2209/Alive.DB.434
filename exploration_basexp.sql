@@ -10,7 +10,7 @@
 /*!40014 SET @OLD_FOREIGN_KEY_CHECKS=@@FOREIGN_KEY_CHECKS, FOREIGN_KEY_CHECKS=0 */;
 /*!40101 SET @OLD_SQL_MODE=@@SQL_MODE, SQL_MODE='NO_AUTO_VALUE_ON_ZERO' */;
 
--- Exportiere Struktur von Tabelle world2.exploration_basexp
+-- Exportiere Struktur von Tabelle world3.exploration_basexp
 DROP TABLE IF EXISTS `exploration_basexp`;
 CREATE TABLE IF NOT EXISTS `exploration_basexp` (
   `level` tinyint(3) unsigned NOT NULL DEFAULT '0',
@@ -18,7 +18,7 @@ CREATE TABLE IF NOT EXISTS `exploration_basexp` (
   PRIMARY KEY (`level`)
 ) ENGINE=MyISAM DEFAULT CHARSET=utf8 ROW_FORMAT=FIXED COMMENT='Exploration System';
 
--- Exportiere Daten aus Tabelle world2.exploration_basexp: 85 rows
+-- Exportiere Daten aus Tabelle world3.exploration_basexp: 85 rows
 DELETE FROM `exploration_basexp`;
 /*!40000 ALTER TABLE `exploration_basexp` DISABLE KEYS */;
 INSERT INTO `exploration_basexp` (`level`, `basexp`) VALUES

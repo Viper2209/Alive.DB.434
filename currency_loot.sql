@@ -10,7 +10,7 @@
 /*!40014 SET @OLD_FOREIGN_KEY_CHECKS=@@FOREIGN_KEY_CHECKS, FOREIGN_KEY_CHECKS=0 */;
 /*!40101 SET @OLD_SQL_MODE=@@SQL_MODE, SQL_MODE='NO_AUTO_VALUE_ON_ZERO' */;
 
--- Exportiere Struktur von Tabelle world2.currency_loot
+-- Exportiere Struktur von Tabelle world3.currency_loot
 DROP TABLE IF EXISTS `currency_loot`;
 CREATE TABLE IF NOT EXISTS `currency_loot` (
   `entry` mediumint(8) NOT NULL,
@@ -20,7 +20,7 @@ CREATE TABLE IF NOT EXISTS `currency_loot` (
   PRIMARY KEY (`entry`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
--- Exportiere Daten aus Tabelle world2.currency_loot: ~0 rows (ungefähr)
+-- Exportiere Daten aus Tabelle world3.currency_loot: ~0 rows (ungefähr)
 DELETE FROM `currency_loot`;
 /*!40000 ALTER TABLE `currency_loot` DISABLE KEYS */;
 /*!40000 ALTER TABLE `currency_loot` ENABLE KEYS */;

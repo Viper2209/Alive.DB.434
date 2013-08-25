@@ -10,7 +10,7 @@
 /*!40014 SET @OLD_FOREIGN_KEY_CHECKS=@@FOREIGN_KEY_CHECKS, FOREIGN_KEY_CHECKS=0 */;
 /*!40101 SET @OLD_SQL_MODE=@@SQL_MODE, SQL_MODE='NO_AUTO_VALUE_ON_ZERO' */;
 
--- Exportiere Struktur von Tabelle world2.creature_equip_template
+-- Exportiere Struktur von Tabelle world3.creature_equip_template
 DROP TABLE IF EXISTS `creature_equip_template`;
 CREATE TABLE IF NOT EXISTS `creature_equip_template` (
   `entry` mediumint(8) unsigned NOT NULL DEFAULT '0',
@@ -21,7 +21,7 @@ CREATE TABLE IF NOT EXISTS `creature_equip_template` (
   PRIMARY KEY (`entry`,`id`)
 ) ENGINE=MyISAM DEFAULT CHARSET=utf8;
 
--- Exportiere Daten aus Tabelle world2.creature_equip_template: 22.790 rows
+-- Exportiere Daten aus Tabelle world3.creature_equip_template: 22.838 rows
 DELETE FROM `creature_equip_template`;
 /*!40000 ALTER TABLE `creature_equip_template` DISABLE KEYS */;
 INSERT INTO `creature_equip_template` (`entry`, `id`, `itemEntry1`, `itemEntry2`, `itemEntry3`) VALUES
@@ -8890,7 +8890,6 @@ INSERT INTO `creature_equip_template` (`entry`, `id`, `itemEntry1`, `itemEntry2`
 	(26805, 1, 1905, 0, 2551),
 	(26811, 1, 1908, 0, 0),
 	(26812, 1, 28199, 0, 0),
-	(26814, 1, 32246, 2081, 0),
 	(26815, 1, 2558, 0, 0),
 	(26816, 1, 29107, 0, 0),
 	(26820, 1, 35727, 0, 0),
@@ -22814,7 +22813,56 @@ INSERT INTO `creature_equip_template` (`entry`, `id`, `itemEntry1`, `itemEntry2`
 	(31750, 1, 30714, 0, 0),
 	(30249, 1, 29107, 0, 0),
 	(30245, 1, 30714, 0, 0),
-	(31578, 1, 21573, 0, 0);
+	(31578, 1, 21573, 0, 0),
+	(54431, 1, 76289, 0, 0),
+	(54512, 1, 14881, 0, 0),
+	(54552, 1, 70693, 0, 0),
+	(54589, 1, 76363, 0, 0),
+	(54612, 1, 36523, 25085, 0),
+	(54645, 1, 6236, 2708, 0),
+	(54695, 1, 72822, 0, 0),
+	(54701, 1, 29414, 0, 0),
+	(54882, 1, 76364, 0, 0),
+	(54883, 1, 76366, 76366, 0),
+	(54884, 1, 77365, 77548, 0),
+	(55419, 1, 74052, 0, 0),
+	(55426, 1, 74302, 0, 0),
+	(55476, 1, 34891, 0, 0),
+	(55500, 1, 32065, 32066, 0),
+	(55519, 1, 34876, 0, 0),
+	(55524, 1, 0, 0, 25247),
+	(55532, 1, 32065, 32066, 0),
+	(55689, 1, 75236, 75236, 0),
+	(55739, 1, 32743, 32743, 0),
+	(56002, 1, 25816, 0, 0),
+	(56427, 1, 76286, 76277, 0),
+	(56579, 1, 76364, 0, 0),
+	(56848, 1, 45926, 0, 0),
+	(56854, 1, 61370, 0, 0),
+	(57118, 1, 74052, 0, 0),
+	(57264, 1, 0, 0, 2552),
+	(57265, 1, 1493, 0, 0),
+	(57280, 1, 60888, 0, 0),
+	(57334, 1, 73442, 0, 0),
+	(57348, 1, 73442, 0, 0),
+	(57380, 1, 73439, 73435, 0),
+	(57398, 1, 73423, 0, 0),
+	(57410, 1, 32743, 32743, 0),
+	(57459, 1, 31824, 0, 0),
+	(57632, 1, 73433, 0, 0),
+	(57682, 1, 71797, 0, 0),
+	(57684, 1, 71797, 0, 0),
+	(57807, 1, 72254, 0, 0),
+	(57817, 1, 77937, 77937, 0),
+	(57821, 1, 76741, 0, 0),
+	(57823, 1, 72269, 74678, 0),
+	(57913, 1, 12591, 0, 0),
+	(58153, 1, 2901, 12857, 0),
+	(30924, 0, 43296, 43295, 0),
+	(29560, 1, 40276, 0, 0),
+	(29028, 1, 39892, 0, 0),
+	(52924, 1, 53835, 0, 0),
+	(31306, 1, 41371, 0, 0);
 /*!40000 ALTER TABLE `creature_equip_template` ENABLE KEYS */;
 /*!40101 SET SQL_MODE=IFNULL(@OLD_SQL_MODE, '') */;
 /*!40014 SET FOREIGN_KEY_CHECKS=IF(@OLD_FOREIGN_KEY_CHECKS IS NULL, 1, @OLD_FOREIGN_KEY_CHECKS) */;

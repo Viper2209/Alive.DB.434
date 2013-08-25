@@ -10,7 +10,7 @@
 /*!40014 SET @OLD_FOREIGN_KEY_CHECKS=@@FOREIGN_KEY_CHECKS, FOREIGN_KEY_CHECKS=0 */;
 /*!40101 SET @OLD_SQL_MODE=@@SQL_MODE, SQL_MODE='NO_AUTO_VALUE_ON_ZERO' */;
 
--- Exportiere Struktur von Tabelle world2.pickpocketing_loot_template
+-- Exportiere Struktur von Tabelle world3.pickpocketing_loot_template
 DROP TABLE IF EXISTS `pickpocketing_loot_template`;
 CREATE TABLE IF NOT EXISTS `pickpocketing_loot_template` (
   `entry` mediumint(8) unsigned NOT NULL DEFAULT '0',
@@ -23,7 +23,7 @@ CREATE TABLE IF NOT EXISTS `pickpocketing_loot_template` (
   PRIMARY KEY (`entry`,`item`)
 ) ENGINE=MyISAM DEFAULT CHARSET=utf8 ROW_FORMAT=FIXED COMMENT='Loot System';
 
--- Exportiere Daten aus Tabelle world2.pickpocketing_loot_template: 27.529 rows
+-- Exportiere Daten aus Tabelle world3.pickpocketing_loot_template: 27.510 rows
 DELETE FROM `pickpocketing_loot_template`;
 /*!40000 ALTER TABLE `pickpocketing_loot_template` DISABLE KEYS */;
 INSERT INTO `pickpocketing_loot_template` (`entry`, `item`, `ChanceOrQuestChance`, `lootmode`, `groupid`, `mincountOrRef`, `maxcount`) VALUES
@@ -36,13 +36,6 @@ INSERT INTO `pickpocketing_loot_template` (`entry`, `item`, `ChanceOrQuestChance
 	(6, 118, 6.0606, 1, 0, 1, 1),
 	(6, 774, 3.0303, 1, 0, 1, 1),
 	(6, 5364, 12.1212, 1, 0, 1, 1),
-	(38, 118, 2.3585, 1, 0, 1, 1),
-	(38, 774, 0.8255, 1, 0, 1, 1),
-	(38, 2070, 3.4198, 1, 0, 1, 1),
-	(38, 4536, 1.533, 1, 0, 1, 1),
-	(38, 4540, 3.4198, 1, 0, 1, 1),
-	(38, 5363, 6.0142, 1, 0, 1, 1),
-	(38, 6150, 5.4245, 1, 0, 1, 1),
 	(40, 117, 8.3333, 1, 0, 1, 1),
 	(40, 118, 3.8194, 1, 0, 1, 1),
 	(40, 774, 3.125, 1, 0, 1, 1),
@@ -78,10 +71,6 @@ INSERT INTO `pickpocketing_loot_template` (`entry`, `item`, `ChanceOrQuestChance
 	(98, 2287, 8.8889, 1, 0, 1, 1),
 	(98, 5369, 6.6667, 1, 0, 1, 1),
 	(99, 6150, 16.6667, 1, 0, 1, 1),
-	(103, 118, 3.8462, 1, 0, 1, 1),
-	(103, 4536, 7.6923, 1, 0, 1, 1),
-	(103, 4540, 3.8462, 1, 0, 1, 1),
-	(103, 6150, 3.8462, 1, 0, 1, 1),
 	(116, 118, 2.4169, 1, 0, 1, 1),
 	(116, 774, 1.5106, 1, 0, 1, 1),
 	(116, 2070, 2.4169, 1, 0, 1, 1),
@@ -9972,9 +9961,6 @@ INSERT INTO `pickpocketing_loot_template` (`entry`, `item`, `ChanceOrQuestChance
 	(21386, 27854, 2.2989, 1, 0, 1, 1),
 	(21386, 29569, 9.5785, 1, 0, 1, 1),
 	(21386, 29570, 7.2797, 1, 0, 1, 1),
-	(21387, 27854, 3.2258, 1, 0, 1, 1),
-	(21387, 29569, 9.6774, 1, 0, 1, 1),
-	(21387, 29570, 9.6774, 1, 0, 1, 1),
 	(21405, 22829, 2.4482, 1, 0, 1, 1),
 	(21405, 27856, 3.9548, 1, 0, 1, 1),
 	(21405, 29569, 10.7345, 1, 0, 1, 1),
@@ -12678,7 +12664,6 @@ INSERT INTO `pickpocketing_loot_template` (`entry`, `item`, `ChanceOrQuestChance
 	(875, 10457, 7.6923, 1, 0, 1, 1),
 	(875, 6362, 12.8205, 1, 0, 1, 2),
 	(875, 1710, 5.1282, 1, 0, 1, 1),
-	(38, 2406, 0.1957, 1, 0, -2406, 1),
 	(873, 16883, 12.5, 1, 0, 1, 1),
 	(873, 10457, 20.3125, 1, 0, 1, 1),
 	(873, 6362, 10.9375, 1, 0, 1, 2),
@@ -12744,11 +12729,8 @@ INSERT INTO `pickpocketing_loot_template` (`entry`, `item`, `ChanceOrQuestChance
 	(762, 1710, 2.0619, 1, 0, 1, 1),
 	(100, 5369, 25, 1, 0, 1, 1),
 	(761, 1710, 3.3557, 1, 0, 1, 1),
-	(103, 774, 0.7752, 1, 0, 1, 1),
-	(103, 2070, 3.876, 1, 0, 1, 1),
 	(760, 1529, 0.7246, 1, 0, 1, 1),
 	(757, 1710, 1.4337, 1, 0, 1, 1),
-	(103, 5363, 7.7519, 1, 0, 1, 1),
 	(757, 1529, 0.3584, 1, 0, 1, 1),
 	(754, 5431, 11.1111, 1, 0, 1, 1),
 	(732, 2406, 0.3436, 1, 0, -2406, 1),
@@ -16878,7 +16860,6 @@ INSERT INTO `pickpocketing_loot_template` (`entry`, `item`, `ChanceOrQuestChance
 	(21409, 27855, 2.8169, 1, 0, 1, 1),
 	(21405, 27855, 2.6485, 1, 0, 1, 1),
 	(21315, 27855, 2.1277, 1, 0, 1, 1),
-	(21387, 27855, 8.1633, 1, 0, 1, 1),
 	(21386, 27855, 5.538, 1, 0, 1, 1),
 	(21384, 27855, 2.2727, 1, 0, 1, 1),
 	(21315, 30458, 4.2553, 1, 0, 1, 1),
@@ -25646,8 +25627,7 @@ INSERT INTO `pickpocketing_loot_template` (`entry`, `item`, `ChanceOrQuestChance
 	(47287, 63296, 34.4118, 1, 0, 1, 1),
 	(47287, 63300, 8.2353, 1, 0, 1, 1),
 	(47287, 63313, 30.5882, 1, 0, 1, 1),
-	(47287, 63349, 28.8235, 1, 0, 1, 1);
-INSERT INTO `pickpocketing_loot_template` (`entry`, `item`, `ChanceOrQuestChance`, `lootmode`, `groupid`, `mincountOrRef`, `maxcount`) VALUES
+	(47287, 63349, 28.8235, 1, 0, 1, 1),
 	(47291, 58259, 7.2727, 1, 0, 1, 1),
 	(47291, 58261, 7.9221, 1, 0, 1, 1),
 	(47291, 63269, 0.5195, 1, 0, 1, 1),
@@ -25664,7 +25644,8 @@ INSERT INTO `pickpocketing_loot_template` (`entry`, `item`, `ChanceOrQuestChance
 	(47762, 63322, 0.3257, 1, 0, 1, 1),
 	(47762, 63314, 13.2095, 1, 0, 1, 1),
 	(47762, 63300, 5.8632, 1, 0, 1, 1),
-	(47762, 63299, 25.1806, 1, 0, 1, 1),
+	(47762, 63299, 25.1806, 1, 0, 1, 1);
+INSERT INTO `pickpocketing_loot_template` (`entry`, `item`, `ChanceOrQuestChance`, `lootmode`, `groupid`, `mincountOrRef`, `maxcount`) VALUES
 	(47762, 58262, 4.8969, 1, 0, 1, 1),
 	(47760, 63349, 24.2857, 1, 0, 1, 1),
 	(47760, 63343, 18.8968, 1, 0, 1, 1),

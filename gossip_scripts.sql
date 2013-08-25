@@ -10,7 +10,7 @@
 /*!40014 SET @OLD_FOREIGN_KEY_CHECKS=@@FOREIGN_KEY_CHECKS, FOREIGN_KEY_CHECKS=0 */;
 /*!40101 SET @OLD_SQL_MODE=@@SQL_MODE, SQL_MODE='NO_AUTO_VALUE_ON_ZERO' */;
 
--- Exportiere Struktur von Tabelle world2.gossip_scripts
+-- Exportiere Struktur von Tabelle world3.gossip_scripts
 DROP TABLE IF EXISTS `gossip_scripts`;
 CREATE TABLE IF NOT EXISTS `gossip_scripts` (
   `id` mediumint(8) unsigned NOT NULL DEFAULT '0',
@@ -25,7 +25,7 @@ CREATE TABLE IF NOT EXISTS `gossip_scripts` (
   `o` float NOT NULL DEFAULT '0'
 ) ENGINE=MyISAM DEFAULT CHARSET=utf8 COMMENT='ArkDB Gossip scripts';
 
--- Exportiere Daten aus Tabelle world2.gossip_scripts: 460 rows
+-- Exportiere Daten aus Tabelle world3.gossip_scripts: 460 rows
 DELETE FROM `gossip_scripts`;
 /*!40000 ALTER TABLE `gossip_scripts` DISABLE KEYS */;
 INSERT INTO `gossip_scripts` (`id`, `delay`, `command`, `datalong`, `datalong2`, `dataint`, `x`, `y`, `z`, `o`) VALUES

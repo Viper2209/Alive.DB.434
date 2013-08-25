@@ -10,7 +10,7 @@
 /*!40014 SET @OLD_FOREIGN_KEY_CHECKS=@@FOREIGN_KEY_CHECKS, FOREIGN_KEY_CHECKS=0 */;
 /*!40101 SET @OLD_SQL_MODE=@@SQL_MODE, SQL_MODE='NO_AUTO_VALUE_ON_ZERO' */;
 
--- Exportiere Struktur von Prozedur world2.sp_get_go_lootid
+-- Exportiere Struktur von Prozedur world3.sp_get_go_lootid
 DROP PROCEDURE IF EXISTS `sp_get_go_lootid`;
 DELIMITER //
 CREATE DEFINER=`root`@`localhost` PROCEDURE `sp_get_go_lootid`(IN gobjID MEDIUMINT(6),OUT gobjLootID INT(10))

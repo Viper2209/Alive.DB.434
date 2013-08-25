@@ -10,7 +10,7 @@
 /*!40014 SET @OLD_FOREIGN_KEY_CHECKS=@@FOREIGN_KEY_CHECKS, FOREIGN_KEY_CHECKS=0 */;
 /*!40101 SET @OLD_SQL_MODE=@@SQL_MODE, SQL_MODE='NO_AUTO_VALUE_ON_ZERO' */;
 
--- Exportiere Struktur von Tabelle world2.game_event_arena_seasons
+-- Exportiere Struktur von Tabelle world3.game_event_arena_seasons
 DROP TABLE IF EXISTS `game_event_arena_seasons`;
 CREATE TABLE IF NOT EXISTS `game_event_arena_seasons` (
   `eventEntry` tinyint(3) unsigned NOT NULL COMMENT 'Entry of the game event',
@@ -18,7 +18,7 @@ CREATE TABLE IF NOT EXISTS `game_event_arena_seasons` (
   UNIQUE KEY `season` (`season`,`eventEntry`)
 ) ENGINE=MyISAM DEFAULT CHARSET=utf8;
 
--- Exportiere Daten aus Tabelle world2.game_event_arena_seasons: 0 rows
+-- Exportiere Daten aus Tabelle world3.game_event_arena_seasons: 0 rows
 DELETE FROM `game_event_arena_seasons`;
 /*!40000 ALTER TABLE `game_event_arena_seasons` DISABLE KEYS */;
 /*!40000 ALTER TABLE `game_event_arena_seasons` ENABLE KEYS */;

@@ -10,7 +10,7 @@
 /*!40014 SET @OLD_FOREIGN_KEY_CHECKS=@@FOREIGN_KEY_CHECKS, FOREIGN_KEY_CHECKS=0 */;
 /*!40101 SET @OLD_SQL_MODE=@@SQL_MODE, SQL_MODE='NO_AUTO_VALUE_ON_ZERO' */;
 
--- Exportiere Struktur von Tabelle world2.milling_loot_template
+-- Exportiere Struktur von Tabelle world3.milling_loot_template
 DROP TABLE IF EXISTS `milling_loot_template`;
 CREATE TABLE IF NOT EXISTS `milling_loot_template` (
   `entry` mediumint(8) unsigned NOT NULL DEFAULT '0',
@@ -23,7 +23,7 @@ CREATE TABLE IF NOT EXISTS `milling_loot_template` (
   PRIMARY KEY (`entry`,`item`)
 ) ENGINE=MyISAM DEFAULT CHARSET=utf8 ROW_FORMAT=FIXED COMMENT='Loot System';
 
--- Exportiere Daten aus Tabelle world2.milling_loot_template: 144 rows
+-- Exportiere Daten aus Tabelle world3.milling_loot_template: 144 rows
 DELETE FROM `milling_loot_template`;
 /*!40000 ALTER TABLE `milling_loot_template` DISABLE KEYS */;
 INSERT INTO `milling_loot_template` (`entry`, `item`, `ChanceOrQuestChance`, `lootmode`, `groupid`, `mincountOrRef`, `maxcount`) VALUES

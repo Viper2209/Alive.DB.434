@@ -10,7 +10,7 @@
 /*!40014 SET @OLD_FOREIGN_KEY_CHECKS=@@FOREIGN_KEY_CHECKS, FOREIGN_KEY_CHECKS=0 */;
 /*!40101 SET @OLD_SQL_MODE=@@SQL_MODE, SQL_MODE='NO_AUTO_VALUE_ON_ZERO' */;
 
--- Exportiere Struktur von Tabelle world2.fishing_loot_template
+-- Exportiere Struktur von Tabelle world3.fishing_loot_template
 DROP TABLE IF EXISTS `fishing_loot_template`;
 CREATE TABLE IF NOT EXISTS `fishing_loot_template` (
   `entry` mediumint(8) unsigned NOT NULL DEFAULT '0',
@@ -23,7 +23,7 @@ CREATE TABLE IF NOT EXISTS `fishing_loot_template` (
   PRIMARY KEY (`entry`,`item`)
 ) ENGINE=MyISAM DEFAULT CHARSET=utf8 COMMENT='Loot System';
 
--- Exportiere Daten aus Tabelle world2.fishing_loot_template: 6.482 rows
+-- Exportiere Daten aus Tabelle world3.fishing_loot_template: 6.477 rows
 DELETE FROM `fishing_loot_template`;
 /*!40000 ALTER TABLE `fishing_loot_template` DISABLE KEYS */;
 INSERT INTO `fishing_loot_template` (`entry`, `item`, `ChanceOrQuestChance`, `lootmode`, `groupid`, `mincountOrRef`, `maxcount`) VALUES
@@ -1709,19 +1709,14 @@ INSERT INTO `fishing_loot_template` (`entry`, `item`, `ChanceOrQuestChance`, `lo
 	(4812, 45194, 4, 1, 1, 1, 1),
 	(4812, 45198, 4, 1, 1, 1, 1),
 	(4812, 45190, 2.66667, 1, 1, 1, 1),
-	(4813, 41808, 10.477, 1, 1, 1, 1),
-	(4813, 43572, 10.477, 1, 1, 1, 1),
-	(4813, 25447, 5.84795, 1, 1, 1, 1),
-	(4813, 45190, 5.84795, 1, 1, 1, 1),
-	(4813, 45198, 5.84795, 1, 1, 1, 1),
-	(4813, 45200, 5.26316, 1, 1, 1, 1),
-	(4813, 4875, 4.67836, 1, 1, 1, 1),
-	(4813, 3671, 3.50877, 1, 1, 1, 1),
-	(4813, 45194, 3.50877, 1, 1, 1, 1),
-	(4813, 36794, 1.75439, 1, 1, 1, 1),
-	(4813, 45196, 1.75439, 1, 1, 1, 1),
-	(4813, 37705, 0.584795, 1, 1, 1, 1),
-	(4813, 44475, 0.584795, 1, 1, 1, 1),
+	(4813, 4875, 5, 1, 1, 1, 1),
+	(4813, 41808, 58, 1, 1, 1, 1),
+	(4813, 37705, 1, 1, 1, 1, 1),
+	(4813, 43572, 20.5, 1, 1, 1, 1),
+	(4813, 36794, 5.4, 1, 1, 1, 1),
+	(4813, 44475, 1.1, 1, 1, 1, 1),
+	(4813, 3671, 4.5, 1, 1, 1, 1),
+	(4813, 25447, 4.5, 1, 1, 1, 1),
 	(4926, 53062, 10.477, 1, 1, 1, 1),
 	(4926, 53068, 10.477, 1, 1, 1, 1),
 	(4926, 53066, 10.477, 1, 1, 1, 1),

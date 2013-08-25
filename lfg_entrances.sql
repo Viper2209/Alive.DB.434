@@ -10,7 +10,7 @@
 /*!40014 SET @OLD_FOREIGN_KEY_CHECKS=@@FOREIGN_KEY_CHECKS, FOREIGN_KEY_CHECKS=0 */;
 /*!40101 SET @OLD_SQL_MODE=@@SQL_MODE, SQL_MODE='NO_AUTO_VALUE_ON_ZERO' */;
 
--- Exportiere Struktur von Tabelle world2.lfg_entrances
+-- Exportiere Struktur von Tabelle world3.lfg_entrances
 DROP TABLE IF EXISTS `lfg_entrances`;
 CREATE TABLE IF NOT EXISTS `lfg_entrances` (
   `dungeonId` int(10) unsigned NOT NULL DEFAULT '0' COMMENT 'Unique id from LFGDungeons.dbc',
@@ -22,7 +22,7 @@ CREATE TABLE IF NOT EXISTS `lfg_entrances` (
   PRIMARY KEY (`dungeonId`)
 ) ENGINE=MyISAM DEFAULT CHARSET=utf8;
 
--- Exportiere Daten aus Tabelle world2.lfg_entrances: 18 rows
+-- Exportiere Daten aus Tabelle world3.lfg_entrances: 18 rows
 DELETE FROM `lfg_entrances`;
 /*!40000 ALTER TABLE `lfg_entrances` DISABLE KEYS */;
 INSERT INTO `lfg_entrances` (`dungeonId`, `name`, `position_x`, `position_y`, `position_z`, `orientation`) VALUES

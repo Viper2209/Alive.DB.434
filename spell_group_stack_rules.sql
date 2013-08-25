@@ -10,7 +10,7 @@
 /*!40014 SET @OLD_FOREIGN_KEY_CHECKS=@@FOREIGN_KEY_CHECKS, FOREIGN_KEY_CHECKS=0 */;
 /*!40101 SET @OLD_SQL_MODE=@@SQL_MODE, SQL_MODE='NO_AUTO_VALUE_ON_ZERO' */;
 
--- Exportiere Struktur von Tabelle world2.spell_group_stack_rules
+-- Exportiere Struktur von Tabelle world3.spell_group_stack_rules
 DROP TABLE IF EXISTS `spell_group_stack_rules`;
 CREATE TABLE IF NOT EXISTS `spell_group_stack_rules` (
   `group_id` int(11) unsigned NOT NULL DEFAULT '0',
@@ -18,7 +18,7 @@ CREATE TABLE IF NOT EXISTS `spell_group_stack_rules` (
   PRIMARY KEY (`group_id`)
 ) ENGINE=MyISAM DEFAULT CHARSET=utf8;
 
--- Exportiere Daten aus Tabelle world2.spell_group_stack_rules: 77 rows
+-- Exportiere Daten aus Tabelle world3.spell_group_stack_rules: 75 rows
 DELETE FROM `spell_group_stack_rules`;
 /*!40000 ALTER TABLE `spell_group_stack_rules` DISABLE KEYS */;
 INSERT INTO `spell_group_stack_rules` (`group_id`, `stack_rule`) VALUES
@@ -82,10 +82,8 @@ INSERT INTO `spell_group_stack_rules` (`group_id`, `stack_rule`) VALUES
 	(1250, 2),
 	(1500, 2),
 	(1113, 2),
-	(16, 1),
 	(1337, 1),
-	(25, 1),
-	(26, 1),
+	(1501, 2),
 	(1252, 2),
 	(1253, 2),
 	(1254, 2),

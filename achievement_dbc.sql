@@ -10,7 +10,7 @@
 /*!40014 SET @OLD_FOREIGN_KEY_CHECKS=@@FOREIGN_KEY_CHECKS, FOREIGN_KEY_CHECKS=0 */;
 /*!40101 SET @OLD_SQL_MODE=@@SQL_MODE, SQL_MODE='NO_AUTO_VALUE_ON_ZERO' */;
 
--- Exportiere Struktur von Tabelle world2.achievement_dbc
+-- Exportiere Struktur von Tabelle world3.achievement_dbc
 DROP TABLE IF EXISTS `achievement_dbc`;
 CREATE TABLE IF NOT EXISTS `achievement_dbc` (
   `ID` int(10) unsigned NOT NULL,
@@ -23,7 +23,7 @@ CREATE TABLE IF NOT EXISTS `achievement_dbc` (
   PRIMARY KEY (`ID`)
 ) ENGINE=MyISAM DEFAULT CHARSET=utf8;
 
--- Exportiere Daten aus Tabelle world2.achievement_dbc: 416 rows
+-- Exportiere Daten aus Tabelle world3.achievement_dbc: 416 rows
 DELETE FROM `achievement_dbc`;
 /*!40000 ALTER TABLE `achievement_dbc` DISABLE KEYS */;
 INSERT INTO `achievement_dbc` (`ID`, `requiredFaction`, `mapID`, `points`, `flags`, `count`, `refAchievement`) VALUES

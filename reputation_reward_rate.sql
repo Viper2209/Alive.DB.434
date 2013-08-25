@@ -10,7 +10,7 @@
 /*!40014 SET @OLD_FOREIGN_KEY_CHECKS=@@FOREIGN_KEY_CHECKS, FOREIGN_KEY_CHECKS=0 */;
 /*!40101 SET @OLD_SQL_MODE=@@SQL_MODE, SQL_MODE='NO_AUTO_VALUE_ON_ZERO' */;
 
--- Exportiere Struktur von Tabelle world2.reputation_reward_rate
+-- Exportiere Struktur von Tabelle world3.reputation_reward_rate
 DROP TABLE IF EXISTS `reputation_reward_rate`;
 CREATE TABLE IF NOT EXISTS `reputation_reward_rate` (
   `faction` mediumint(8) unsigned NOT NULL DEFAULT '0',
@@ -23,7 +23,7 @@ CREATE TABLE IF NOT EXISTS `reputation_reward_rate` (
   PRIMARY KEY (`faction`)
 ) ENGINE=MyISAM DEFAULT CHARSET=utf8;
 
--- Exportiere Daten aus Tabelle world2.reputation_reward_rate: 85 rows
+-- Exportiere Daten aus Tabelle world3.reputation_reward_rate: 85 rows
 DELETE FROM `reputation_reward_rate`;
 /*!40000 ALTER TABLE `reputation_reward_rate` DISABLE KEYS */;
 INSERT INTO `reputation_reward_rate` (`faction`, `quest_rate`, `quest_daily_rate`, `quest_weekly_rate`, `quest_monthly_rate`, `creature_rate`, `spell_rate`) VALUES

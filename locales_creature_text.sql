@@ -10,7 +10,7 @@
 /*!40014 SET @OLD_FOREIGN_KEY_CHECKS=@@FOREIGN_KEY_CHECKS, FOREIGN_KEY_CHECKS=0 */;
 /*!40101 SET @OLD_SQL_MODE=@@SQL_MODE, SQL_MODE='NO_AUTO_VALUE_ON_ZERO' */;
 
--- Exportiere Struktur von Tabelle world2.locales_creature_text
+-- Exportiere Struktur von Tabelle world3.locales_creature_text
 DROP TABLE IF EXISTS `locales_creature_text`;
 CREATE TABLE IF NOT EXISTS `locales_creature_text` (
   `entry` mediumint(8) unsigned NOT NULL DEFAULT '0',
@@ -27,7 +27,7 @@ CREATE TABLE IF NOT EXISTS `locales_creature_text` (
   PRIMARY KEY (`entry`,`groupid`,`id`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
--- Exportiere Daten aus Tabelle world2.locales_creature_text: ~0 rows (ungefähr)
+-- Exportiere Daten aus Tabelle world3.locales_creature_text: ~0 rows (ungefähr)
 DELETE FROM `locales_creature_text`;
 /*!40000 ALTER TABLE `locales_creature_text` DISABLE KEYS */;
 /*!40000 ALTER TABLE `locales_creature_text` ENABLE KEYS */;

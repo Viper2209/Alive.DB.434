@@ -10,7 +10,7 @@
 /*!40014 SET @OLD_FOREIGN_KEY_CHECKS=@@FOREIGN_KEY_CHECKS, FOREIGN_KEY_CHECKS=0 */;
 /*!40101 SET @OLD_SQL_MODE=@@SQL_MODE, SQL_MODE='NO_AUTO_VALUE_ON_ZERO' */;
 
--- Exportiere Struktur von Tabelle world2.pet_levelstats
+-- Exportiere Struktur von Tabelle world3.pet_levelstats
 DROP TABLE IF EXISTS `pet_levelstats`;
 CREATE TABLE IF NOT EXISTS `pet_levelstats` (
   `creature_entry` mediumint(8) unsigned NOT NULL,
@@ -26,7 +26,7 @@ CREATE TABLE IF NOT EXISTS `pet_levelstats` (
   PRIMARY KEY (`creature_entry`,`level`)
 ) ENGINE=MyISAM DEFAULT CHARSET=utf8 PACK_KEYS=0 COMMENT='Stores pet levels stats.';
 
--- Exportiere Daten aus Tabelle world2.pet_levelstats: 3.740 rows
+-- Exportiere Daten aus Tabelle world3.pet_levelstats: 3.740 rows
 DELETE FROM `pet_levelstats`;
 /*!40000 ALTER TABLE `pet_levelstats` DISABLE KEYS */;
 INSERT INTO `pet_levelstats` (`creature_entry`, `level`, `hp`, `mana`, `armor`, `str`, `agi`, `sta`, `inte`, `spi`) VALUES

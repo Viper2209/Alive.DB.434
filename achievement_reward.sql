@@ -10,7 +10,7 @@
 /*!40014 SET @OLD_FOREIGN_KEY_CHECKS=@@FOREIGN_KEY_CHECKS, FOREIGN_KEY_CHECKS=0 */;
 /*!40101 SET @OLD_SQL_MODE=@@SQL_MODE, SQL_MODE='NO_AUTO_VALUE_ON_ZERO' */;
 
--- Exportiere Struktur von Tabelle world2.achievement_reward
+-- Exportiere Struktur von Tabelle world3.achievement_reward
 DROP TABLE IF EXISTS `achievement_reward`;
 CREATE TABLE IF NOT EXISTS `achievement_reward` (
   `entry` mediumint(8) unsigned NOT NULL DEFAULT '0',
@@ -23,7 +23,7 @@ CREATE TABLE IF NOT EXISTS `achievement_reward` (
   PRIMARY KEY (`entry`)
 ) ENGINE=MyISAM DEFAULT CHARSET=utf8 ROW_FORMAT=FIXED COMMENT='Loot System';
 
--- Exportiere Daten aus Tabelle world2.achievement_reward: 106 rows
+-- Exportiere Daten aus Tabelle world3.achievement_reward: 120 rows
 DELETE FROM `achievement_reward`;
 /*!40000 ALTER TABLE `achievement_reward` DISABLE KEYS */;
 INSERT INTO `achievement_reward` (`entry`, `title_A`, `title_H`, `item`, `sender`, `subject`, `text`) VALUES
@@ -125,14 +125,28 @@ INSERT INTO `achievement_reward` (`entry`, `title_A`, `title_H`, `item`, `sender
 	(4156, 0, 0, 49096, 36095, 'A Tribute to Immortality', 'Dear $N,$B$BTales of your recent performance in the Trial of the Grand Crusader will be told,and retold,for ages to come. As the Argent Crusade issued its call for the greatest champions of Azeroth to test their mettle in the crucible of the Coliseum,I hoped against hope that beacons of light such as you and your companions might emerge from the fray.$B$BWe will need you direly in the coming battle against the Lich King. But on this day,rejoice and celebrate your glorious accomplishment and accept this gift of one of our very finest warhorses. When the Scourge see its banner looming on the horizon,hero,their end shall be nigh!$B$BYours with Honor,$BTirion Fordring'),
 	(4602, 0, 0, 51954, 37120, 'Glory of the Icecrown Raider', '$N,$B$BAs the Lich King\'s influence wanes, some of his more powerful minions have wrested free of his grasp.$B$BThis frost wyrm drake my men captured is a prime example. She has a will of her own and then some.$B$BOne of my men lost an arm breaking her in, but she now takes to riders fairly well -- provided they themselves are skilled and strong willed.$B$BPlease accept this magnificent beast as a gift from the Knights of the Ebon Blade. It was an honor to fight along your side in this greatest of battles.$B$BWith honor,$BDarion Mograine.'),
 	(4603, 0, 0, 51955, 37120, 'Glory of the Icecrown Raider', '$N,$B$BAs the Lich King\'s influence wanes, some of his more powerful minions have wrested free of his grasp.$B$BThis frost wyrm drake my men captured is a prime example. She has a will of her own and then some.$B$BOne of my men lost an arm breaking her in, but she now takes to riders fairly well -- provided they themselves are skilled and strong willed.$B$BPlease accept this magnificent beast as a gift from the Knights of the Ebon Blade. It was an honor to fight along your side in this greatest of battles.$B$BWith honor,$BDarion Mograine.'),
-	(5449, 0, 0, 60869, 56020, 'Recovered item', 'We recovered a lost item in the twisting nether and noted that it was yours.\r\n\r\nPlease find said object enclosed.\r\n\r\nCronos vous remercie d\'avoir fait le trÃ©fond !'),
+	(5449, 0, 0, 60869, 56020, 'Recovered item', 'We recovered a lost item in the twisting nether and noted that it was yours.\r\n\r\nPlease find said object enclosed.\r\n\r\nCronos vous remercie d\'avoir fait le tréfond !'),
 	(5506, 227, 227, 0, 0, NULL, NULL),
-	(4845, 0, 0, 62900, 56020, 'Gloire au hÃ©ros du Cataclysme', 'Bien jouÃ©, le staff te rÃ©compense et te fÃ©licite d\'avoir fait tous les donjons avec leurs Hauts-Faits associÃ©s !\r\nEncore toutes nos fÃ©licitations...'),
-	(4853, 0, 0, 62901, 56020, 'Gloire Ã  l\'Ã©cumeur de raids du Cataclysme', 'Bien jouÃ©, le staff te rÃ©compense et te fÃ©licite d\'avoir fait tous les raids avec leurs Hauts-Faits associÃ©s !\r\nEncore toutes nos fÃ©licitations...'),
+	(4845, 0, 0, 62900, 56020, 'Gloire au héros du Cataclysme', 'Bien joué, le staff te récompense et te félicite d\'avoir fait tous les donjons avec leurs Hauts-Faits associés !\r\nEncore toutes nos félicitations...'),
+	(4853, 0, 0, 62901, 56020, 'Gloire à l\'écumeur de raids du Cataclysme', 'Bien joué, le staff te récompense et te félicite d\'avoir fait tous les raids avec leurs Hauts-Faits associés !\r\nEncore toutes nos félicitations...'),
 	(4854, 189, 189, 0, 0, NULL, NULL),
 	(4855, 190, 190, 0, 0, NULL, NULL),
 	(5767, 258, 258, 0, 0, NULL, NULL),
-	(5121, 228, 228, 0, 0, '', '');
+	(5121, 228, 228, 0, 0, '', ''),
+	(5860, 0, 0, 69838, 40578, 'Please... Just Take It', 'Ever since his brother was taken away. This little creature has been nothing short of a handful. The guardians and I have done everything we can to contain his energy, but our efforts have fallen depressingly short. It is now clear.$b$bHe wants to be with his brother.$b$bIt took us nearly an hour to get him contained. Please, take him with you. Perhaps some time outside of this cavern will do him good.$b$b-Farden Talonshrike'),
+	(5859, 0, 0, 69854, 52825, 'Left Behind', 'I found this locket in the Igneous Depths, near the lava\'s edge. It is not mine, and I know that it does not belong to either of the Arch Druids. Perhaps it belonged to one of the fire druids.$b$bNo matter who its owner, I have no use for it. Please take it as a small token of our appreciation for all you\'ve done for us.'),
+	(5866, 0, 0, 69213, 52135, 'A Gift From the Arch Druid', 'Never again will Hyjal shudder beneath the endless forces of flame. Never again shall the mortal races of the world tremble before the minions of Ragnaros.$b$bNow, thanks to your efforts, they will tremble before us.$b$bYour heroism on the Molten Front has been instrumental in the fight against the Firelord. You have gathered allies from all over Kalimdor and turned them into an army. You have fought the minions of Ragnaros... And prevailed. And for that, you have our deepest thanks.'),
+	(5877, 0, 0, 71387, 28951, 'Keep Collecting!', 'Hello!$b$bWow, you\'re becoming quite the collector of cute critters, aren\'t you?$b$bI thought I\'d write a small note and send a small gift to encourage your efforts. Keep it up!$b$b--Breanni'),
+	(5876, 0, 0, 71140, 28951, 'I\'m Going Nuts!', 'Hello again. Friend!$b$bThis mischievous little fellow is driving everyone in the pet store nuts!$b$bI thought you might take him along on some of your adventures... Perhaps he\'ll calm down after he\'s seen a bit of the world.$b$bYou DO wear a helmet, right... ?$b$b--Breanni'),
+	(5875, 0, 0, 54810, 28951, 'Keep Collecting!', 'Hello!$b$bWow, you\'re becoming quite the collector of cute critters, aren\'t you?$b$bI thought I\'d write a small note and send a small gift to encourage your efforts. Keep it up!$b$b--Breanni'),
+	(6169, 0, 0, 77068, 53905, 'Glory of the Dragon Soul Raider', 'Champion,$b$bYour actions turned the tide in the great battle against Deathwing, and we could not have succeeded without your aid. You battled with bravery and valor, overcoming the Destroyer\'s armies though you were beset with adversity at every turn.$b$bWith the fall of Deathwing and the Twilight Hammer, a new age dawns. The future remains uncertain, but it is assuredly a better one thanks to your efforts. Enclosed is a small token of our profound appreciation.$b$bThrall'),
+	(5828, 0, 0, 69230, 53385, 'Glory of the Firelands Raider', 'Champion,$b$bWhen the world\'s strongest rose to the rallying call of the Avengers of Hyjal, you stood among the very greatest of them, the best and the bravest who dared all in that maw of fire and hatred.$b$bIt is for this reason that I ask a boon of you:$b$bA clutch of Millagazor\'s eggs has been discovered, tainted by the otherworldly vileness of the Twilight\'s Hammer. Rather than destroying what remains of her brood, it is my hope that champions such as you, through strength of character and force of will, can tame the ill-fated hatchlings, offering them lives as noble steeds and companions rather than doomed monstrosities.$b$bWill you honor my humble request and take this egg, to raise it as your own...?$b$bMalfurion Stormrage'),
+	(5824, 0, 0, 70910, 39605, 'Horde War Wolf', 'How many Alliance heads have fallen into the dust by your hand? How many Victories won, enemies crushed, battefields(sic) taken?$b$bThe eyes of Hellscream have been upon you, and they are pleased. Ride on proudly, for the Horde!$b$b--Warchief Garrosh Hellscream'),
+	(5823, 0, 0, 70909, 29611, 'Alliance War Steed', 'Time and again your skill and bravery have been proven on the field of battle.$b$bYour deeds will not go unrewarded. Ride on proudly, for the Alliance!$b$b--Your King'),
+	(5325, 194, 194, 70910, 39605, 'Horde War Wolf', 'How many Alliance heads have fallen into the dust by your hand? How many Victories won, enemies crushed, battefields(sic) taken?$b$bThe eyes of Hellscream have been upon you, and they are pleased. Ride on proudly, for the Horde!$b$b--Warchief Garrosh Hellscream'),
+	(5328, 193, 193, 70909, 29611, 'Alliance War Steed', 'Time and again your skill and bravery have been proven on the field of battle.$b$bYour deeds will not go unrewarded. Ride on proudly, for the Alliance!$b$b--Your King'),
+	(5326, 259, 259, 70910, 39605, 'Horde War Wolf', 'How many Alliance heads have fallen into the dust by your hand? How many Victories won, enemies crushed, battefields(sic) taken?$b$bThe eyes of Hellscream have been upon you, and they are pleased. Ride on proudly, for the Horde!$b$b--Warchief Garrosh Hellscream'),
+	(5329, 260, 260, 70909, 29611, 'Alliance War Steed', 'Time and again your skill and bravery have been proven on the field of battle.$b$bYour deeds will not go unrewarded. Ride on proudly, for the Alliance!$b$b--Your King');
 /*!40000 ALTER TABLE `achievement_reward` ENABLE KEYS */;
 /*!40101 SET SQL_MODE=IFNULL(@OLD_SQL_MODE, '') */;
 /*!40014 SET FOREIGN_KEY_CHECKS=IF(@OLD_FOREIGN_KEY_CHECKS IS NULL, 1, @OLD_FOREIGN_KEY_CHECKS) */;

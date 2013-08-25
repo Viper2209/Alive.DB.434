@@ -10,16 +10,16 @@
 /*!40014 SET @OLD_FOREIGN_KEY_CHECKS=@@FOREIGN_KEY_CHECKS, FOREIGN_KEY_CHECKS=0 */;
 /*!40101 SET @OLD_SQL_MODE=@@SQL_MODE, SQL_MODE='NO_AUTO_VALUE_ON_ZERO' */;
 
--- Exportiere Struktur von Tabelle world2.game_event_npc_gossip
+-- Exportiere Struktur von Tabelle world3.game_event_npc_gossip
 DROP TABLE IF EXISTS `game_event_npc_gossip`;
 CREATE TABLE IF NOT EXISTS `game_event_npc_gossip` (
-  `guid` int(10) unsigned NOT NULL,
+  `guid` mediumint(8) NOT NULL DEFAULT '0',
   `event_id` mediumint(8) unsigned NOT NULL DEFAULT '0',
   `textid` mediumint(8) unsigned NOT NULL DEFAULT '0',
   PRIMARY KEY (`guid`)
 ) ENGINE=MyISAM DEFAULT CHARSET=utf8 COMMENT='ArkDB Game event npc gossip';
 
--- Exportiere Daten aus Tabelle world2.game_event_npc_gossip: 0 rows
+-- Exportiere Daten aus Tabelle world3.game_event_npc_gossip: 0 rows
 DELETE FROM `game_event_npc_gossip`;
 /*!40000 ALTER TABLE `game_event_npc_gossip` DISABLE KEYS */;
 /*!40000 ALTER TABLE `game_event_npc_gossip` ENABLE KEYS */;

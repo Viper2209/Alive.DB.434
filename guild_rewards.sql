@@ -10,7 +10,7 @@
 /*!40014 SET @OLD_FOREIGN_KEY_CHECKS=@@FOREIGN_KEY_CHECKS, FOREIGN_KEY_CHECKS=0 */;
 /*!40101 SET @OLD_SQL_MODE=@@SQL_MODE, SQL_MODE='NO_AUTO_VALUE_ON_ZERO' */;
 
--- Exportiere Struktur von Tabelle world2.guild_rewards
+-- Exportiere Struktur von Tabelle world3.guild_rewards
 DROP TABLE IF EXISTS `guild_rewards`;
 CREATE TABLE IF NOT EXISTS `guild_rewards` (
   `entry` int(10) unsigned NOT NULL DEFAULT '0',
@@ -21,7 +21,7 @@ CREATE TABLE IF NOT EXISTS `guild_rewards` (
   PRIMARY KEY (`entry`)
 ) ENGINE=MyISAM DEFAULT CHARSET=utf8;
 
--- Exportiere Daten aus Tabelle world2.guild_rewards: 42 rows
+-- Exportiere Daten aus Tabelle world3.guild_rewards: 42 rows
 DELETE FROM `guild_rewards`;
 /*!40000 ALTER TABLE `guild_rewards` DISABLE KEYS */;
 INSERT INTO `guild_rewards` (`entry`, `standing`, `racemask`, `price`, `achievement`) VALUES

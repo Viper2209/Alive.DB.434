@@ -10,7 +10,7 @@
 /*!40014 SET @OLD_FOREIGN_KEY_CHECKS=@@FOREIGN_KEY_CHECKS, FOREIGN_KEY_CHECKS=0 */;
 /*!40101 SET @OLD_SQL_MODE=@@SQL_MODE, SQL_MODE='NO_AUTO_VALUE_ON_ZERO' */;
 
--- Exportiere Struktur von Tabelle world2.skill_extra_item_template
+-- Exportiere Struktur von Tabelle world3.skill_extra_item_template
 DROP TABLE IF EXISTS `skill_extra_item_template`;
 CREATE TABLE IF NOT EXISTS `skill_extra_item_template` (
   `spellId` mediumint(8) unsigned NOT NULL DEFAULT '0' COMMENT 'SpellId of the item creation spell',
@@ -20,7 +20,7 @@ CREATE TABLE IF NOT EXISTS `skill_extra_item_template` (
   PRIMARY KEY (`spellId`)
 ) ENGINE=MyISAM DEFAULT CHARSET=utf8 ROW_FORMAT=FIXED COMMENT='Skill Specialization System';
 
--- Exportiere Daten aus Tabelle world2.skill_extra_item_template: 227 rows
+-- Exportiere Daten aus Tabelle world3.skill_extra_item_template: 227 rows
 DELETE FROM `skill_extra_item_template`;
 /*!40000 ALTER TABLE `skill_extra_item_template` DISABLE KEYS */;
 INSERT INTO `skill_extra_item_template` (`spellId`, `requiredSpecialization`, `additionalCreateChance`, `additionalMaxNum`) VALUES

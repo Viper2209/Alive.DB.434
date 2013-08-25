@@ -10,7 +10,7 @@
 /*!40014 SET @OLD_FOREIGN_KEY_CHECKS=@@FOREIGN_KEY_CHECKS, FOREIGN_KEY_CHECKS=0 */;
 /*!40101 SET @OLD_SQL_MODE=@@SQL_MODE, SQL_MODE='NO_AUTO_VALUE_ON_ZERO' */;
 
--- Exportiere Struktur von Tabelle world2.pool_gameobject
+-- Exportiere Struktur von Tabelle world3.pool_gameobject
 DROP TABLE IF EXISTS `pool_gameobject`;
 CREATE TABLE IF NOT EXISTS `pool_gameobject` (
   `guid` int(10) unsigned NOT NULL DEFAULT '0',
@@ -21,7 +21,7 @@ CREATE TABLE IF NOT EXISTS `pool_gameobject` (
   KEY `idx_guid` (`guid`)
 ) ENGINE=MyISAM DEFAULT CHARSET=utf8;
 
--- Exportiere Daten aus Tabelle world2.pool_gameobject: 35.096 rows
+-- Exportiere Daten aus Tabelle world3.pool_gameobject: 35.096 rows
 DELETE FROM `pool_gameobject`;
 /*!40000 ALTER TABLE `pool_gameobject` DISABLE KEYS */;
 INSERT INTO `pool_gameobject` (`guid`, `pool_entry`, `chance`, `description`) VALUES

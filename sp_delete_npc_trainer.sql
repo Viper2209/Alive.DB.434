@@ -10,7 +10,7 @@
 /*!40014 SET @OLD_FOREIGN_KEY_CHECKS=@@FOREIGN_KEY_CHECKS, FOREIGN_KEY_CHECKS=0 */;
 /*!40101 SET @OLD_SQL_MODE=@@SQL_MODE, SQL_MODE='NO_AUTO_VALUE_ON_ZERO' */;
 
--- Exportiere Struktur von Prozedur world2.sp_delete_npc_trainer
+-- Exportiere Struktur von Prozedur world3.sp_delete_npc_trainer
 DROP PROCEDURE IF EXISTS `sp_delete_npc_trainer`;
 DELIMITER //
 CREATE DEFINER=`root`@`localhost` PROCEDURE `sp_delete_npc_trainer`(IN npc_entry INT(10), IN spell_id INT(10))

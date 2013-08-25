@@ -10,7 +10,7 @@
 /*!40014 SET @OLD_FOREIGN_KEY_CHECKS=@@FOREIGN_KEY_CHECKS, FOREIGN_KEY_CHECKS=0 */;
 /*!40101 SET @OLD_SQL_MODE=@@SQL_MODE, SQL_MODE='NO_AUTO_VALUE_ON_ZERO' */;
 
--- Exportiere Struktur von Tabelle world2.game_event_pool
+-- Exportiere Struktur von Tabelle world3.game_event_pool
 DROP TABLE IF EXISTS `game_event_pool`;
 CREATE TABLE IF NOT EXISTS `game_event_pool` (
   `eventEntry` tinyint(4) NOT NULL COMMENT 'Entry of the game event. Put negative entry to remove during event.',
@@ -18,7 +18,7 @@ CREATE TABLE IF NOT EXISTS `game_event_pool` (
   PRIMARY KEY (`pool_entry`)
 ) ENGINE=MyISAM DEFAULT CHARSET=utf8 COMMENT='ArkDB Game event pool';
 
--- Exportiere Daten aus Tabelle world2.game_event_pool: 0 rows
+-- Exportiere Daten aus Tabelle world3.game_event_pool: 0 rows
 DELETE FROM `game_event_pool`;
 /*!40000 ALTER TABLE `game_event_pool` DISABLE KEYS */;
 /*!40000 ALTER TABLE `game_event_pool` ENABLE KEYS */;

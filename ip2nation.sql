@@ -10,7 +10,7 @@
 /*!40014 SET @OLD_FOREIGN_KEY_CHECKS=@@FOREIGN_KEY_CHECKS, FOREIGN_KEY_CHECKS=0 */;
 /*!40101 SET @OLD_SQL_MODE=@@SQL_MODE, SQL_MODE='NO_AUTO_VALUE_ON_ZERO' */;
 
--- Exportiere Struktur von Tabelle world2.ip2nation
+-- Exportiere Struktur von Tabelle world3.ip2nation
 DROP TABLE IF EXISTS `ip2nation`;
 CREATE TABLE IF NOT EXISTS `ip2nation` (
   `ip` int(10) unsigned NOT NULL DEFAULT '0',
@@ -18,7 +18,7 @@ CREATE TABLE IF NOT EXISTS `ip2nation` (
   KEY `ip` (`ip`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
--- Exportiere Daten aus Tabelle world2.ip2nation: ~0 rows (ungefähr)
+-- Exportiere Daten aus Tabelle world3.ip2nation: ~0 rows (ungefähr)
 DELETE FROM `ip2nation`;
 /*!40000 ALTER TABLE `ip2nation` DISABLE KEYS */;
 /*!40000 ALTER TABLE `ip2nation` ENABLE KEYS */;

@@ -1,0 +1,93 @@
+-- --------------------------------------------------------
+-- Host:                         127.0.0.1
+-- Server Version:               5.1.56-community - MySQL Community Server (GPL)
+-- Server Betriebssystem:        Win32
+-- HeidiSQL Version:             8.0.0.4396
+-- --------------------------------------------------------
+
+/*!40101 SET @OLD_CHARACTER_SET_CLIENT=@@CHARACTER_SET_CLIENT */;
+/*!40101 SET NAMES utf8 */;
+/*!40014 SET @OLD_FOREIGN_KEY_CHECKS=@@FOREIGN_KEY_CHECKS, FOREIGN_KEY_CHECKS=0 */;
+/*!40101 SET @OLD_SQL_MODE=@@SQL_MODE, SQL_MODE='NO_AUTO_VALUE_ON_ZERO' */;
+
+-- Exportiere Struktur von Tabelle world3.db_version_ytdb
+DROP TABLE IF EXISTS `db_version_ytdb`;
+CREATE TABLE IF NOT EXISTS `db_version_ytdb` (
+  `version` varchar(120) NOT NULL,
+  `620_FIX_15588` bit(1) DEFAULT NULL
+) ENGINE=MyISAM DEFAULT CHARSET=utf8 ROW_FORMAT=FIXED COMMENT='Used YTDB version notes';
+
+-- Exportiere Daten aus Tabelle world3.db_version_ytdb: 66 rows
+DELETE FROM `db_version_ytdb`;
+/*!40000 ALTER TABLE `db_version_ytdb` DISABLE KEYS */;
+INSERT INTO `db_version_ytdb` (`version`, `620_FIX_15588`) VALUES
+	('555_FIX_8874 (3.3.5a)', NULL),
+	('556_FIX_8874', NULL),
+	('557_FIX_8910', NULL),
+	('558_FIX_9046', NULL),
+	('559_FIX_9142', NULL),
+	('560_FIX_9327', NULL),
+	('561_FIX_9436', NULL),
+	('562_FIX_9589', NULL),
+	('563_FIX_9751', NULL),
+	('564_FIX_9910', NULL),
+	('565_FIX_10001', NULL),
+	('566_FIX_10093', NULL),
+	('567_FIX_10093', NULL),
+	('568_FIX_10217', NULL),
+	('569_FIX_10254', NULL),
+	('570_FIX_10316', NULL),
+	('571_FIX_10340', NULL),
+	('572_FIX_10394', NULL),
+	('573_FIX_10450', NULL),
+	('574_FIX_10500', NULL),
+	('575_FIX_10544', NULL),
+	('576_FIX_10603', NULL),
+	('577_FIX_10658', NULL),
+	('578_FIX_10754', NULL),
+	('579_FIX_10862', NULL),
+	('580_FIX_11004', NULL),
+	('581_FIX_11043', NULL),
+	('582_FIX_11043', NULL),
+	('583_FIX_11121', NULL),
+	('584_FIX_11188', NULL),
+	('585_FIX_11188', NULL),
+	('586_FIX_11285', NULL),
+	('587_FIX_11348', NULL),
+	('588_FIX_11409', NULL),
+	('589_FIX_11463', NULL),
+	('590_FIX_11554', NULL),
+	('591_FIX_11600', NULL),
+	('592_FIX_11642', NULL),
+	('593_FIX_11688', NULL),
+	('594_FIX_11723', NULL),
+	('595_FIX_11772', NULL),
+	('596_FIX_11772', NULL),
+	('597_FIX_2011051100', NULL),
+	('598_FIX_12047', NULL),
+	('599_FIX_12047', NULL),
+	('600_FIX_12254', NULL),
+	('601_FIX_12254', NULL),
+	('602_FIX_12376', NULL),
+	('603_FIX_12644', NULL),
+	('604_FIX_12758', NULL),
+	('605_FIX_12888', NULL),
+	('606_FIX_13132', NULL),
+	('607_FIX_13223', NULL),
+	('608_FIX_13359', NULL),
+	('609_FIX_13559', NULL),
+	('610_FIX_13712', NULL),
+	('611_FIX_13785', NULL),
+	('612_FIX_13911', NULL),
+	('613_FIX_14136', NULL),
+	('614_FIX_14424', NULL),
+	('615_FIX_14613', NULL),
+	('616_FIX_15025', NULL),
+	('617_FIX_15146', NULL),
+	('618_FIX_15263', NULL),
+	('619_FIX_15434', NULL),
+	('620_FIX_15588', NULL);
+/*!40000 ALTER TABLE `db_version_ytdb` ENABLE KEYS */;
+/*!40101 SET SQL_MODE=IFNULL(@OLD_SQL_MODE, '') */;
+/*!40014 SET FOREIGN_KEY_CHECKS=IF(@OLD_FOREIGN_KEY_CHECKS IS NULL, 1, @OLD_FOREIGN_KEY_CHECKS) */;
+/*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;

@@ -10,20 +10,20 @@
 /*!40014 SET @OLD_FOREIGN_KEY_CHECKS=@@FOREIGN_KEY_CHECKS, FOREIGN_KEY_CHECKS=0 */;
 /*!40101 SET @OLD_SQL_MODE=@@SQL_MODE, SQL_MODE='NO_AUTO_VALUE_ON_ZERO' */;
 
--- Exportiere Struktur von Tabelle world2.vehicle_accessory
+-- Exportiere Struktur von Tabelle world3.vehicle_accessory
 DROP TABLE IF EXISTS `vehicle_accessory`;
 CREATE TABLE IF NOT EXISTS `vehicle_accessory` (
-  `guid` mediumint(8) unsigned NOT NULL DEFAULT '0',
+  `guid` mediumint(8) NOT NULL DEFAULT '0',
   `accessory_entry` mediumint(8) unsigned NOT NULL DEFAULT '0',
   `seat_id` tinyint(4) NOT NULL DEFAULT '0',
   `minion` tinyint(3) unsigned NOT NULL DEFAULT '0',
   `description` text NOT NULL,
   `summontype` tinyint(3) unsigned NOT NULL DEFAULT '6' COMMENT 'see enum TempSummonType',
   `summontimer` int(10) unsigned NOT NULL DEFAULT '30000' COMMENT 'timer, only relevant for certain summontypes',
-  PRIMARY KEY (`guid`,`seat_id`)
+  PRIMARY KEY (`guid`)
 ) ENGINE=MyISAM DEFAULT CHARSET=utf8;
 
--- Exportiere Daten aus Tabelle world2.vehicle_accessory: 0 rows
+-- Exportiere Daten aus Tabelle world3.vehicle_accessory: 0 rows
 DELETE FROM `vehicle_accessory`;
 /*!40000 ALTER TABLE `vehicle_accessory` DISABLE KEYS */;
 /*!40000 ALTER TABLE `vehicle_accessory` ENABLE KEYS */;

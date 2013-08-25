@@ -10,7 +10,7 @@
 /*!40014 SET @OLD_FOREIGN_KEY_CHECKS=@@FOREIGN_KEY_CHECKS, FOREIGN_KEY_CHECKS=0 */;
 /*!40101 SET @OLD_SQL_MODE=@@SQL_MODE, SQL_MODE='NO_AUTO_VALUE_ON_ZERO' */;
 
--- Exportiere Struktur von Tabelle world2.spell_linked_spell
+-- Exportiere Struktur von Tabelle world3.spell_linked_spell
 DROP TABLE IF EXISTS `spell_linked_spell`;
 CREATE TABLE IF NOT EXISTS `spell_linked_spell` (
   `spell_trigger` mediumint(8) NOT NULL,
@@ -20,7 +20,7 @@ CREATE TABLE IF NOT EXISTS `spell_linked_spell` (
   UNIQUE KEY `trigger_effect_type` (`spell_trigger`,`spell_effect`,`type`)
 ) ENGINE=MyISAM DEFAULT CHARSET=utf8 COMMENT='Spell System';
 
--- Exportiere Daten aus Tabelle world2.spell_linked_spell: 522 rows
+-- Exportiere Daten aus Tabelle world3.spell_linked_spell: 539 rows
 DELETE FROM `spell_linked_spell`;
 /*!40000 ALTER TABLE `spell_linked_spell` DISABLE KEYS */;
 INSERT INTO `spell_linked_spell` (`spell_trigger`, `spell_effect`, `type`, `comment`) VALUES
@@ -176,7 +176,7 @@ INSERT INTO `spell_linked_spell` (`spell_trigger`, `spell_effect`, `type`, `comm
 	(73510, -34914, 1, 'Mind Spike rem dots'),
 	(73510, -2944, 1, 'Mind Spike rem dots'),
 	(73510, -589, 1, 'Mind Spike rem dots'),
-	(55342, 58832, 0, 'Mirror Image Trigger'),
+	(55342, 58832, 0, 'Mirror Image - Summon'),
 	(-74792, 74800, 0, 'Soul Consumption removed -> Consumption'),
 	(70117, 70122, 1, 'Sindragosa - Icy Grip'),
 	(70157, 69700, 2, 'Sindragosa - Ice Tomb resistance'),
@@ -545,7 +545,24 @@ INSERT INTO `spell_linked_spell` (`spell_trigger`, `spell_effect`, `type`, `comm
 	(24714, 24750, 1, 'Trick cast Trick'),
 	(11327, 1784, 0, 'Vanish - Rank 1'),
 	(77769, 82946, 2, 'Trap Launcher - Add/Remove'),
-	(57889, 57885, 0, 'On spellcast Using the Eye of the Lich King cast Through the Eye: Summon Image of a Shadow Cultist');
+	(57889, 57885, 0, 'On spellcast Using the Eye of the Lich King cast Through the Eye: Summon Image of a Shadow Cultist'),
+	(83643, 83645, 0, ''),
+	(23881, 23880, 1, 'Bloodthirst heal'),
+	(81206, 81207, 0, 'Chakra:Sanctuary - Renew spellmod link'),
+	(768, -76691, 0, 'Remover Vengeance feral'),
+	(63644, -76691, 0, 'Vengeance remove when change talents'),
+	(63645, -76691, 0, 'Vengeance remove when change talents'),
+	(34428, -32216, 1, 'Victory Rush removes Victorious'),
+	(19750, -53569, 3, 'Flash of Light removes Infusion of Light'),
+	(43315, 46348, 2, 'On aura Vrykul Insult apply Slow Creature'),
+	(52989, -53504, 1, 'On spellhit Akali\'s Stun - Remove aura Flickering Flames'),
+	(42013, 45537, 0, 'Visual Channel'),
+	(6353, -74434, 0, 'warlock_rv2.1.0'),
+	(697, -74434, 0, 'warlock_pet_rv2.1.1'),
+	(688, -74434, 0, 'warlock_pet_rv2.1.1'),
+	(689, -74434, 0, 'warlock_rv2.1.0'),
+	(-47744, 61611, 0, 'Cast other side when curse expires'),
+	(61611, 61612, 1, 'Summon body when going to other side');
 /*!40000 ALTER TABLE `spell_linked_spell` ENABLE KEYS */;
 /*!40101 SET SQL_MODE=IFNULL(@OLD_SQL_MODE, '') */;
 /*!40014 SET FOREIGN_KEY_CHECKS=IF(@OLD_FOREIGN_KEY_CHECKS IS NULL, 1, @OLD_FOREIGN_KEY_CHECKS) */;

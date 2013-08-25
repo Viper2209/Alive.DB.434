@@ -10,7 +10,7 @@
 /*!40014 SET @OLD_FOREIGN_KEY_CHECKS=@@FOREIGN_KEY_CHECKS, FOREIGN_KEY_CHECKS=0 */;
 /*!40101 SET @OLD_SQL_MODE=@@SQL_MODE, SQL_MODE='NO_AUTO_VALUE_ON_ZERO' */;
 
--- Exportiere Struktur von Tabelle world2.vehicle_template_accessory
+-- Exportiere Struktur von Tabelle world3.vehicle_template_accessory
 DROP TABLE IF EXISTS `vehicle_template_accessory`;
 CREATE TABLE IF NOT EXISTS `vehicle_template_accessory` (
   `entry` mediumint(8) unsigned NOT NULL DEFAULT '0',
@@ -23,7 +23,7 @@ CREATE TABLE IF NOT EXISTS `vehicle_template_accessory` (
   PRIMARY KEY (`entry`,`seat_id`)
 ) ENGINE=MyISAM DEFAULT CHARSET=utf8 ROW_FORMAT=FIXED;
 
--- Exportiere Daten aus Tabelle world2.vehicle_template_accessory: 201 rows
+-- Exportiere Daten aus Tabelle world3.vehicle_template_accessory: 210 rows
 DELETE FROM `vehicle_template_accessory`;
 /*!40000 ALTER TABLE `vehicle_template_accessory` DISABLE KEYS */;
 INSERT INTO `vehicle_template_accessory` (`entry`, `accessory_entry`, `seat_id`, `minion`, `description`, `summontype`, `summontimer`) VALUES
@@ -93,8 +93,8 @@ INSERT INTO `vehicle_template_accessory` (`entry`, `accessory_entry`, `seat_id`,
 	(33298, 35332, 0, 1, 'Darnassian Nightsaber', 6, 30000),
 	(47297, 47296, 0, 1, 'Patan inutil', 6, 30000),
 	(41570, 42347, 0, 1, 'Magmaws Head', 6, 30000),
-	(48040, 48041, 0, 1, 'Eclaireur pygmÃ©e sur Dadais pygmÃ©e', 6, 30000),
-	(48041, 48043, 0, 1, 'Larron pygmÃ©e sur Eclaireur pygmÃ©e', 6, 30000),
+	(48040, 48041, 0, 1, 'Eclaireur pygmée sur Dadais pygmée', 6, 30000),
+	(48041, 48043, 0, 1, 'Larron pygmée sur Eclaireur pygmée', 6, 30000),
 	(30234, 30245, 0, 1, 'Hover Disk - Nexus Lord', 6, 1000),
 	(30248, 30249, 0, 1, 'Hover Disk - Scion of Eternity', 6, 1000),
 	(28614, 28616, 0, 1, 'Scarlet Gryphon Rider', 6, 30000),
@@ -117,7 +117,7 @@ INSERT INTO `vehicle_template_accessory` (`entry`, `accessory_entry`, `seat_id`,
 	(38431, 38308, 1, 1, 'Ooze Covered Tentacle Stalker', 6, 30000),
 	(38585, 38308, 1, 1, 'Ooze Covered Tentacle Stalker', 6, 30000),
 	(38586, 38308, 1, 1, 'Ooze Covered Tentacle Stalker', 6, 30000),
-	(28669, 28717, 0, 0, 'Overlord Drakuru', 6, 30000),
+	(28669, 28717, 1, 1, 'Flying Fiend', 8, 0),
 	(39860, 39264, 0, 0, 'Gnomeregan Mechano-Tank Pilot', 6, 30000),
 	(36896, 28717, 0, 0, 'Overlord Drakuru', 6, 30000),
 	(36794, 36658, 0, 0, 'Scourgelord Tyrannus', 6, 30000),
@@ -227,7 +227,16 @@ INSERT INTO `vehicle_template_accessory` (`entry`, `accessory_entry`, `seat_id`,
 	(29931, 29982, 1, 0, 'Drakkari Rider on Drakkari Rhino', 6, 300),
 	(29625, 29694, 1, 1, 'Hyldsmeet Proto-Drake', 6, 30000),
 	(28054, 28053, -1, 0, 'Lucky Wilhelm - Apple', 6, 10000),
-	(35299, 33780, 0, 0, 'Royal Grhypon', 6, 30000);
+	(35299, 33780, 0, 0, 'Royal Grhypon', 6, 30000),
+	(36283, 36292, 0, 0, 'Forsaken Catapult', 6, 30000),
+	(29863, 28518, 0, 1, 'Persistence', 8, 0),
+	(52363, 52368, 0, 1, 'Occu\'thar - Eyestalk (Seat 1)', 8, 0),
+	(52363, 52368, 1, 1, 'Occu\'thar - Eyestalk (Seat 2)', 8, 0),
+	(52363, 52368, 2, 1, 'Occu\'thar - Eyestalk (Seat 3)', 8, 0),
+	(52363, 52368, 3, 1, 'Occu\'thar - Eyestalk (Seat 4)', 8, 0),
+	(52363, 52368, 4, 1, 'Occu\'thar - Eyestalk (Seat 5)', 8, 0),
+	(52363, 52368, 5, 1, 'Occu\'thar - Eyestalk (Seat 6)', 8, 0),
+	(52363, 52368, 6, 1, 'Occu\'thar - Eyestalk (Seat 7)', 8, 0);
 /*!40000 ALTER TABLE `vehicle_template_accessory` ENABLE KEYS */;
 /*!40101 SET SQL_MODE=IFNULL(@OLD_SQL_MODE, '') */;
 /*!40014 SET FOREIGN_KEY_CHECKS=IF(@OLD_FOREIGN_KEY_CHECKS IS NULL, 1, @OLD_FOREIGN_KEY_CHECKS) */;

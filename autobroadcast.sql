@@ -10,7 +10,7 @@
 /*!40014 SET @OLD_FOREIGN_KEY_CHECKS=@@FOREIGN_KEY_CHECKS, FOREIGN_KEY_CHECKS=0 */;
 /*!40101 SET @OLD_SQL_MODE=@@SQL_MODE, SQL_MODE='NO_AUTO_VALUE_ON_ZERO' */;
 
--- Exportiere Struktur von Tabelle world2.autobroadcast
+-- Exportiere Struktur von Tabelle world3.autobroadcast
 DROP TABLE IF EXISTS `autobroadcast`;
 CREATE TABLE IF NOT EXISTS `autobroadcast` (
   `id` int(11) NOT NULL AUTO_INCREMENT,
@@ -18,7 +18,7 @@ CREATE TABLE IF NOT EXISTS `autobroadcast` (
   PRIMARY KEY (`id`)
 ) ENGINE=MyISAM AUTO_INCREMENT=8 DEFAULT CHARSET=utf8;
 
--- Exportiere Daten aus Tabelle world2.autobroadcast: 1 rows
+-- Exportiere Daten aus Tabelle world3.autobroadcast: 1 rows
 DELETE FROM `autobroadcast`;
 /*!40000 ALTER TABLE `autobroadcast` DISABLE KEYS */;
 INSERT INTO `autobroadcast` (`id`, `text`) VALUES

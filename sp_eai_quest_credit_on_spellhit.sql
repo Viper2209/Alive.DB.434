@@ -10,7 +10,7 @@
 /*!40014 SET @OLD_FOREIGN_KEY_CHECKS=@@FOREIGN_KEY_CHECKS, FOREIGN_KEY_CHECKS=0 */;
 /*!40101 SET @OLD_SQL_MODE=@@SQL_MODE, SQL_MODE='NO_AUTO_VALUE_ON_ZERO' */;
 
--- Exportiere Struktur von Prozedur world2.sp_eai_quest_credit_on_spellhit
+-- Exportiere Struktur von Prozedur world3.sp_eai_quest_credit_on_spellhit
 DROP PROCEDURE IF EXISTS `sp_eai_quest_credit_on_spellhit`;
 DELIMITER //
 CREATE DEFINER=`root`@`localhost` PROCEDURE `sp_eai_quest_credit_on_spellhit`(IN npc_entry INT(10), spell_id MEDIUMINT(6), trigger_id INT(10), despawn_time INT(10))

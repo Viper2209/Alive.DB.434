@@ -10,7 +10,7 @@
 /*!40014 SET @OLD_FOREIGN_KEY_CHECKS=@@FOREIGN_KEY_CHECKS, FOREIGN_KEY_CHECKS=0 */;
 /*!40101 SET @OLD_SQL_MODE=@@SQL_MODE, SQL_MODE='NO_AUTO_VALUE_ON_ZERO' */;
 
--- Exportiere Struktur von Tabelle world2.game_event_gameobject_quest
+-- Exportiere Struktur von Tabelle world3.game_event_gameobject_quest
 DROP TABLE IF EXISTS `game_event_gameobject_quest`;
 CREATE TABLE IF NOT EXISTS `game_event_gameobject_quest` (
   `eventEntry` tinyint(3) unsigned NOT NULL COMMENT 'Entry of the game event',
@@ -19,7 +19,7 @@ CREATE TABLE IF NOT EXISTS `game_event_gameobject_quest` (
   PRIMARY KEY (`id`,`quest`,`eventEntry`)
 ) ENGINE=MyISAM DEFAULT CHARSET=utf8;
 
--- Exportiere Daten aus Tabelle world2.game_event_gameobject_quest: 189 rows
+-- Exportiere Daten aus Tabelle world3.game_event_gameobject_quest: 189 rows
 DELETE FROM `game_event_gameobject_quest`;
 /*!40000 ALTER TABLE `game_event_gameobject_quest` DISABLE KEYS */;
 INSERT INTO `game_event_gameobject_quest` (`eventEntry`, `id`, `quest`) VALUES

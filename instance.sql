@@ -10,7 +10,7 @@
 /*!40014 SET @OLD_FOREIGN_KEY_CHECKS=@@FOREIGN_KEY_CHECKS, FOREIGN_KEY_CHECKS=0 */;
 /*!40101 SET @OLD_SQL_MODE=@@SQL_MODE, SQL_MODE='NO_AUTO_VALUE_ON_ZERO' */;
 
--- Exportiere Struktur von Tabelle world2.instance
+-- Exportiere Struktur von Tabelle world3.instance
 DROP TABLE IF EXISTS `instance`;
 CREATE TABLE IF NOT EXISTS `instance` (
   `id` int(11) unsigned NOT NULL DEFAULT '0',
@@ -26,7 +26,7 @@ CREATE TABLE IF NOT EXISTS `instance` (
   KEY `newid` (`newid`)
 ) ENGINE=MyISAM DEFAULT CHARSET=utf8 COMMENT='ArkDB Instances';
 
--- Exportiere Daten aus Tabelle world2.instance: 0 rows
+-- Exportiere Daten aus Tabelle world3.instance: 0 rows
 DELETE FROM `instance`;
 /*!40000 ALTER TABLE `instance` DISABLE KEYS */;
 /*!40000 ALTER TABLE `instance` ENABLE KEYS */;

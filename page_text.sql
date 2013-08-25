@@ -10,7 +10,7 @@
 /*!40014 SET @OLD_FOREIGN_KEY_CHECKS=@@FOREIGN_KEY_CHECKS, FOREIGN_KEY_CHECKS=0 */;
 /*!40101 SET @OLD_SQL_MODE=@@SQL_MODE, SQL_MODE='NO_AUTO_VALUE_ON_ZERO' */;
 
--- Exportiere Struktur von Tabelle world2.page_text
+-- Exportiere Struktur von Tabelle world3.page_text
 DROP TABLE IF EXISTS `page_text`;
 CREATE TABLE IF NOT EXISTS `page_text` (
   `entry` mediumint(8) unsigned NOT NULL DEFAULT '0',
@@ -20,7 +20,7 @@ CREATE TABLE IF NOT EXISTS `page_text` (
   PRIMARY KEY (`entry`)
 ) ENGINE=MyISAM DEFAULT CHARSET=utf8 COMMENT='Item System';
 
--- Exportiere Daten aus Tabelle world2.page_text: 2.090 rows
+-- Exportiere Daten aus Tabelle world3.page_text: 2.091 rows
 DELETE FROM `page_text`;
 /*!40000 ALTER TABLE `page_text` DISABLE KEYS */;
 INSERT INTO `page_text` (`entry`, `text`, `next_page`, `WDBVerified`) VALUES
@@ -1586,14 +1586,14 @@ INSERT INTO `page_text` (`entry`, `text`, `next_page`, `WDBVerified`) VALUES
 	(3419, 'The Fluffy Bunny         $BBy Jepetto Joybuzz, Toymaker$B$B<The entire book is covered with large colorful pictures that are accompanied by short sentences.>', 3420, 11723),
 	(3432, 'Oct 8.\n\nAs I have said before, I am becoming increasingly disturbed by the dangerously vast potential of certain schools of magic, and the contrasting amount of laws and boundaries that should be set to limit them. Furthermore, comprehensive research on these volatile schools shows a trend of decreasing academic prerequisites yielding increasingly powerful outcomes. \n', 3433, 14545),
 	(3443, 'It is not our intention to replace popular transportation methods such as ships, zeppelins, and flightmasters. These are cheap, practical, and safe methods of transportation. Portals, when used properly, are just as safe and certainly faster. HOWEVER, in practice portals have a history of being a burden on any society in which it is offered to the general public. Of all the major spells developed and maintained by the Kirin Tor (including polymorph), portal technology is the closest to becoming banished from anything but emergency usage.', 3444, 14007),
-	(3454, 'Species altercation has the highest potential for abuse and disaster, and is the source of the most number of complaints to the Kirin Tor. Polymorphic study has been under constant scrutiny and threat of removal for years, but only recently have these tribulations increased exponentially. In order for this spell to continue to be sanctioned, certain guideless must be put in place to throttle the increasing number of tragedies reckless polymorphs have caused.   \n', 3455, 14007),
+	(3454, 'Species altercation has the highest potential for abuse and disaster, and is the source of the most number of complaints to the Kirin Tor. Polymorphic study has been under constant scrutiny and threat of removal for years, but only recently have these tribulations increased exponentially. In order for this spell to continue to be sanctioned, certain guideless must be put in place to throttle the increasing number of tragedies reckless polymorphs have caused.   \r\n', 3455, 14007),
 	(3461, 'Short range full-body instant cast teleportations have specific rules and boundaries which must be adhered to at all times. This book is a guideline for proper usage of this travel option, to ensure a safe and expedient teleportation.$B', 3462, 11723),
 	(3469, 'Sorry, UDB does not know this page yet', 0, 1),
 	(3472, 'From the desk of the esteemed Archmage Ansirem Runeweaver\n', 3473, 14545),
 	(3477, '<This flier was recently pasted here. Residue of glue on the stone shows that many fliers have previously occupied this location.>\n', 3478, 14007),
 	(3479, 'Thule Ravenclaw$B$BThough accounts vary wildly, many recent  events transpiring in Tirisfal Glades and Silverpine Forest seem to indicate that Thule Ravenclaw had willingly sided with the Scourge. The husk of Fenris Keep on Lordamere Lake may yield clues, but our attention must remain elsewhere at present.$B', 3480, 11723),
 	(3482, 'Rheanna,\n\nI can scarcely pass the seconds in your absence. My every waking moment yearns for your touch, your sweet, woolen caress.\n\nWere the stars to fall from the sky, I\'d catch not a one amid the brighter light burning, blinding, beyond the the infinity of your eyes.\n', 3483, 14545),
-	(3487, 'Dalaran Dining Guide\nWhen Inzi Charmlight opened A Hero\'s Welcome shortly after the city relocated, locals and visitors alike lined up to lay their weapons down and sink their teeth into a tough hunk of bread!  Seating is ample, prices are fair and the full bar offers indulgences from all over the world to help you feel satisfyingly heroic.  No matter what you order, save room for the Mead-Basted Caribou!\n', 3488, 14007),
+	(3487, 'Dalaran Dining Guide\r\nWhen Inzi Charmlight opened A Hero\'s Welcome shortly after the city relocated, locals and visitors alike lined up to lay their weapons down and sink their teeth into a tough hunk of bread!  Seating is ample, prices are fair and the full bar offers indulgences from all over the world to help you feel satisfyingly heroic.  No matter what you order, save room for the Mead-Basted Caribou!\r\n', 3488, 14007),
 	(3490, '<The worn journal\'s entries are separated by illegible or missing sheets.>$B$BWhat would Nikolai think?  I wouldn\'t dream of telling him about the voice, but I can barely speak around him anyway.  Perhaps the voice is my conscience...$B', 3491, 11723),
 	(3498, 'BUR - An aggressively passionate mating call.$BWhat can I do fer ye? - Beer sold here.$BHi - A threatening war cry, especially when accompanied by a wave or bow.$BHow are you? - Was your mother really a reptile?$BKing\'s Honor, friend! - I\'m starving!', 0, 11723),
 	(3500, '- Fight fire with fire!  Just because a monster\'s body is completely made of flames doesn\'t mean that your fireball spell won\'t work.  Give it a shot!  The results might surprise you.$B$B- Dress for success!  Studies show that mages who pay attention to their wardrobe are FAR more effective than those who wear older, lower-quality clothing.  Have you updated your robe lately?$B$B- Know your role!  At first glance, your staff may look like an effective melee weapon, but it\'s not.  Let the guys with the big shiny armor stand in front.  That being said...$B', 3501, 11403),
@@ -2113,7 +2113,8 @@ INSERT INTO `page_text` (`entry`, `text`, `next_page`, `WDBVerified`) VALUES
 	(3749, 'The D-1000\n\nAwaits you at the old arena.', 0, 14545),
 	(3774, 'I have been awaiting your arrival, sunwalker. Chief Hawkwind himself told me of your interest in our order and I have agreed to begin your training. Please meet with me in the circle at the center of Camp Narache when you are ready to begin your instruction.$B$BSunwalker Helaku', 0, 1),
 	(3773, 'The way of the priest is a new one for our people, but it draws on the ancient traditions of our seers. In your lessons, you will learn the wisdom of the Earthmother as illuminated by the Light. Meet with me in the circle at the center of Camp Narache and we will begin your lessons.$B$BSeer Ravenfeather', 0, 1),
-	(4330, '<Much of the coded missive was destroyed by fire.>$B$B...his calling...$B...the will of Grand Master Fahrad that we act by dawn tomorrow. The one who calls is restless ...renewed urgency ....$B...mustn\'t forgo the element of surprise ... an eventuality, you must divert attention away from the objec....$B...but with all luck attributed to the Twilight\'s Hammer....$B$B...fter the operation is done, both groups will reconvene back at Ravenholdt Manor. May you be fleet of foot and quiet of blade.$B$BBurn this.', 0, 1);
+	(4330, '<Much of the coded missive was destroyed by fire.>$B$B...his calling...$B...the will of Grand Master Fahrad that we act by dawn tomorrow. The one who calls is restless ...renewed urgency ....$B...mustn\'t forgo the element of surprise ... an eventuality, you must divert attention away from the objec....$B...but with all luck attributed to the Twilight\'s Hammer....$B$B...fter the operation is done, both groups will reconvene back at Ravenholdt Manor. May you be fleet of foot and quiet of blade.$B$BBurn this.', 0, 1),
+	(2470, 'The corruption and evil that rumor says travels with the arcane is nothing compared to the pain we\'ve already felt. We are no longer victims, <name>. We are the ones who control our fate. Sylvanas has paved the way for us--she has proven that our will is our own; that we are no longer thralls to that bastard Arthas.$B$BSeek me out in the church, I shall instruct you further... if that is your desire.$B$B- Isabella, Mage Trainer', 0, 1);
 /*!40000 ALTER TABLE `page_text` ENABLE KEYS */;
 /*!40101 SET SQL_MODE=IFNULL(@OLD_SQL_MODE, '') */;
 /*!40014 SET FOREIGN_KEY_CHECKS=IF(@OLD_FOREIGN_KEY_CHECKS IS NULL, 1, @OLD_FOREIGN_KEY_CHECKS) */;

@@ -10,7 +10,7 @@
 /*!40014 SET @OLD_FOREIGN_KEY_CHECKS=@@FOREIGN_KEY_CHECKS, FOREIGN_KEY_CHECKS=0 */;
 /*!40101 SET @OLD_SQL_MODE=@@SQL_MODE, SQL_MODE='NO_AUTO_VALUE_ON_ZERO' */;
 
--- Exportiere Struktur von Tabelle world2.battlemaster_entry
+-- Exportiere Struktur von Tabelle world3.battlemaster_entry
 DROP TABLE IF EXISTS `battlemaster_entry`;
 CREATE TABLE IF NOT EXISTS `battlemaster_entry` (
   `entry` mediumint(8) unsigned NOT NULL DEFAULT '0' COMMENT 'Entry of a creature',
@@ -18,7 +18,7 @@ CREATE TABLE IF NOT EXISTS `battlemaster_entry` (
   PRIMARY KEY (`entry`)
 ) ENGINE=MyISAM DEFAULT CHARSET=utf8;
 
--- Exportiere Daten aus Tabelle world2.battlemaster_entry: 20 rows
+-- Exportiere Daten aus Tabelle world3.battlemaster_entry: 20 rows
 DELETE FROM `battlemaster_entry`;
 /*!40000 ALTER TABLE `battlemaster_entry` DISABLE KEYS */;
 INSERT INTO `battlemaster_entry` (`entry`, `bg_template`) VALUES

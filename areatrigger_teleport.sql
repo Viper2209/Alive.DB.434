@@ -10,7 +10,7 @@
 /*!40014 SET @OLD_FOREIGN_KEY_CHECKS=@@FOREIGN_KEY_CHECKS, FOREIGN_KEY_CHECKS=0 */;
 /*!40101 SET @OLD_SQL_MODE=@@SQL_MODE, SQL_MODE='NO_AUTO_VALUE_ON_ZERO' */;
 
--- Exportiere Struktur von Tabelle world2.areatrigger_teleport
+-- Exportiere Struktur von Tabelle world3.areatrigger_teleport
 DROP TABLE IF EXISTS `areatrigger_teleport`;
 CREATE TABLE IF NOT EXISTS `areatrigger_teleport` (
   `id` mediumint(8) unsigned NOT NULL DEFAULT '0' COMMENT 'Identifier',
@@ -24,7 +24,7 @@ CREATE TABLE IF NOT EXISTS `areatrigger_teleport` (
   FULLTEXT KEY `name` (`name`)
 ) ENGINE=MyISAM DEFAULT CHARSET=utf8 ROW_FORMAT=FIXED COMMENT='Trigger System';
 
--- Exportiere Daten aus Tabelle world2.areatrigger_teleport: 307 rows
+-- Exportiere Daten aus Tabelle world3.areatrigger_teleport: 309 rows
 DELETE FROM `areatrigger_teleport`;
 /*!40000 ALTER TABLE `areatrigger_teleport` DISABLE KEYS */;
 INSERT INTO `areatrigger_teleport` (`id`, `name`, `target_map`, `target_position_x`, `target_position_y`, `target_position_z`, `target_orientation`) VALUES
@@ -84,8 +84,8 @@ INSERT INTO `areatrigger_teleport` (`id`, `name`, `target_map`, `target_position
 	(4743, 'Utgarde Pinnacle - Exit Target', 571, 1242.55, -4857.47, 217.783, 0.314159),
 	(2530, 'Orgrimmar - Barracks Exit Target 001', 1, 1637.91, -4240.25, 56.1744, 3.92699),
 	(2534, 'Stormwind - Barracks Exit Target 001', 0, -8762.82, 402.434, 103.901, 5.49779),
-	(2567, 'Scholomance Entrance', 289, 196.37, 127.05, 134.91, 6.09),
-	(2568, 'Scholomance Instance', 0, 1275.05, -2552.03, 90.3994, 3.6631),
+	(2567, 'Scholomance - Entrance target', 289, 199.876, 125.346, 138.43, 4.67748),
+	(2568, 'Scholomance - Stairs Exit Target 001', 0, 1273.91, -2553.09, 91.8393, 3.57792),
 	(2606, 'Alterac Valley - Horde Exit Target', 0, 536.495, -1085.72, 106.27, 3.66519),
 	(2608, 'Alterac Valley - Alliance Exit Target', 0, 101.144, -184.934, 127.344, 4.88692),
 	(2848, 'Onyxia\'s Lair Entrance Target', 249, 30.8916, -54.079, -5.02784, 4.71239),
@@ -280,9 +280,7 @@ INSERT INTO `areatrigger_teleport` (`id`, `name`, `target_map`, `target_position
 	(3650, 'Ashenvale - Silverwing Grove (Warsong Gulch - Alliance Entrance)', 489, 1448.83, 1606.72, 350.593, 0),
 	(4614, 'Tempest Keep - Factory Exit Target', 530, 2867.93, 1550.95, 252.159, 0.785398),
 	(4612, 'Tempest Keep - Atrium Exit Target', 530, 3409.85, 1486.26, 182.837, 2.53073),
-	(2549, 'Scholomance - Out', 289, 325.184, 75.6181, 93.8744, 0),
-	(2548, 'Scholomance - Out', 289, 322.884, 112.137, 98.6726, 0),
-	(2547, 'Scholomance - Out', 289, 332.866, 94.3108, 92.2221, 0),
+	(2549, 'Scholomance - Exit Porch Target 001', 0, 1399.42, -2574.59, 107.786, 6.28319),
 	(4233, 'Eversong Woods - Duskwither UP Target', 530, 9331.49, -7812.27, 136.569, 5.23599),
 	(4267, 'Eversong Woods - Duskwither DOWN Target', 530, 9334.03, -7880.02, 74.9095, 2.35619),
 	(5029, 'DK 2 Floor to 3 Floor East', 609, 2465.71, -5566.71, 550.221, 0),
@@ -322,19 +320,23 @@ INSERT INTO `areatrigger_teleport` (`id`, `name`, `target_map`, `target_position
 	(5462, 'Waygate un\'goro -> sholazar', 571, 4885.89, 5176.28, -84.8635, 0.435156),
 	(6215, 'The Hatchery (Entrance)', 1, 4566.25, -2585.61, 829.51, 1.41),
 	(5939, 'The Hatchery (Exit)', 1, 4546.95, -2592.34, 1129.52, 8.46322),
-	(5895, 'The Inner Spire (Exit)', 1, 4309.55, -3278.11, 1035.11, 2.29),
-	(5893, 'The Inner Spire (Entrance)', 1, 3946.9, -2811.49, 618.747, 3.68),
+	(5893, 'Hyjal - Teleport from Seat of the Prophets', 1, 3948.62, -2818.22, 618.747, 0),
 	(6769, 'Zul\'Gurub 4.1 - Exit Target', 0, -11916.2, -1209.47, 92.2873, 1.5708),
 	(6322, 'Badlands 4.x - Dock Teleport Target', 0, -6519.82, -4608.52, 28.4842, 4.36332),
 	(6210, 'Stratholme - Front Right Exit Target', 0, 3392.41, -3406.85, 142.246, 4.71239),
 	(6211, 'Stratholme - Front Left Exit Target', 0, 3393.17, -3352.15, 142.246, 1.5708),
-	(2411, 'Shadowfang - North Fall Target', 0, -181.26, 1580.65, 97.4466, 6.28319),
-	(2410, 'Shadowfang - North Fall Target', 0, -181.26, 1580.65, 97.4466, 6.28319),
-	(2409, 'Shadowfang Front Fall Exit Target', 0, -225.34, 1556.53, 93.0454, 4.71239),
-	(2408, 'Shadowfang Front Fall Exit Target', 0, -225.34, 1556.53, 93.0454, 4.71239),
-	(2407, 'Shadowfang - South Fall Target', 0, -276.241, 1652.68, 77.5589, 3.14159),
 	(2406, 'Shadowfang - South Fall Target', 0, -276.241, 1652.68, 77.5589, 3.14159),
-	(4304, 'Hellfire Ramparts - Omor Exit Target', 530, -233.33, 3199.71, -50, 0.785398);
+	(2407, 'Shadowfang - South Fall Target', 0, -276.241, 1652.68, 77.5589, 3.14159),
+	(2408, 'Shadowfang Front Fall Exit Target', 0, -225.34, 1556.53, 93.0454, 4.71239),
+	(2409, 'Shadowfang Front Fall Exit Target', 0, -225.34, 1556.53, 93.0454, 4.71239),
+	(2410, 'Shadowfang - North Fall Target', 0, -181.26, 1580.65, 97.4466, 6.28319),
+	(4304, 'Hellfire Ramparts - Omor Exit Target', 530, -233.33, 3199.71, -50, 0.785398),
+	(2411, 'Shadowfang - North Fall Target', 0, -181.26, 1580.65, 97.4466, 6.28319),
+	(2548, 'Scholomance - Exit Porch Target 001', 0, 1399.42, -2574.59, 107.786, 6.28319),
+	(2547, 'Scholomance - Exit Porch Target 001', 0, 1399.42, -2574.59, 107.786, 6.28319),
+	(5895, 'Hyjal - Teleport From Sulfuron Spire', 1, 4316.05, -3282.51, 1035.53, 0),
+	(5926, 'The Lost Isles - Volcanoth\'s Lair - Teleport Target - Phase 8+', 659, 1172.59, 1094.79, 119.232, 1.5708),
+	(6073, 'Vashj\'ir - Throne of Tides Exit Target', 0, -5592.83, 5408.36, -1798.57, 2.44346);
 /*!40000 ALTER TABLE `areatrigger_teleport` ENABLE KEYS */;
 /*!40101 SET SQL_MODE=IFNULL(@OLD_SQL_MODE, '') */;
 /*!40014 SET FOREIGN_KEY_CHECKS=IF(@OLD_FOREIGN_KEY_CHECKS IS NULL, 1, @OLD_FOREIGN_KEY_CHECKS) */;

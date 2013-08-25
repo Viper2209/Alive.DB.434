@@ -10,7 +10,7 @@
 /*!40014 SET @OLD_FOREIGN_KEY_CHECKS=@@FOREIGN_KEY_CHECKS, FOREIGN_KEY_CHECKS=0 */;
 /*!40101 SET @OLD_SQL_MODE=@@SQL_MODE, SQL_MODE='NO_AUTO_VALUE_ON_ZERO' */;
 
--- Exportiere Struktur von Prozedur world2.sp_set_npc_aggro_bylist
+-- Exportiere Struktur von Prozedur world3.sp_set_npc_aggro_bylist
 DROP PROCEDURE IF EXISTS `sp_set_npc_aggro_bylist`;
 DELIMITER //
 CREATE DEFINER=`root`@`localhost` PROCEDURE `sp_set_npc_aggro_bylist`(IN entry_list LONGTEXT,IN on_off BOOLEAN)

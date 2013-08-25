@@ -10,7 +10,7 @@
 /*!40014 SET @OLD_FOREIGN_KEY_CHECKS=@@FOREIGN_KEY_CHECKS, FOREIGN_KEY_CHECKS=0 */;
 /*!40101 SET @OLD_SQL_MODE=@@SQL_MODE, SQL_MODE='NO_AUTO_VALUE_ON_ZERO' */;
 
--- Exportiere Struktur von Tabelle world2.creature_summon_groups
+-- Exportiere Struktur von Tabelle world3.creature_summon_groups
 DROP TABLE IF EXISTS `creature_summon_groups`;
 CREATE TABLE IF NOT EXISTS `creature_summon_groups` (
   `summonerId` mediumint(8) unsigned NOT NULL DEFAULT '0',
@@ -25,7 +25,7 @@ CREATE TABLE IF NOT EXISTS `creature_summon_groups` (
   `summonTime` int(10) unsigned NOT NULL DEFAULT '0'
 ) ENGINE=MyISAM DEFAULT CHARSET=utf8;
 
--- Exportiere Daten aus Tabelle world2.creature_summon_groups: 8 rows
+-- Exportiere Daten aus Tabelle world3.creature_summon_groups: 8 rows
 DELETE FROM `creature_summon_groups`;
 /*!40000 ALTER TABLE `creature_summon_groups` DISABLE KEYS */;
 INSERT INTO `creature_summon_groups` (`summonerId`, `summonerType`, `groupId`, `entry`, `position_x`, `position_y`, `position_z`, `orientation`, `summonType`, `summonTime`) VALUES

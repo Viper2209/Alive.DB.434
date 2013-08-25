@@ -10,7 +10,7 @@
 /*!40014 SET @OLD_FOREIGN_KEY_CHECKS=@@FOREIGN_KEY_CHECKS, FOREIGN_KEY_CHECKS=0 */;
 /*!40101 SET @OLD_SQL_MODE=@@SQL_MODE, SQL_MODE='NO_AUTO_VALUE_ON_ZERO' */;
 
--- Exportiere Struktur von Tabelle world2.graveyard_orientation
+-- Exportiere Struktur von Tabelle world3.graveyard_orientation
 DROP TABLE IF EXISTS `graveyard_orientation`;
 CREATE TABLE IF NOT EXISTS `graveyard_orientation` (
   `Id` int(10) unsigned NOT NULL DEFAULT '0',
@@ -18,7 +18,7 @@ CREATE TABLE IF NOT EXISTS `graveyard_orientation` (
   PRIMARY KEY (`Id`)
 ) ENGINE=MyISAM DEFAULT CHARSET=utf8 COMMENT='Orientations used by graveyards';
 
--- Exportiere Daten aus Tabelle world2.graveyard_orientation: 1.016 rows
+-- Exportiere Daten aus Tabelle world3.graveyard_orientation: 1.016 rows
 DELETE FROM `graveyard_orientation`;
 /*!40000 ALTER TABLE `graveyard_orientation` DISABLE KEYS */;
 INSERT INTO `graveyard_orientation` (`Id`, `Orientation`) VALUES

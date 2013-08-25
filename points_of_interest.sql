@@ -10,7 +10,7 @@
 /*!40014 SET @OLD_FOREIGN_KEY_CHECKS=@@FOREIGN_KEY_CHECKS, FOREIGN_KEY_CHECKS=0 */;
 /*!40101 SET @OLD_SQL_MODE=@@SQL_MODE, SQL_MODE='NO_AUTO_VALUE_ON_ZERO' */;
 
--- Exportiere Struktur von Tabelle world2.points_of_interest
+-- Exportiere Struktur von Tabelle world3.points_of_interest
 DROP TABLE IF EXISTS `points_of_interest`;
 CREATE TABLE IF NOT EXISTS `points_of_interest` (
   `entry` mediumint(8) unsigned NOT NULL DEFAULT '0',
@@ -23,7 +23,7 @@ CREATE TABLE IF NOT EXISTS `points_of_interest` (
   PRIMARY KEY (`entry`)
 ) ENGINE=MyISAM DEFAULT CHARSET=utf8;
 
--- Exportiere Daten aus Tabelle world2.points_of_interest: 959 rows
+-- Exportiere Daten aus Tabelle world3.points_of_interest: 993 rows
 DELETE FROM `points_of_interest`;
 /*!40000 ALTER TABLE `points_of_interest` DISABLE KEYS */;
 INSERT INTO `points_of_interest` (`entry`, `x`, `y`, `icon`, `flags`, `data`, `icon_name`) VALUES
@@ -204,7 +204,7 @@ INSERT INTO `points_of_interest` (`entry`, `x`, `y`, `icon`, `flags`, `data`, `i
 	(175, 5884, 608.281, 7, 99, 0, 'Dalaran Wine & Cheese'),
 	(176, 1631, -4375.33, 7, 99, 0, 'Bank of Orgrimmar'),
 	(177, 1676, -4332.72, 7, 99, 0, 'The Sky Tower'),
-	(178, 1576, -4294.75, 7, 99, 0, 'Horde Embassy'),
+	(178, 1611.97, -4345.16, 7, 99, 0, 'Horde Embassy'),
 	(179, 1644, -4447.28, 7, 99, 0, 'Orgrimmar Inn'),
 	(180, 1622, -4388.8, 7, 99, 0, 'Orgrimmar Mailbox'),
 	(181, 1679, -4450.11, 7, 99, 0, 'Orgrimmar Auction House'),
@@ -456,10 +456,9 @@ INSERT INTO `points_of_interest` (`entry`, `x`, `y`, `icon`, `flags`, `data`, `i
 	(427, -2349.22, -241.376, 7, 99, 0, 'Uthan Stillwater'),
 	(428, -2257.12, -288.633, 7, 99, 0, 'Chaw Stronghide'),
 	(429, -2252.95, -291.324, 7, 99, 0, 'Yonn Deepcut'),
-	(430, 2266.98, 242.754, 7, 99, 0, 'Gallows\' End Tavern'),
-	(431, 2266.98, 242.754, 7, 99, 0, 'Gallows\' End Tavern'),
-	(432, 2268.67, 318.876, 7, 99, 0, 'Morganus'),
-	(433, 2259.58, 235.865, 7, 99, 0, 'Cain Firesong'),
+	(458, 1731.28, -4510.06, 7, 99, 0, 'Orgrimmar Ethereals'),
+	(457, -8282.65, 716.852, 7, 99, 0, 'Stormwind Druid Trainer'),
+	(433, 2235.25, 317.696, 7, 99, 0, 'Cain Firesong'),
 	(434, 2264.43, 248.158, 7, 99, 0, 'Dark Cleric Beryl'),
 	(435, 2267.61, 243.924, 7, 99, 0, 'Marion Call'),
 	(436, 2257.46, 247.402, 7, 99, 0, 'Rupert Boch'),
@@ -472,8 +471,8 @@ INSERT INTO `points_of_interest` (`entry`, `x`, `y`, `icon`, `flags`, `data`, `i
 	(443, 2027.81, 80.1105, 7, 99, 0, 'Shelene Rhobart'),
 	(444, 2031.33, 71.8599, 7, 99, 0, 'Rand Rhobart'),
 	(445, 2161.7, 658.172, 7, 99, 0, 'Bowen Brisboise'),
-	(446, 2266.98, 242.754, 7, 99, 0, 'Gallows\' End Tavern'),
-	(447, 2268.67, 318.876, 7, 99, 0, 'Morganus'),
+	(446, 2281.68, 283.71, 7, 99, 0, 'Gallows\' End Tavern'),
+	(447, 2265.61, 240.149, 7, 99, 0, 'Morganus'),
 	(454, 5855.21, 650.977, 7, 99, 0, 'Dalaran Archaeology Trainer'),
 	(455, -5081.34, -780.465, 7, 99, 0, 'Ironforge Druid Trainer'),
 	(456, -4627.94, -1311.17, 7, 99, 0, 'Ironforge Archaeology'),
@@ -918,7 +917,7 @@ INSERT INTO `points_of_interest` (`entry`, `x`, `y`, `icon`, `flags`, `data`, `i
 	(1085, -5023.08, -1253.68, 7, 99, 0, 'Hall of Arms'),
 	(1084, -4605.03, -1110.46, 7, 99, 0, 'Ironforge Warlock Trainer'),
 	(1082, -4647.83, -1124, 7, 99, 0, 'Ironforge Rogue Trainer'),
-	(1080, -4627.02, -926.459, 7, 99, 0, 'Hall of Mysteries'),
+	(1080, -4767, -1184.6, 6, 99, 0, 'The Bronze Kettle'),
 	(1079, -4627.02, -926.459, 7, 99, 0, 'Hall of Mysteries'),
 	(1078, -4627.02, -926.459, 7, 99, 0, 'Hall of Mysteries'),
 	(1077, -5023.08, -1253.68, 7, 99, 0, 'Hall of Arms'),
@@ -985,7 +984,42 @@ INSERT INTO `points_of_interest` (`entry`, `x`, `y`, `icon`, `flags`, `data`, `i
 	(1060, -4891.91, -991.48, 7, 99, 0, 'The Vault'),
 	(1066, -5021.06, -996.453, 7, 99, 0, 'Ironforge Visitor\'s Center'),
 	(1067, -4821.52, -1152.3, 7, 99, 0, 'Ironforge Gryphon Master'),
-	(1068, -4850.48, -872.571, 7, 99, 0, 'Stonefire Tavern');
+	(1068, -4850.48, -872.571, 7, 99, 0, 'Stonefire Tavern'),
+	(459, 1961.85, -4801.29, 7, 99, 0, 'Orgrimmar Battlemasters'),
+	(460, -4088.89, 6359.15, 7, 99, 0, 'Darkmoon Game Tokens'),
+	(461, 2231.17, 241.611, 7, 99, 0, 'Dedlow Wormwood'),
+	(462, 9924.49, 2311.77, 7, 99, 0, 'Darnassus Blacksmithing'),
+	(463, -4128.34, 6324.93, 7, 99, 0, 'AAA Tonk Arena'),
+	(464, -4018.02, 6292.56, 7, 99, 0, 'AAA Cannon'),
+	(465, -3998.5, 6280.14, 7, 99, 0, 'AAA Whack-a-Gnoll'),
+	(466, -4290.16, 6308.55, 7, 99, 0, 'AAA Ring Toss'),
+	(467, -4076.42, 6351.4, 7, 99, 0, 'AAA Shooting Gallery'),
+	(468, -4263.25, 6281.23, 7, 99, 0, 'AAA Fortune Teller'),
+	(469, -3721.33, -4538.39, 7, 99, 0, 'Theramore Banker'),
+	(470, -3779.58, -4542.24, 7, 99, 0, 'Theramore Hunter'),
+	(471, -3760.57, -4458.26, 7, 99, 0, 'Theramore Mage'),
+	(472, -3692.57, -4513.23, 7, 99, 0, 'Theramore Paladin'),
+	(473, -3651.75, -4501.25, 7, 99, 0, 'Theramore Priest'),
+	(474, -3819.24, -4563.96, 7, 99, 0, 'Theramore Rogue'),
+	(475, -3616.1, -4471.28, 7, 99, 0, 'Theramore Shaman'),
+	(476, -3744.52, -4435.25, 7, 99, 0, 'Theramore Warlock'),
+	(477, -3727.55, -4538.48, 7, 99, 0, 'Theramore Warrior'),
+	(478, -3700.83, -4331.73, 7, 99, 0, 'Theramore Alchemy'),
+	(479, -3618.91, -4454.21, 7, 99, 0, 'Theramore Archaeology'),
+	(480, -3785.93, -4366.83, 7, 99, 0, 'Theramore Blacksmithing'),
+	(481, -3617.13, -4486.98, 7, 99, 0, 'Theramore Cooking'),
+	(482, -3772.04, -4441.66, 7, 99, 0, 'Theramore Enchanting'),
+	(483, -3798.24, -4374.75, 7, 99, 0, 'Theramore Engineering'),
+	(484, -3747.08, -4532.17, 7, 99, 0, 'Theramore First Aid'),
+	(485, -3849.29, -4610.17, 7, 99, 0, 'Theramore Fishing'),
+	(486, -3697.02, -4335.25, 7, 99, 0, 'Theramore Herbalism'),
+	(487, -3774.65, -4448.43, 7, 99, 0, 'Theramore Inscription'),
+	(488, -3612.54, -4456.31, 7, 99, 0, 'Theramore Jewelcrafting'),
+	(489, -3613.03, -4461.91, 7, 99, 0, 'Theramore Leatherworking'),
+	(490, -3777.12, -4366.25, 7, 99, 0, 'Theramore Mining'),
+	(491, -3843.38, -4405.83, 7, 99, 0, 'Theramore Riding'),
+	(492, -3612.49, -4458.98, 7, 99, 0, 'Theramore Skinning'),
+	(493, -3846.47, -4449.22, 7, 99, 0, 'Theramore Tailoring');
 /*!40000 ALTER TABLE `points_of_interest` ENABLE KEYS */;
 /*!40101 SET SQL_MODE=IFNULL(@OLD_SQL_MODE, '') */;
 /*!40014 SET FOREIGN_KEY_CHECKS=IF(@OLD_FOREIGN_KEY_CHECKS IS NULL, 1, @OLD_FOREIGN_KEY_CHECKS) */;

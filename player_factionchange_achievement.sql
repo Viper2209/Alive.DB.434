@@ -10,7 +10,7 @@
 /*!40014 SET @OLD_FOREIGN_KEY_CHECKS=@@FOREIGN_KEY_CHECKS, FOREIGN_KEY_CHECKS=0 */;
 /*!40101 SET @OLD_SQL_MODE=@@SQL_MODE, SQL_MODE='NO_AUTO_VALUE_ON_ZERO' */;
 
--- Exportiere Struktur von Tabelle world2.player_factionchange_achievement
+-- Exportiere Struktur von Tabelle world3.player_factionchange_achievement
 DROP TABLE IF EXISTS `player_factionchange_achievement`;
 CREATE TABLE IF NOT EXISTS `player_factionchange_achievement` (
   `alliance_id` int(10) unsigned NOT NULL,
@@ -18,7 +18,7 @@ CREATE TABLE IF NOT EXISTS `player_factionchange_achievement` (
   PRIMARY KEY (`alliance_id`,`horde_id`)
 ) ENGINE=MyISAM DEFAULT CHARSET=utf8;
 
--- Exportiere Daten aus Tabelle world2.player_factionchange_achievement: 127 rows
+-- Exportiere Daten aus Tabelle world3.player_factionchange_achievement: 127 rows
 DELETE FROM `player_factionchange_achievement`;
 /*!40000 ALTER TABLE `player_factionchange_achievement` DISABLE KEYS */;
 INSERT INTO `player_factionchange_achievement` (`alliance_id`, `horde_id`) VALUES

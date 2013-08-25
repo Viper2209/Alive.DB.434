@@ -10,7 +10,7 @@
 /*!40014 SET @OLD_FOREIGN_KEY_CHECKS=@@FOREIGN_KEY_CHECKS, FOREIGN_KEY_CHECKS=0 */;
 /*!40101 SET @OLD_SQL_MODE=@@SQL_MODE, SQL_MODE='NO_AUTO_VALUE_ON_ZERO' */;
 
--- Exportiere Struktur von Tabelle world2.locales_npc_text
+-- Exportiere Struktur von Tabelle world3.locales_npc_text
 DROP TABLE IF EXISTS `locales_npc_text`;
 CREATE TABLE IF NOT EXISTS `locales_npc_text` (
   `ID` mediumint(8) unsigned NOT NULL DEFAULT '0',
@@ -145,7 +145,7 @@ CREATE TABLE IF NOT EXISTS `locales_npc_text` (
   PRIMARY KEY (`ID`)
 ) ENGINE=MyISAM DEFAULT CHARSET=utf8;
 
--- Exportiere Daten aus Tabelle world2.locales_npc_text: 0 rows
+-- Exportiere Daten aus Tabelle world3.locales_npc_text: 0 rows
 DELETE FROM `locales_npc_text`;
 /*!40000 ALTER TABLE `locales_npc_text` DISABLE KEYS */;
 /*!40000 ALTER TABLE `locales_npc_text` ENABLE KEYS */;

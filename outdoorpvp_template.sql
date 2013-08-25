@@ -10,7 +10,7 @@
 /*!40014 SET @OLD_FOREIGN_KEY_CHECKS=@@FOREIGN_KEY_CHECKS, FOREIGN_KEY_CHECKS=0 */;
 /*!40101 SET @OLD_SQL_MODE=@@SQL_MODE, SQL_MODE='NO_AUTO_VALUE_ON_ZERO' */;
 
--- Exportiere Struktur von Tabelle world2.outdoorpvp_template
+-- Exportiere Struktur von Tabelle world3.outdoorpvp_template
 DROP TABLE IF EXISTS `outdoorpvp_template`;
 CREATE TABLE IF NOT EXISTS `outdoorpvp_template` (
   `TypeId` tinyint(3) unsigned NOT NULL,
@@ -19,7 +19,7 @@ CREATE TABLE IF NOT EXISTS `outdoorpvp_template` (
   PRIMARY KEY (`TypeId`)
 ) ENGINE=MyISAM DEFAULT CHARSET=utf8 ROW_FORMAT=DYNAMIC COMMENT='OutdoorPvP Templates';
 
--- Exportiere Daten aus Tabelle world2.outdoorpvp_template: 5 rows
+-- Exportiere Daten aus Tabelle world3.outdoorpvp_template: 5 rows
 DELETE FROM `outdoorpvp_template`;
 /*!40000 ALTER TABLE `outdoorpvp_template` DISABLE KEYS */;
 INSERT INTO `outdoorpvp_template` (`TypeId`, `ScriptName`, `comment`) VALUES

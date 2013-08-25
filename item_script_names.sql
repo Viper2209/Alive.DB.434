@@ -10,7 +10,7 @@
 /*!40014 SET @OLD_FOREIGN_KEY_CHECKS=@@FOREIGN_KEY_CHECKS, FOREIGN_KEY_CHECKS=0 */;
 /*!40101 SET @OLD_SQL_MODE=@@SQL_MODE, SQL_MODE='NO_AUTO_VALUE_ON_ZERO' */;
 
--- Exportiere Struktur von Tabelle world2.item_script_names
+-- Exportiere Struktur von Tabelle world3.item_script_names
 DROP TABLE IF EXISTS `item_script_names`;
 CREATE TABLE IF NOT EXISTS `item_script_names` (
   `Id` int(10) unsigned NOT NULL,
@@ -18,7 +18,7 @@ CREATE TABLE IF NOT EXISTS `item_script_names` (
   PRIMARY KEY (`Id`)
 ) ENGINE=MyISAM DEFAULT CHARSET=utf8 ROW_FORMAT=DYNAMIC;
 
--- Exportiere Daten aus Tabelle world2.item_script_names: 0 rows
+-- Exportiere Daten aus Tabelle world3.item_script_names: 0 rows
 DELETE FROM `item_script_names`;
 /*!40000 ALTER TABLE `item_script_names` DISABLE KEYS */;
 /*!40000 ALTER TABLE `item_script_names` ENABLE KEYS */;

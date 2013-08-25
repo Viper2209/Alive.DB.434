@@ -10,7 +10,7 @@
 /*!40014 SET @OLD_FOREIGN_KEY_CHECKS=@@FOREIGN_KEY_CHECKS, FOREIGN_KEY_CHECKS=0 */;
 /*!40101 SET @OLD_SQL_MODE=@@SQL_MODE, SQL_MODE='NO_AUTO_VALUE_ON_ZERO' */;
 
--- Exportiere Struktur von Prozedur world2.sp_PetExtraLevelStats
+-- Exportiere Struktur von Prozedur world3.sp_PetExtraLevelStats
 DROP PROCEDURE IF EXISTS `sp_PetExtraLevelStats`;
 DELIMITER //
 CREATE DEFINER=`Arkania`@`%` PROCEDURE `sp_PetExtraLevelStats`()

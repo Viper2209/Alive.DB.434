@@ -10,7 +10,7 @@
 /*!40014 SET @OLD_FOREIGN_KEY_CHECKS=@@FOREIGN_KEY_CHECKS, FOREIGN_KEY_CHECKS=0 */;
 /*!40101 SET @OLD_SQL_MODE=@@SQL_MODE, SQL_MODE='NO_AUTO_VALUE_ON_ZERO' */;
 
--- Exportiere Struktur von Tabelle world2.pool_template
+-- Exportiere Struktur von Tabelle world3.pool_template
 DROP TABLE IF EXISTS `pool_template`;
 CREATE TABLE IF NOT EXISTS `pool_template` (
   `entry` mediumint(8) unsigned NOT NULL DEFAULT '0' COMMENT 'Pool entry',
@@ -19,7 +19,7 @@ CREATE TABLE IF NOT EXISTS `pool_template` (
   PRIMARY KEY (`entry`)
 ) ENGINE=MyISAM DEFAULT CHARSET=utf8;
 
--- Exportiere Daten aus Tabelle world2.pool_template: 13.868 rows
+-- Exportiere Daten aus Tabelle world3.pool_template: 13.875 rows
 DELETE FROM `pool_template`;
 /*!40000 ALTER TABLE `pool_template` DISABLE KEYS */;
 INSERT INTO `pool_template` (`entry`, `max_limit`, `description`) VALUES
@@ -3486,7 +3486,6 @@ INSERT INTO `pool_template` (`entry`, `max_limit`, `description`) VALUES
 	(1074, 1, ''),
 	(1075, 1, ''),
 	(1076, 1, ''),
-	(1077, 1, ''),
 	(1078, 1, ''),
 	(1079, 1, ''),
 	(1080, 1, ''),
@@ -13890,7 +13889,15 @@ INSERT INTO `pool_template` (`entry`, `max_limit`, `description`) VALUES
 	(14496, 1, 'GO=176752 OR 176751'),
 	(14497, 1, 'GO=176752 OR 176751'),
 	(989, 1, ''),
-	(358, 1, 'Max 1 Rare in Dire Maul Arena');
+	(358, 1, 'Max 1 Rare in Dire Maul Arena'),
+	(376, 2, 'Commander Larmash - Daily Quests'),
+	(375, 2, 'Camp Coordinator Brack - Daily Quests'),
+	(374, 2, 'Sergeant Gray - Daily Quests'),
+	(373, 2, 'Lieutenant Farnsworth - Daily Quests'),
+	(372, 2, 'Commander Marcus Johnson - Daily Quests'),
+	(377, 2, '3rd Officer Kronkar - Daily Quests'),
+	(378, 2, 'Private Sarlosk - Daily Quests'),
+	(379, 2, 'Captain Prug - Daily Quests');
 /*!40000 ALTER TABLE `pool_template` ENABLE KEYS */;
 /*!40101 SET SQL_MODE=IFNULL(@OLD_SQL_MODE, '') */;
 /*!40014 SET FOREIGN_KEY_CHECKS=IF(@OLD_FOREIGN_KEY_CHECKS IS NULL, 1, @OLD_FOREIGN_KEY_CHECKS) */;

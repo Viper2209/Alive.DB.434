@@ -10,7 +10,7 @@
 /*!40014 SET @OLD_FOREIGN_KEY_CHECKS=@@FOREIGN_KEY_CHECKS, FOREIGN_KEY_CHECKS=0 */;
 /*!40101 SET @OLD_SQL_MODE=@@SQL_MODE, SQL_MODE='NO_AUTO_VALUE_ON_ZERO' */;
 
--- Exportiere Struktur von Tabelle world2.disenchant_loot_template
+-- Exportiere Struktur von Tabelle world3.disenchant_loot_template
 DROP TABLE IF EXISTS `disenchant_loot_template`;
 CREATE TABLE IF NOT EXISTS `disenchant_loot_template` (
   `entry` mediumint(8) unsigned NOT NULL DEFAULT '0' COMMENT 'Recommended id selection: item_level*100 + item_quality',
@@ -23,7 +23,7 @@ CREATE TABLE IF NOT EXISTS `disenchant_loot_template` (
   PRIMARY KEY (`entry`,`item`)
 ) ENGINE=MyISAM DEFAULT CHARSET=utf8 ROW_FORMAT=FIXED COMMENT='Loot System';
 
--- Exportiere Daten aus Tabelle world2.disenchant_loot_template: 191 rows
+-- Exportiere Daten aus Tabelle world3.disenchant_loot_template: 203 rows
 DELETE FROM `disenchant_loot_template`;
 /*!40000 ALTER TABLE `disenchant_loot_template` DISABLE KEYS */;
 INSERT INTO `disenchant_loot_template` (`entry`, `item`, `ChanceOrQuestChance`, `lootmode`, `groupid`, `mincountOrRef`, `maxcount`) VALUES
@@ -217,7 +217,19 @@ INSERT INTO `disenchant_loot_template` (`entry`, `item`, `ChanceOrQuestChance`, 
 	(80, 52718, 75, 1, 0, 1, 5),
 	(79, 52555, 75, 1, 0, 1, 5),
 	(79, 52718, 75, 1, 0, 1, 5),
-	(79, 52719, 10, 1, 0, 1, 3);
+	(79, 52719, 10, 1, 0, 1, 3),
+	(57309, 52555, 64, 1, 0, 1, 6),
+	(57309, 52718, 36, 1, 0, 1, 6),
+	(57309, 34054, 100, 1, 0, 2, 4),
+	(38006, 34054, 87, 1, 0, 2, 4),
+	(35930, 34054, 85, 1, 0, 2, 3),
+	(38033, 34054, 85, 1, 0, 2, 4),
+	(38013, 34054, 84, 1, 0, 2, 4),
+	(37941, 34054, 85, 1, 0, 2, 7),
+	(42816, 34054, 83, 1, 0, 4, 7),
+	(39846, 34054, 82, 1, 0, 4, 8),
+	(35899, 34054, 82, 1, 0, 2, 4),
+	(37435, 34054, 81, 1, 0, 2, 6);
 /*!40000 ALTER TABLE `disenchant_loot_template` ENABLE KEYS */;
 /*!40101 SET SQL_MODE=IFNULL(@OLD_SQL_MODE, '') */;
 /*!40014 SET FOREIGN_KEY_CHECKS=IF(@OLD_FOREIGN_KEY_CHECKS IS NULL, 1, @OLD_FOREIGN_KEY_CHECKS) */;

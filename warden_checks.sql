@@ -10,7 +10,7 @@
 /*!40014 SET @OLD_FOREIGN_KEY_CHECKS=@@FOREIGN_KEY_CHECKS, FOREIGN_KEY_CHECKS=0 */;
 /*!40101 SET @OLD_SQL_MODE=@@SQL_MODE, SQL_MODE='NO_AUTO_VALUE_ON_ZERO' */;
 
--- Exportiere Struktur von Tabelle world2.warden_checks
+-- Exportiere Struktur von Tabelle world3.warden_checks
 DROP TABLE IF EXISTS `warden_checks`;
 CREATE TABLE IF NOT EXISTS `warden_checks` (
   `id` smallint(5) unsigned NOT NULL AUTO_INCREMENT,
@@ -24,7 +24,7 @@ CREATE TABLE IF NOT EXISTS `warden_checks` (
   PRIMARY KEY (`id`)
 ) ENGINE=MyISAM AUTO_INCREMENT=787 DEFAULT CHARSET=utf8;
 
--- Exportiere Daten aus Tabelle world2.warden_checks: 786 rows
+-- Exportiere Daten aus Tabelle world3.warden_checks: 786 rows
 DELETE FROM `warden_checks`;
 /*!40000 ALTER TABLE `warden_checks` DISABLE KEYS */;
 INSERT INTO `warden_checks` (`id`, `type`, `data`, `str`, `address`, `length`, `result`, `comment`) VALUES
@@ -812,7 +812,7 @@ INSERT INTO `warden_checks` (`id`, `type`, `data`, `str`, `address`, `length`, `
 	(782, 243, '', '', 8016620, 2, '7417', 'Collision M2 Special'),
 	(783, 243, '', '', 8016079, 6, '0F8462010000', 'Collision M2 Regular'),
 	(784, 243, '', '', 8054762, 2, '7506', 'Collision WMD'),
-	(785, 243, '', '', 9995315, 2, '7544', 'Multi-Jump Patch'),
+	(785, 243, '', '', 9995315, 5, '75440FB75E', 'Multi-Jump Patch'),
 	(786, 217, '', 'WPESPY.DLL', 0, 0, '', 'WPE PRO - injected dll');
 /*!40000 ALTER TABLE `warden_checks` ENABLE KEYS */;
 /*!40101 SET SQL_MODE=IFNULL(@OLD_SQL_MODE, '') */;

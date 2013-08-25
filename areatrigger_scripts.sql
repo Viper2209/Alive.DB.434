@@ -10,7 +10,7 @@
 /*!40014 SET @OLD_FOREIGN_KEY_CHECKS=@@FOREIGN_KEY_CHECKS, FOREIGN_KEY_CHECKS=0 */;
 /*!40101 SET @OLD_SQL_MODE=@@SQL_MODE, SQL_MODE='NO_AUTO_VALUE_ON_ZERO' */;
 
--- Exportiere Struktur von Tabelle world2.areatrigger_scripts
+-- Exportiere Struktur von Tabelle world3.areatrigger_scripts
 DROP TABLE IF EXISTS `areatrigger_scripts`;
 CREATE TABLE IF NOT EXISTS `areatrigger_scripts` (
   `entry` mediumint(8) NOT NULL,
@@ -18,7 +18,7 @@ CREATE TABLE IF NOT EXISTS `areatrigger_scripts` (
   PRIMARY KEY (`entry`)
 ) ENGINE=MyISAM DEFAULT CHARSET=utf8;
 
--- Exportiere Daten aus Tabelle world2.areatrigger_scripts: 79 rows
+-- Exportiere Daten aus Tabelle world3.areatrigger_scripts: 94 rows
 DELETE FROM `areatrigger_scripts`;
 /*!40000 ALTER TABLE `areatrigger_scripts` DISABLE KEYS */;
 INSERT INTO `areatrigger_scripts` (`entry`, `ScriptName`) VALUES
@@ -100,7 +100,22 @@ INSERT INTO `areatrigger_scripts` (`entry`, `ScriptName`) VALUES
 	(5704, 'SmartTrigger'),
 	(5703, 'SmartTrigger'),
 	(5173, 'at_frostgrips_hollow'),
-	(5342, 'at_eye_of_eternity_improvised_floor');
+	(5342, 'at_eye_of_eternity_improvised_floor'),
+	(4956, 'SmartTrigger'),
+	(5697, 'at_hor_waves_restarter'),
+	(5632, 'at_hor_intro_start'),
+	(5056, 'SmartTrigger'),
+	(5057, 'SmartTrigger'),
+	(5058, 'SmartTrigger'),
+	(5059, 'SmartTrigger'),
+	(5060, 'SmartTrigger'),
+	(5095, 'SmartTrigger'),
+	(5096, 'SmartTrigger'),
+	(5097, 'SmartTrigger'),
+	(5098, 'SmartTrigger'),
+	(2046, 'at_dragonspire_hall'),
+	(2026, 'at_blackrock_stadium'),
+	(5605, 'at_shadow_throne');
 /*!40000 ALTER TABLE `areatrigger_scripts` ENABLE KEYS */;
 /*!40101 SET SQL_MODE=IFNULL(@OLD_SQL_MODE, '') */;
 /*!40014 SET FOREIGN_KEY_CHECKS=IF(@OLD_FOREIGN_KEY_CHECKS IS NULL, 1, @OLD_FOREIGN_KEY_CHECKS) */;

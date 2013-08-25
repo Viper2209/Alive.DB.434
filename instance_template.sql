@@ -10,7 +10,7 @@
 /*!40014 SET @OLD_FOREIGN_KEY_CHECKS=@@FOREIGN_KEY_CHECKS, FOREIGN_KEY_CHECKS=0 */;
 /*!40101 SET @OLD_SQL_MODE=@@SQL_MODE, SQL_MODE='NO_AUTO_VALUE_ON_ZERO' */;
 
--- Exportiere Struktur von Tabelle world2.instance_template
+-- Exportiere Struktur von Tabelle world3.instance_template
 DROP TABLE IF EXISTS `instance_template`;
 CREATE TABLE IF NOT EXISTS `instance_template` (
   `map` smallint(5) unsigned NOT NULL,
@@ -20,12 +20,12 @@ CREATE TABLE IF NOT EXISTS `instance_template` (
   PRIMARY KEY (`map`)
 ) ENGINE=MyISAM DEFAULT CHARSET=utf8;
 
--- Exportiere Daten aus Tabelle world2.instance_template: 106 rows
+-- Exportiere Daten aus Tabelle world3.instance_template: 106 rows
 DELETE FROM `instance_template`;
 /*!40000 ALTER TABLE `instance_template` DISABLE KEYS */;
 INSERT INTO `instance_template` (`map`, `parent`, `script`, `allowMount`) VALUES
 	(33, 0, 'instance_shadowfang_keep', 0),
-	(34, 0, '', 0),
+	(34, 0, 'instance_the_stockade', 0),
 	(36, 0, 'instance_deadmines', 0),
 	(43, 1, 'instance_wailing_caverns', 0),
 	(47, 1, 'instance_razorfen_kraul', 0),
@@ -39,13 +39,13 @@ INSERT INTO `instance_template` (`map`, `parent`, `script`, `allowMount`) VALUES
 	(229, 0, '', 0),
 	(230, 0, 'instance_blackrock_depths', 0),
 	(249, 1, 'instance_onyxias_lair', 0),
-	(269, 1, 'instance_dark_portal', 1),
+	(269, 1, 'instance_the_black_morass', 1),
 	(289, 0, 'instance_scholomance', 0),
 	(329, 0, 'instance_stratholme', 0),
-	(349, 1, '', 0),
-	(389, 1, '', 0),
+	(349, 1, 'instance_maraudon', 0),
+	(389, 1, 'instance_ragefire_chasm', 0),
 	(409, 230, 'instance_molten_core', 0),
-	(429, 1, '', 0),
+	(429, 1, 'instance_dire_maul', 0),
 	(469, 229, 'instance_blackwing_lair', 0),
 	(509, 1, 'instance_ruins_of_ahnqiraj', 1),
 	(531, 1, 'instance_temple_of_ahnqiraj', 1),
@@ -57,8 +57,8 @@ INSERT INTO `instance_template` (`map`, `parent`, `script`, `allowMount`) VALUES
 	(543, 530, 'instance_ramparts', 0),
 	(544, 530, 'instance_magtheridons_lair', 0),
 	(545, 530, 'instance_steam_vault', 0),
-	(546, 530, '', 0),
-	(547, 530, '', 0),
+	(546, 530, 'instance_the_underbog', 0),
+	(547, 530, 'instance_the_slave_pens', 0),
 	(548, 530, 'instance_serpent_shrine', 0),
 	(550, 530, 'instance_the_eye', 0),
 	(552, 530, 'instance_arcatraz', 0),
@@ -69,7 +69,7 @@ INSERT INTO `instance_template` (`map`, `parent`, `script`, `allowMount`) VALUES
 	(557, 530, '', 0),
 	(558, 530, '', 0),
 	(560, 1, 'instance_old_hillsbrad', 1),
-	(564, 530, 'instance_black_temple', 0),
+	(564, 530, 'instance_black_temple', 1),
 	(565, 530, 'instance_gruuls_lair', 0),
 	(568, 530, 'instance_zulaman', 1),
 	(580, 530, 'instance_sunwell_plateau', 1),
@@ -92,7 +92,7 @@ INSERT INTO `instance_template` (`map`, `parent`, `script`, `allowMount`) VALUES
 	(599, 571, 'instance_halls_of_stone', 0),
 	(601, 571, 'instance_azjol_nerub', 0),
 	(619, 571, 'instance_ahnkahet', 0),
-	(600, 571, 'instance_drak_tharon', 1),
+	(600, 571, 'instance_drak_tharon_keep', 1),
 	(595, 1, 'instance_culling_of_stratholme', 1),
 	(616, 571, 'instance_eye_of_eternity', 0),
 	(624, 571, 'instance_archavon', 0),

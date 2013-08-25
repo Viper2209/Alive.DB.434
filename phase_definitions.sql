@@ -10,20 +10,20 @@
 /*!40014 SET @OLD_FOREIGN_KEY_CHECKS=@@FOREIGN_KEY_CHECKS, FOREIGN_KEY_CHECKS=0 */;
 /*!40101 SET @OLD_SQL_MODE=@@SQL_MODE, SQL_MODE='NO_AUTO_VALUE_ON_ZERO' */;
 
--- Exportiere Struktur von Tabelle world2.phase_definitions
+-- Exportiere Struktur von Tabelle world3.phase_definitions
 DROP TABLE IF EXISTS `phase_definitions`;
 CREATE TABLE IF NOT EXISTS `phase_definitions` (
   `zoneId` mediumint(7) unsigned NOT NULL DEFAULT '0',
   `entry` smallint(5) unsigned NOT NULL AUTO_INCREMENT,
   `phasemask` bigint(20) unsigned NOT NULL DEFAULT '0',
-  `phaseId` tinyint(3) unsigned NOT NULL DEFAULT '0',
+  `phaseId` smallint(5) unsigned NOT NULL DEFAULT '0',
   `terrainswapmap` smallint(5) unsigned NOT NULL DEFAULT '0',
   `flags` tinyint(3) unsigned DEFAULT '0',
   `comment` text,
   PRIMARY KEY (`zoneId`,`entry`)
 ) ENGINE=MyISAM DEFAULT CHARSET=utf8;
 
--- Exportiere Daten aus Tabelle world2.phase_definitions: 11 rows
+-- Exportiere Daten aus Tabelle world3.phase_definitions: 11 rows
 DELETE FROM `phase_definitions`;
 /*!40000 ALTER TABLE `phase_definitions` DISABLE KEYS */;
 INSERT INTO `phase_definitions` (`zoneId`, `entry`, `phasemask`, `phaseId`, `terrainswapmap`, `flags`, `comment`) VALUES

@@ -10,7 +10,7 @@
 /*!40014 SET @OLD_FOREIGN_KEY_CHECKS=@@FOREIGN_KEY_CHECKS, FOREIGN_KEY_CHECKS=0 */;
 /*!40101 SET @OLD_SQL_MODE=@@SQL_MODE, SQL_MODE='NO_AUTO_VALUE_ON_ZERO' */;
 
--- Exportiere Struktur von Tabelle world2.game_event_creature_quest
+-- Exportiere Struktur von Tabelle world3.game_event_creature_quest
 DROP TABLE IF EXISTS `game_event_creature_quest`;
 CREATE TABLE IF NOT EXISTS `game_event_creature_quest` (
   `eventEntry` tinyint(3) unsigned NOT NULL COMMENT 'Entry of the game event.',
@@ -19,7 +19,7 @@ CREATE TABLE IF NOT EXISTS `game_event_creature_quest` (
   PRIMARY KEY (`id`,`quest`)
 ) ENGINE=MyISAM DEFAULT CHARSET=utf8 COMMENT='CTDB Creatures with quests';
 
--- Exportiere Daten aus Tabelle world2.game_event_creature_quest: 202 rows
+-- Exportiere Daten aus Tabelle world3.game_event_creature_quest: 198 rows
 DELETE FROM `game_event_creature_quest`;
 /*!40000 ALTER TABLE `game_event_creature_quest` DISABLE KEYS */;
 INSERT INTO `game_event_creature_quest` (`eventEntry`, `id`, `quest`) VALUES
@@ -137,25 +137,21 @@ INSERT INTO `game_event_creature_quest` (`eventEntry`, `id`, `quest`) VALUES
 	(21, 15351, 11337),
 	(19, 15351, 11338),
 	(30, 15351, 13405),
-	(42, 15351, 14163),
 	(20, 32626, 11335),
 	(18, 32626, 11336),
 	(21, 32626, 11337),
 	(19, 32626, 11338),
 	(30, 32626, 13405),
-	(42, 32626, 14163),
 	(20, 15350, 11339),
 	(18, 15350, 11340),
 	(21, 15350, 11341),
 	(19, 15350, 11342),
 	(30, 15350, 13407),
-	(42, 15350, 14164),
 	(20, 32615, 11339),
 	(18, 32615, 11340),
 	(21, 32615, 11341),
 	(19, 32615, 11342),
 	(30, 32615, 13407),
-	(42, 32615, 14164),
 	(12, 5111, 8353),
 	(12, 6741, 8354),
 	(12, 6740, 8356),

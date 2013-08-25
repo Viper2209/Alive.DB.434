@@ -10,7 +10,7 @@
 /*!40014 SET @OLD_FOREIGN_KEY_CHECKS=@@FOREIGN_KEY_CHECKS, FOREIGN_KEY_CHECKS=0 */;
 /*!40101 SET @OLD_SQL_MODE=@@SQL_MODE, SQL_MODE='NO_AUTO_VALUE_ON_ZERO' */;
 
--- Exportiere Struktur von Tabelle world2.disables
+-- Exportiere Struktur von Tabelle world3.disables
 DROP TABLE IF EXISTS `disables`;
 CREATE TABLE IF NOT EXISTS `disables` (
   `sourceType` int(10) unsigned NOT NULL,
@@ -22,7 +22,7 @@ CREATE TABLE IF NOT EXISTS `disables` (
   PRIMARY KEY (`sourceType`,`entry`)
 ) ENGINE=MyISAM DEFAULT CHARSET=utf8;
 
--- Exportiere Daten aus Tabelle world2.disables: 463 rows
+-- Exportiere Daten aus Tabelle world3.disables: 508 rows
 DELETE FROM `disables`;
 /*!40000 ALTER TABLE `disables` DISABLE KEYS */;
 INSERT INTO `disables` (`sourceType`, `entry`, `flags`, `params_0`, `params_1`, `comment`) VALUES
@@ -149,12 +149,6 @@ INSERT INTO `disables` (`sourceType`, `entry`, `flags`, `params_0`, `params_1`, 
 	(4, 10075, 0, '', '', ''),
 	(4, 10077, 0, '', '', ''),
 	(4, 10079, 0, '', '', ''),
-	(4, 10082, 0, '', '', ''),
-	(4, 10083, 0, '', '', ''),
-	(4, 10084, 0, '', '', ''),
-	(4, 10085, 0, '', '', ''),
-	(4, 10086, 0, '', '', ''),
-	(4, 10087, 0, '', '', ''),
 	(4, 10088, 0, '', '', ''),
 	(4, 10089, 0, '', '', ''),
 	(4, 10090, 0, '', '', ''),
@@ -488,7 +482,58 @@ INSERT INTO `disables` (`sourceType`, `entry`, `flags`, `params_0`, `params_1`, 
 	(1, 13303, 0, '', '', 'Deprecated quest'),
 	(0, 758, 8, '', '', 'Spell for deprecated item 1254'),
 	(0, 23480, 8, '', '', 'Spell for deprecated item 1254'),
-	(0, 16378, 64, '', '', 'Ignore LOS for Krakles Thermometer');
+	(0, 16378, 64, '', '', 'Ignore LOS for Krakles Thermometer'),
+	(0, 32205, 64, '', '', 'Ignore LOS for Place Mag\'har Battle Standard'),
+	(0, 31696, 64, '', '', 'Ignore LOS on Thane'),
+	(0, 32979, 64, '', '', 'Ignore LOS on Ignite Horde Siege Engine'),
+	(1, 168, 0, '0', '0', 'Disable quest Collecting Memories (Removed in 4.0.3a)'),
+	(1, 167, 0, '0', '0', 'Disable quest Oh Brother. . . (Removed in 4.0.3a)'),
+	(1, 65, 0, '0', '0', 'Disable quest The Defias Brotherhood (Removed in 4.0.3a)'),
+	(1, 132, 0, '0', '0', 'Disable quest The Defias Brotherhood (Removed in 4.0.3a)'),
+	(1, 135, 0, '0', '0', 'Disable quest The Defias Brotherhood (Removed in 4.0.3a)'),
+	(1, 141, 0, '0', '0', 'Disable quest The Defias Brotherhood (Removed in 4.0.3a)'),
+	(1, 142, 0, '0', '0', 'Disable quest The Defias Brotherhood (Removed in 4.0.3a)'),
+	(1, 155, 0, '0', '0', 'Disable quest The Defias Brotherhood (Removed in 4.0.3a)'),
+	(1, 166, 0, '0', '0', 'Disable quest The Defias Brotherhood (Removed in 4.0.3a)'),
+	(1, 20, 0, '0', '0', 'Disable quest Blackrock Menace (Removed in 4.0.3a)'),
+	(1, 115, 0, '0', '0', 'Disable quest Shadow Magic (Removed in 4.0.3a)'),
+	(1, 19, 0, '0', '0', 'Disable quest Tharil\'zun (Removed in 4.0.3a)'),
+	(1, 48, 0, '0', '0', 'Disable quest Sweet Amber (Removed in 4.0.3a)'),
+	(1, 49, 0, '0', '0', 'Disable quest Sweet Amber (Removed in 4.0.3a)'),
+	(1, 50, 0, '0', '0', 'Disable quest Sweet Amber (Removed in 4.0.3a)'),
+	(1, 51, 0, '0', '0', 'Disable quest Sweet Amber (Removed in 4.0.3a)'),
+	(1, 53, 0, '0', '0', 'Disable quest Sweet Amber (Removed in 4.0.3a)'),
+	(1, 512, 0, '0', '0', 'Disable quest Noble Deaths (Removed in 4.0.3a)'),
+	(1, 484, 0, '0', '0', 'Disable quest Young Crocolisk Skins (Removed in 4.0.3a)'),
+	(1, 471, 0, '0', '0', 'Disable quest Apprentice\'s Duties (Removed in 4.0.3a)'),
+	(1, 473, 0, '0', '0', 'Disable quest Report to Captain Stoutfist (Removed in 4.0.3a)'),
+	(1, 464, 0, '0', '0', 'Disable quest War Banners (Removed in 4.0.3a)'),
+	(1, 465, 0, '0', '0', 'Disable quest Nek\'rosh\'s Gambit (Removed in 4.0.3a)'),
+	(1, 474, 0, '0', '0', 'Disable quest Defeat Nek\'rosh (Removed in 4.0.3a)'),
+	(1, 381, 0, '0', '0', 'Disable quest The Scarlet Crusade (Removed in 4.0.3a)'),
+	(1, 447, 0, '0', '0', 'Disable quest A Recipe For Death (Removed in 4.0.3a)'),
+	(1, 450, 0, '0', '0', 'Disable quest A Recipe For Death (Removed in 4.0.3a)'),
+	(1, 451, 0, '0', '0', 'Disable quest A Recipe For Death (Removed in 4.0.3a)'),
+	(1, 437, 0, '0', '0', 'Disable quest The Dead Fields (Removed in 4.0.3a)'),
+	(1, 438, 0, '0', '0', 'Disable quest The Decrepit Ferry (Removed in 4.0.3a)'),
+	(1, 439, 0, '0', '0', 'Disable quest Rot Hide Clues (Removed in 4.0.3a)'),
+	(1, 443, 0, '0', '0', 'Disable quest Rot Hide Ichor (Removed in 4.0.3a)'),
+	(1, 444, 0, '0', '0', 'Disable quest Rot Hide Origins (Removed in 4.0.3a)'),
+	(1, 446, 0, '0', '0', 'Disable quest Thule Ravenclaw (Removed in 4.0.3a)'),
+	(1, 448, 0, '0', '0', 'Disable quest Report to Hadrec (Removed in 4.0.3a)'),
+	(1, 442, 0, '0', '0', 'Disable quest Assault on Fenris Isle (Removed in 4.0.3a)'),
+	(1, 421, 0, '0', '0', 'Disable quest Prove Your Worth (Removed in 4.0.3a)'),
+	(1, 422, 0, '0', '0', 'Disable quest Arugal\'s Folly (Removed in 4.0.3a)'),
+	(1, 423, 0, '0', '0', 'Disable quest Arugal\'s Folly (Removed in 4.0.3a)'),
+	(1, 424, 0, '0', '0', 'Disable quest Arugal\'s Folly (Removed in 4.0.3a)'),
+	(1, 99, 0, '0', '0', 'Disable quest Arugal\'s Folly (Removed in 4.0.3a)'),
+	(1, 385, 0, '0', '0', 'Disable quest Crocolisk Hunting (Removed in 4.0.3a)'),
+	(1, 388, 0, '0', '0', 'Disable quest The Color of Blood (Removed in 4.0.3a)'),
+	(1, 122, 0, '0', '0', 'Disable quest Underbelly Scales (Removed in 4.0.3a)'),
+	(1, 91, 0, '0', '0', 'Disable quest Solomon\'s Law (Removed in 4.0.3a)'),
+	(1, 89, 0, '0', '0', 'Disable quest The Everstill Bridge (Removed in 4.0.3a)'),
+	(0, 38729, 64, '', '', 'Ignore LOS on Rod of Purification'),
+	(0, 38736, 64, '', '', 'Ignore LOS on Rod of Purification');
 /*!40000 ALTER TABLE `disables` ENABLE KEYS */;
 /*!40101 SET SQL_MODE=IFNULL(@OLD_SQL_MODE, '') */;
 /*!40014 SET FOREIGN_KEY_CHECKS=IF(@OLD_FOREIGN_KEY_CHECKS IS NULL, 1, @OLD_FOREIGN_KEY_CHECKS) */;

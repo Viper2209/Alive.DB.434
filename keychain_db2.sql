@@ -10,7 +10,7 @@
 /*!40014 SET @OLD_FOREIGN_KEY_CHECKS=@@FOREIGN_KEY_CHECKS, FOREIGN_KEY_CHECKS=0 */;
 /*!40101 SET @OLD_SQL_MODE=@@SQL_MODE, SQL_MODE='NO_AUTO_VALUE_ON_ZERO' */;
 
--- Exportiere Struktur von Tabelle world2.keychain_db2
+-- Exportiere Struktur von Tabelle world3.keychain_db2
 DROP TABLE IF EXISTS `keychain_db2`;
 CREATE TABLE IF NOT EXISTS `keychain_db2` (
   `keyId` int(10) unsigned NOT NULL DEFAULT '0',
@@ -49,7 +49,7 @@ CREATE TABLE IF NOT EXISTS `keychain_db2` (
   PRIMARY KEY (`keyId`)
 ) ENGINE=MyISAM DEFAULT CHARSET=utf8;
 
--- Exportiere Daten aus Tabelle world2.keychain_db2: 4 rows
+-- Exportiere Daten aus Tabelle world3.keychain_db2: 4 rows
 DELETE FROM `keychain_db2`;
 /*!40000 ALTER TABLE `keychain_db2` DISABLE KEYS */;
 INSERT INTO `keychain_db2` (`keyId`, `k1`, `k2`, `k3`, `k4`, `k5`, `k6`, `k7`, `k8`, `k9`, `k10`, `k11`, `k12`, `k13`, `k14`, `k15`, `k16`, `k17`, `k18`, `k19`, `k20`, `k21`, `k22`, `k23`, `k24`, `k25`, `k26`, `k27`, `k28`, `k29`, `k30`, `k31`, `k32`) VALUES

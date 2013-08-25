@@ -10,7 +10,7 @@
 /*!40014 SET @OLD_FOREIGN_KEY_CHECKS=@@FOREIGN_KEY_CHECKS, FOREIGN_KEY_CHECKS=0 */;
 /*!40101 SET @OLD_SQL_MODE=@@SQL_MODE, SQL_MODE='NO_AUTO_VALUE_ON_ZERO' */;
 
--- Exportiere Struktur von Tabelle world2.game_event_model_equip
+-- Exportiere Struktur von Tabelle world3.game_event_model_equip
 DROP TABLE IF EXISTS `game_event_model_equip`;
 CREATE TABLE IF NOT EXISTS `game_event_model_equip` (
   `eventEntry` tinyint(4) NOT NULL COMMENT 'Entry of the game event.',
@@ -20,7 +20,7 @@ CREATE TABLE IF NOT EXISTS `game_event_model_equip` (
   PRIMARY KEY (`guid`)
 ) ENGINE=MyISAM DEFAULT CHARSET=utf8 COMMENT='CTDB Game event model equip';
 
--- Exportiere Daten aus Tabelle world2.game_event_model_equip: 0 rows
+-- Exportiere Daten aus Tabelle world3.game_event_model_equip: 0 rows
 DELETE FROM `game_event_model_equip`;
 /*!40000 ALTER TABLE `game_event_model_equip` DISABLE KEYS */;
 /*!40000 ALTER TABLE `game_event_model_equip` ENABLE KEYS */;

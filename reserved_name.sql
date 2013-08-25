@@ -10,14 +10,14 @@
 /*!40014 SET @OLD_FOREIGN_KEY_CHECKS=@@FOREIGN_KEY_CHECKS, FOREIGN_KEY_CHECKS=0 */;
 /*!40101 SET @OLD_SQL_MODE=@@SQL_MODE, SQL_MODE='NO_AUTO_VALUE_ON_ZERO' */;
 
--- Exportiere Struktur von Tabelle world2.reserved_name
+-- Exportiere Struktur von Tabelle world3.reserved_name
 DROP TABLE IF EXISTS `reserved_name`;
 CREATE TABLE IF NOT EXISTS `reserved_name` (
   `name` varchar(12) NOT NULL DEFAULT '',
   PRIMARY KEY (`name`)
 ) ENGINE=MyISAM DEFAULT CHARSET=utf8 COMMENT='Player Reserved Names';
 
--- Exportiere Daten aus Tabelle world2.reserved_name: 5 rows
+-- Exportiere Daten aus Tabelle world3.reserved_name: 5 rows
 DELETE FROM `reserved_name`;
 /*!40000 ALTER TABLE `reserved_name` DISABLE KEYS */;
 INSERT INTO `reserved_name` (`name`) VALUES

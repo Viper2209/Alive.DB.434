@@ -10,7 +10,7 @@
 /*!40014 SET @OLD_FOREIGN_KEY_CHECKS=@@FOREIGN_KEY_CHECKS, FOREIGN_KEY_CHECKS=0 */;
 /*!40101 SET @OLD_SQL_MODE=@@SQL_MODE, SQL_MODE='NO_AUTO_VALUE_ON_ZERO' */;
 
--- Exportiere Struktur von Tabelle world2.instance_encounters
+-- Exportiere Struktur von Tabelle world3.instance_encounters
 DROP TABLE IF EXISTS `instance_encounters`;
 CREATE TABLE IF NOT EXISTS `instance_encounters` (
   `entry` int(10) unsigned NOT NULL COMMENT 'Unique entry from DungeonEncounter.dbc',
@@ -21,7 +21,7 @@ CREATE TABLE IF NOT EXISTS `instance_encounters` (
   PRIMARY KEY (`entry`)
 ) ENGINE=MyISAM DEFAULT CHARSET=utf8;
 
--- Exportiere Daten aus Tabelle world2.instance_encounters: 774 rows
+-- Exportiere Daten aus Tabelle world3.instance_encounters: 774 rows
 DELETE FROM `instance_encounters`;
 /*!40000 ALTER TABLE `instance_encounters` DISABLE KEYS */;
 INSERT INTO `instance_encounters` (`entry`, `creditType`, `creditEntry`, `lastEncounterDungeon`, `comment`) VALUES
@@ -329,8 +329,8 @@ INSERT INTO `instance_encounters` (`entry`, `creditType`, `creditEntry`, `lastEn
 	(536, 0, 1696, 0, 'Targorr the Dread'),
 	(537, 0, 1666, 0, 'Kam Deepfury'),
 	(538, 0, 1717, 0, 'Hamhock'),
-	(539, 0, 1716, 0, 'Bazil Thredd'),
-	(540, 0, 1663, 12, 'Dextren Ward'),
+	(539, 0, 1716, 12, 'Bazil Thredd'),
+	(540, 0, 1663, 0, 'Dextren Ward'),
 	(541, 0, 29315, 0, 'First Prisoner'),
 	(542, 0, 29315, 0, 'First Prisoner'),
 	(543, 0, 29316, 0, 'Second Prisoner'),

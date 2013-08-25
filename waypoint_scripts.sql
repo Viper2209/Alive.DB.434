@@ -10,7 +10,7 @@
 /*!40014 SET @OLD_FOREIGN_KEY_CHECKS=@@FOREIGN_KEY_CHECKS, FOREIGN_KEY_CHECKS=0 */;
 /*!40101 SET @OLD_SQL_MODE=@@SQL_MODE, SQL_MODE='NO_AUTO_VALUE_ON_ZERO' */;
 
--- Exportiere Struktur von Tabelle world2.waypoint_scripts
+-- Exportiere Struktur von Tabelle world3.waypoint_scripts
 DROP TABLE IF EXISTS `waypoint_scripts`;
 CREATE TABLE IF NOT EXISTS `waypoint_scripts` (
   `id` int(11) unsigned NOT NULL DEFAULT '0',
@@ -27,7 +27,7 @@ CREATE TABLE IF NOT EXISTS `waypoint_scripts` (
   PRIMARY KEY (`guid`)
 ) ENGINE=MyISAM DEFAULT CHARSET=utf8;
 
--- Exportiere Daten aus Tabelle world2.waypoint_scripts: 690 rows
+-- Exportiere Daten aus Tabelle world3.waypoint_scripts: 690 rows
 DELETE FROM `waypoint_scripts`;
 /*!40000 ALTER TABLE `waypoint_scripts` DISABLE KEYS */;
 INSERT INTO `waypoint_scripts` (`id`, `delay`, `command`, `datalong`, `datalong2`, `dataint`, `x`, `y`, `z`, `o`, `guid`) VALUES

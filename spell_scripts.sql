@@ -10,7 +10,7 @@
 /*!40014 SET @OLD_FOREIGN_KEY_CHECKS=@@FOREIGN_KEY_CHECKS, FOREIGN_KEY_CHECKS=0 */;
 /*!40101 SET @OLD_SQL_MODE=@@SQL_MODE, SQL_MODE='NO_AUTO_VALUE_ON_ZERO' */;
 
--- Exportiere Struktur von Tabelle world2.spell_scripts
+-- Exportiere Struktur von Tabelle world3.spell_scripts
 DROP TABLE IF EXISTS `spell_scripts`;
 CREATE TABLE IF NOT EXISTS `spell_scripts` (
   `id` mediumint(8) unsigned NOT NULL DEFAULT '0',
@@ -26,7 +26,7 @@ CREATE TABLE IF NOT EXISTS `spell_scripts` (
   `o` float NOT NULL DEFAULT '0'
 ) ENGINE=MyISAM DEFAULT CHARSET=utf8;
 
--- Exportiere Daten aus Tabelle world2.spell_scripts: 263 rows
+-- Exportiere Daten aus Tabelle world3.spell_scripts: 265 rows
 DELETE FROM `spell_scripts`;
 /*!40000 ALTER TABLE `spell_scripts` DISABLE KEYS */;
 INSERT INTO `spell_scripts` (`id`, `effIndex`, `delay`, `command`, `datalong`, `datalong2`, `dataint`, `x`, `y`, `z`, `o`) VALUES
@@ -220,8 +220,7 @@ INSERT INTO `spell_scripts` (`id`, `effIndex`, `delay`, `command`, `datalong`, `
 	(28698, 0, 0, 15, 28694, 2, 1, 0, 0, 0, 0),
 	(43375, 0, 0, 15, 43377, 1, 0, 0, 0, 0, 0),
 	(47405, 0, 0, 15, 47406, 2, 0, 0, 0, 0, 0),
-	(50630, 0, 0, 15, 52203, 1, 0, 0, 0, 0, 0),
-	(50630, 0, 1, 15, 52220, 1, 0, 0, 0, 0, 0),
+	(50630, 0, 0, 14, 46598, 0, 0, 0, 0, 0, 0),
 	(31231, 0, 0, 15, 45182, 1, 1, 0, 0, 0, 0),
 	(52741, 0, 0, 15, 54415, 3, 1, 0, 0, 0, 0),
 	(52741, 0, 0, 8, 29398, 0, 0, 0, 0, 0, 0),
@@ -292,7 +291,10 @@ INSERT INTO `spell_scripts` (`id`, `effIndex`, `delay`, `command`, `datalong`, `
 	(47129, 0, 5, 10, 25324, 60000, 0, 0, 0, 0, 0),
 	(49899, 0, 0, 1, 406, 0, 0, 0, 0, 0, 0),
 	(31550, 0, 0, 18, 0, 0, 0, 0, 0, 0, 0),
-	(57884, 1, 0, 14, 57889, 0, 0, 0, 0, 0, 0);
+	(57884, 1, 0, 14, 57889, 0, 0, 0, 0, 0, 0),
+	(47615, 0, 0, 14, 47473, 0, 0, 0, 0, 0, 0),
+	(47638, 0, 0, 14, 47636, 0, 0, 0, 0, 0, 0),
+	(53010, 0, 0, 14, 52989, 0, 0, 0, 0, 0, 0);
 /*!40000 ALTER TABLE `spell_scripts` ENABLE KEYS */;
 /*!40101 SET SQL_MODE=IFNULL(@OLD_SQL_MODE, '') */;
 /*!40014 SET FOREIGN_KEY_CHECKS=IF(@OLD_FOREIGN_KEY_CHECKS IS NULL, 1, @OLD_FOREIGN_KEY_CHECKS) */;

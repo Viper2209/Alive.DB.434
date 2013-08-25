@@ -10,7 +10,7 @@
 /*!40014 SET @OLD_FOREIGN_KEY_CHECKS=@@FOREIGN_KEY_CHECKS, FOREIGN_KEY_CHECKS=0 */;
 /*!40101 SET @OLD_SQL_MODE=@@SQL_MODE, SQL_MODE='NO_AUTO_VALUE_ON_ZERO' */;
 
--- Exportiere Struktur von Tabelle world2.creature_transport
+-- Exportiere Struktur von Tabelle world3.creature_transport
 DROP TABLE IF EXISTS `creature_transport`;
 CREATE TABLE IF NOT EXISTS `creature_transport` (
   `guid` int(11) NOT NULL AUTO_INCREMENT COMMENT 'GUID of NPC on transport - not the same as creature.guid',
@@ -25,7 +25,7 @@ CREATE TABLE IF NOT EXISTS `creature_transport` (
   UNIQUE KEY `entry` (`transport_entry`,`guid`)
 ) ENGINE=MyISAM DEFAULT CHARSET=utf8;
 
--- Exportiere Daten aus Tabelle world2.creature_transport: 287 rows
+-- Exportiere Daten aus Tabelle world3.creature_transport: 287 rows
 DELETE FROM `creature_transport`;
 /*!40000 ALTER TABLE `creature_transport` DISABLE KEYS */;
 INSERT INTO `creature_transport` (`guid`, `transport_entry`, `npc_entry`, `TransOffsetX`, `TransOffsetY`, `TransOffsetZ`, `TransOffsetO`, `emote`) VALUES

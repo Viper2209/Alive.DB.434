@@ -10,7 +10,7 @@
 /*!40014 SET @OLD_FOREIGN_KEY_CHECKS=@@FOREIGN_KEY_CHECKS, FOREIGN_KEY_CHECKS=0 */;
 /*!40101 SET @OLD_SQL_MODE=@@SQL_MODE, SQL_MODE='NO_AUTO_VALUE_ON_ZERO' */;
 
--- Exportiere Struktur von Tabelle world2.guild_finder_guild_settings
+-- Exportiere Struktur von Tabelle world3.guild_finder_guild_settings
 DROP TABLE IF EXISTS `guild_finder_guild_settings`;
 CREATE TABLE IF NOT EXISTS `guild_finder_guild_settings` (
   `guildId` int(10) unsigned NOT NULL,
@@ -23,7 +23,7 @@ CREATE TABLE IF NOT EXISTS `guild_finder_guild_settings` (
   PRIMARY KEY (`guildId`)
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
--- Exportiere Daten aus Tabelle world2.guild_finder_guild_settings: ~0 rows (ungefähr)
+-- Exportiere Daten aus Tabelle world3.guild_finder_guild_settings: ~0 rows (ungefähr)
 DELETE FROM `guild_finder_guild_settings`;
 /*!40000 ALTER TABLE `guild_finder_guild_settings` DISABLE KEYS */;
 /*!40000 ALTER TABLE `guild_finder_guild_settings` ENABLE KEYS */;

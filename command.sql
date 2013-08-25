@@ -10,7 +10,7 @@
 /*!40014 SET @OLD_FOREIGN_KEY_CHECKS=@@FOREIGN_KEY_CHECKS, FOREIGN_KEY_CHECKS=0 */;
 /*!40101 SET @OLD_SQL_MODE=@@SQL_MODE, SQL_MODE='NO_AUTO_VALUE_ON_ZERO' */;
 
--- Exportiere Struktur von Tabelle world2.command
+-- Exportiere Struktur von Tabelle world3.command
 DROP TABLE IF EXISTS `command`;
 CREATE TABLE IF NOT EXISTS `command` (
   `name` varchar(50) NOT NULL DEFAULT '',
@@ -19,7 +19,7 @@ CREATE TABLE IF NOT EXISTS `command` (
   PRIMARY KEY (`name`)
 ) ENGINE=MyISAM DEFAULT CHARSET=utf8 ROW_FORMAT=FIXED COMMENT='Chat System';
 
--- Exportiere Daten aus Tabelle world2.command: 525 rows
+-- Exportiere Daten aus Tabelle world3.command: 537 rows
 DELETE FROM `command`;
 /*!40000 ALTER TABLE `command` DISABLE KEYS */;
 INSERT INTO `command` (`name`, `security`, `help`) VALUES
@@ -242,18 +242,17 @@ INSERT INTO `command` (`name`, `security`, `help`) VALUES
 	('reload autobroadcast', 3, 'Syntax: .reload autobroadcast\nReload autobroadcast table.'),
 	('reload command', 3, 'Syntax: .reload command\nReload command table.'),
 	('reload config', 3, 'Syntax: .reload config\r\n\r\nReload config settings (by default stored in trinityd.conf). Not all settings can be change at reload: some new setting values will be ignored until restart, some values will applied with delay or only to new objects/maps, some values will explicitly rejected to change at reload.'),
-	('reload creature_involvedrelation', 3, 'Syntax: .reload creature_involvedrelation\nReload creature_involvedrelation table.'),
+	('reload creature_questender', 3, 'Syntax: .reload creature_questender\nReload creature_questender table.'),
 	('reload creature_linked_respawn', 2, 'Syntax: .reload creature_linked_respawn\r\nReload creature_linked_respawn table.'),
 	('reload creature_loot_template', 3, 'Syntax: .reload creature_loot_template\nReload creature_loot_template table.'),
-	('reload creature_questrelation', 3, 'Syntax: .reload creature_questrelation\nReload creature_questrelation table.'),
+	('reload creature_queststarter', 3, 'Syntax: .reload creature_queststarter\nReload creature_queststarter table.'),
 	('reload disenchant_loot_template', 3, 'Syntax: .reload disenchant_loot_template\nReload disenchant_loot_template table.'),
 	('reload event_scripts', 3, 'Syntax: .reload event_scripts\nReload event_scripts table.'),
 	('reload fishing_loot_template', 3, 'Syntax: .reload fishing_loot_template\nReload fishing_loot_template table.'),
 	('reload game_graveyard_zone', 3, 'Syntax: .reload game_graveyard_zone\nReload game_graveyard_zone table.'),
 	('reload game_tele', 3, 'Syntax: .reload game_tele\nReload game_tele table.'),
-	('reload gameobject_involvedrelation', 3, 'Syntax: .reload gameobject_involvedrelation\nReload gameobject_involvedrelation table.'),
 	('reload gameobject_loot_template', 3, 'Syntax: .reload gameobject_loot_template\nReload gameobject_loot_template table.'),
-	('reload gameobject_questrelation', 3, 'Syntax: .reload gameobject_questrelation\nReload gameobject_questrelation table.'),
+	('reload gameobject_queststarter', 3, 'Syntax: .reload gameobject_queststarter\nReload gameobject_queststarter table.'),
 	('rbac account', 3, 'Syntax: .rbac account [$account]\n\nView permissions of selected player or given account\nNote: Only those that affect current realm\n\nNote: Shows real permissions after checking group and roles'),
 	('reload gm_tickets', 3, 'Syntax: .reload gm_tickets\nReload gm_tickets table.'),
 	('reload item_enchantment_template', 3, 'Syntax: .reload item_enchantment_template\nReload item_enchantment_template table.'),
@@ -379,7 +378,7 @@ INSERT INTO `command` (`name`, `security`, `help`) VALUES
 	('gobject info', 2, 'Syntax: .gobject info [$object_entry]\r\n\r\nQuery Gameobject information for selected gameobject or given entry.'),
 	('reload creature_template', 3, 'Syntax: .reload creature_template $entry\r\nReload the specified creature\'s template.'),
 	('character deleted delete', 4, 'Syntax: .character deleted delete #guid|$name\r\n\r\nCompletely deletes the selected characters.\r\nIf $name is supplied, only characters with that string in their name will be deleted, if #guid is supplied, only the character with that GUID will be deleted.'),
-	('reload creature_onkill_reputation', 3, 'Syntax: .reload creature_onkill_reputation\r\nReload creature_onkill_reputation table.'),
+	('reload creature_onkill_reward', 3, 'Syntax: .reload creature_onkill_reputation\r\nReload creature_onkill_reputation table.'),
 	('reload conditions', 3, 'Reload conditions table.'),
 	('debug phase', 1, 'Syntax: .debug phase\r\n\r\nSends a phase debug report of a player to you.'),
 	('character deleted list', 3, 'Syntax: .character deleted list [#guid|$name]\r\n\r\nShows a list with all deleted characters.\r\nIf $name is supplied, only characters with that string in their name will be selected, if #guid is supplied, only the character with that GUID will be selected.'),
@@ -531,23 +530,36 @@ INSERT INTO `command` (`name`, `security`, `help`) VALUES
 	('group list', 3, 'Syntax: .group list [$CharacterName] \r\nLists all the members of the group/party the player is in.'),
 	('disable add mmap', 3, 'Syntax: .disable add mmap $entry $flag $comment'),
 	('disable remove mmap', 3, 'Syntax: .disable remove mmap $entry'),
-	('.rbac account', 3, 'Syntax: .rbac account [$account]\n\nView permissions of selected player or given account\nNote: Only those that affect current realm\n\nNote: Shows real permissions after checking group and roles'),
-	('.rbac account group', 3, 'Syntax: .rbac account group [$account]\n\nView groups of selected player or given account\nNote: Only those that affect current realm'),
-	('.rbac account group add', 3, 'Syntax: .rbac account group add [$account] #id [#realmId]\n\nAdd a group to selected player or given account.\n\n#reamID may be -1 for all realms.'),
+	('.rbac list groups', 3, 'Syntax: .rbac list groups [$id]\n\nView list of all groups. If $id is given will show group info and his inherited roles.'),
+	('.rbac account permission revoke', 3, 'Syntax: .rbac account permission revoke [$account] #id\n\nRemove a permission from an account\n\nNote: Removes the permission from granted or denied permissions'),
+	('.rbac account permission deny', 3, 'Syntax: .rbac account permission deny [$account] #id [#realmId]\n\nDeny a permission to selected player or given account.\n\n#reamID may be -1 for all realms.'),
+	('.rbac account permission grant', 3, 'Syntax: .rbac account permission grant [$account] #id [#realmId]\n\nGrant a permission to selected player or given account.\n\n#reamID may be -1 for all realms.'),
+	('.rbac account permission', 3, 'Syntax: .rbac account permission [$account]\n\nView permissions of selected player or given account\nNote: Only those that affect current realm\nNote: Only those directly granted or denied, does not include inherited permissions from roles'),
 	('.rbac account group remove', 3, 'Syntax: .rbac account group remove [$account] #id\n\nRemove a group from selected player or given account.'),
 	('.rbac account role', 3, 'Syntax: .rbac account role [$account]\n\nView roles of selected player or given account\nNote: Only those that affect current realm\nNote: Only those directly granted or denied, does not include inherited roles from groups'),
 	('.rbac account role grant', 3, 'Syntax: .rbac account role grant [$account] #id [#realmId]\n\nGrant a role to selected player or given account.\n\n#reamID may be -1 for all realms.'),
 	('.rbac account role deny', 3, 'Syntax: .rbac account role deny [$account] #id [#realmId]\n\nDeny a role to selected player or given account.\n\n#reamID may be -1 for all realms.'),
 	('.rbac account role revoke', 3, 'Syntax: .rbac account role revoke [$account] #id\n\nRemove a role from an account\n\nNote: Removes the role from granted or denied roles'),
-	('.rbac account permission', 3, 'Syntax: .rbac account permission [$account]\n\nView permissions of selected player or given account\nNote: Only those that affect current realm\nNote: Only those directly granted or denied, does not include inherited permissions from roles'),
-	('.rbac account permission grant', 3, 'Syntax: .rbac account permission grant [$account] #id [#realmId]\n\nGrant a permission to selected player or given account.\n\n#reamID may be -1 for all realms.'),
-	('.rbac account permission deny', 3, 'Syntax: .rbac account permission deny [$account] #id [#realmId]\n\nDeny a permission to selected player or given account.\n\n#reamID may be -1 for all realms.'),
-	('.rbac account permission revoke', 3, 'Syntax: .rbac account permission revoke [$account] #id\n\nRemove a permission from an account\n\nNote: Removes the permission from granted or denied permissions'),
-	('.rbac list groups', 3, 'Syntax: .rbac list groups [$id]\n\nView list of all groups. If $id is given will show group info and his inherited roles.'),
+	('.rbac account group add', 3, 'Syntax: .rbac account group add [$account] #id [#realmId]\n\nAdd a group to selected player or given account.\n\n#reamID may be -1 for all realms.'),
+	('.rbac account', 3, 'Syntax: .rbac account [$account]\n\nView permissions of selected player or given account\nNote: Only those that affect current realm\n\nNote: Shows real permissions after checking group and roles'),
+	('.rbac account group', 3, 'Syntax: .rbac account group [$account]\n\nView groups of selected player or given account\nNote: Only those that affect current realm'),
+	('reload creature_summon_groups', 3, 'Syntax: .reload creature_summon_groups\nReload creature_summon_groups table.'),
+	('reload rbac', 3, 'Syntax: .reload rbac\nReload rbac system.'),
+	('deserter bg remove', 3, 'Syntax: .deserter bg remove \n\n Removes the bg deserter debuff from your target.'),
+	('deserter instance add', 3, 'Syntax: .deserter instance add $time \n\n Adds the instance deserter debuff to your target with $time duration.'),
+	('deserter instance remove', 3, 'Syntax: .deserter instance remove \n\n Removes the instance deserter debuff from your target.'),
+	('deserter bg add', 3, 'Syntax: .deserter bg add $time \n\n Adds the bg deserter debuff to your target with $time duration.'),
+	('list mail', 3, 'Syntax: .list mail $character\nList of mails the character received.'),
 	('.rbac list roles', 3, 'Syntax: .rbac list roles [$id]\n\nView list of all roles. If $id is given will show role info and his inherited permissions.'),
 	('.rbac list permissions', 3, 'Syntax: .rbac list permissions [$id]\n\nView list of all permissions. If $id is given will show only info for that permission.'),
-	('reload creature_summon_groups', 3, 'Syntax: .reload creature_summon_groups\nReload creature_summon_groups table.'),
-	('reload rbac', 3, 'Syntax: .reload rbac\nReload rbac system.');
+	('arena create', 3, 'Syntax: .arena create $name "arena name" #type\n\nA command to create a new Arena-team in game. #type  = [2/3/5]'),
+	('arena disband', 3, 'Syntax: .arena disband #TeamID\n\nA command to disband Arena-team in game.'),
+	('arena rename', 3, 'Syntax: .arena rename "oldname" "newname"\n\nA command to rename Arena-team name.'),
+	('arena captain', 3, 'Syntax: .arena captain #TeamID $name\n\nA command to set new captain to the team $name must be in the team'),
+	('arena info', 2, 'Syntax: .arena info #TeamID\n\nA command that show info about arena team'),
+	('arena lookup', 2, 'Syntax: .arena lookup $name\n\nA command that give a list of arenateam with the given $name'),
+	('credits', 0, 'Show ArkCORE Credits :) '),
+	('reload gameobject_questender', 3, 'Syntax: .reload gameobject_questender\\nReload gameobject_questender table.');
 /*!40000 ALTER TABLE `command` ENABLE KEYS */;
 /*!40101 SET SQL_MODE=IFNULL(@OLD_SQL_MODE, '') */;
 /*!40014 SET FOREIGN_KEY_CHECKS=IF(@OLD_FOREIGN_KEY_CHECKS IS NULL, 1, @OLD_FOREIGN_KEY_CHECKS) */;

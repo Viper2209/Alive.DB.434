@@ -10,7 +10,7 @@
 /*!40014 SET @OLD_FOREIGN_KEY_CHECKS=@@FOREIGN_KEY_CHECKS, FOREIGN_KEY_CHECKS=0 */;
 /*!40101 SET @OLD_SQL_MODE=@@SQL_MODE, SQL_MODE='NO_AUTO_VALUE_ON_ZERO' */;
 
--- Exportiere Struktur von Tabelle world2.transports
+-- Exportiere Struktur von Tabelle world3.transports
 DROP TABLE IF EXISTS `transports`;
 CREATE TABLE IF NOT EXISTS `transports` (
   `guid` int(10) unsigned NOT NULL AUTO_INCREMENT,
@@ -22,7 +22,7 @@ CREATE TABLE IF NOT EXISTS `transports` (
   UNIQUE KEY `idx_entry` (`entry`)
 ) ENGINE=MyISAM AUTO_INCREMENT=29 DEFAULT CHARSET=utf8 ROW_FORMAT=FIXED COMMENT='Transports';
 
--- Exportiere Daten aus Tabelle world2.transports: 27 rows
+-- Exportiere Daten aus Tabelle world3.transports: 27 rows
 DELETE FROM `transports`;
 /*!40000 ALTER TABLE `transports` DISABLE KEYS */;
 INSERT INTO `transports` (`guid`, `entry`, `name`, `period`, `ScriptName`) VALUES

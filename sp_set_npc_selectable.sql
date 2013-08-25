@@ -10,7 +10,7 @@
 /*!40014 SET @OLD_FOREIGN_KEY_CHECKS=@@FOREIGN_KEY_CHECKS, FOREIGN_KEY_CHECKS=0 */;
 /*!40101 SET @OLD_SQL_MODE=@@SQL_MODE, SQL_MODE='NO_AUTO_VALUE_ON_ZERO' */;
 
--- Exportiere Struktur von Prozedur world2.sp_set_npc_selectable
+-- Exportiere Struktur von Prozedur world3.sp_set_npc_selectable
 DROP PROCEDURE IF EXISTS `sp_set_npc_selectable`;
 DELIMITER //
 CREATE DEFINER=`root`@`localhost` PROCEDURE `sp_set_npc_selectable`(IN npc_entry INT(10),IN on_off BOOLEAN)

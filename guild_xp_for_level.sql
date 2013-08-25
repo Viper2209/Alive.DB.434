@@ -10,14 +10,14 @@
 /*!40014 SET @OLD_FOREIGN_KEY_CHECKS=@@FOREIGN_KEY_CHECKS, FOREIGN_KEY_CHECKS=0 */;
 /*!40101 SET @OLD_SQL_MODE=@@SQL_MODE, SQL_MODE='NO_AUTO_VALUE_ON_ZERO' */;
 
--- Exportiere Struktur von Tabelle world2.guild_xp_for_level
+-- Exportiere Struktur von Tabelle world3.guild_xp_for_level
 DROP TABLE IF EXISTS `guild_xp_for_level`;
 CREATE TABLE IF NOT EXISTS `guild_xp_for_level` (
   `lvl` int(11) NOT NULL,
   `xp_for_next_level` bigint(20) NOT NULL
 ) ENGINE=MyISAM DEFAULT CHARSET=latin1 COMMENT='ArkDB XP for Guilds';
 
--- Exportiere Daten aus Tabelle world2.guild_xp_for_level: 24 rows
+-- Exportiere Daten aus Tabelle world3.guild_xp_for_level: 24 rows
 DELETE FROM `guild_xp_for_level`;
 /*!40000 ALTER TABLE `guild_xp_for_level` DISABLE KEYS */;
 INSERT INTO `guild_xp_for_level` (`lvl`, `xp_for_next_level`) VALUES

@@ -10,7 +10,7 @@
 /*!40014 SET @OLD_FOREIGN_KEY_CHECKS=@@FOREIGN_KEY_CHECKS, FOREIGN_KEY_CHECKS=0 */;
 /*!40101 SET @OLD_SQL_MODE=@@SQL_MODE, SQL_MODE='NO_AUTO_VALUE_ON_ZERO' */;
 
--- Exportiere Struktur von Tabelle world2.players_reports_status
+-- Exportiere Struktur von Tabelle world3.players_reports_status
 DROP TABLE IF EXISTS `players_reports_status`;
 CREATE TABLE IF NOT EXISTS `players_reports_status` (
   `guid` int(10) unsigned NOT NULL DEFAULT '0',
@@ -26,7 +26,7 @@ CREATE TABLE IF NOT EXISTS `players_reports_status` (
   PRIMARY KEY (`guid`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
--- Exportiere Daten aus Tabelle world2.players_reports_status: ~0 rows (ungefähr)
+-- Exportiere Daten aus Tabelle world3.players_reports_status: ~0 rows (ungefähr)
 DELETE FROM `players_reports_status`;
 /*!40000 ALTER TABLE `players_reports_status` DISABLE KEYS */;
 /*!40000 ALTER TABLE `players_reports_status` ENABLE KEYS */;

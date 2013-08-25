@@ -10,7 +10,7 @@
 /*!40014 SET @OLD_FOREIGN_KEY_CHECKS=@@FOREIGN_KEY_CHECKS, FOREIGN_KEY_CHECKS=0 */;
 /*!40101 SET @OLD_SQL_MODE=@@SQL_MODE, SQL_MODE='NO_AUTO_VALUE_ON_ZERO' */;
 
--- Exportiere Struktur von Tabelle world2.player_factionchange_spells
+-- Exportiere Struktur von Tabelle world3.player_factionchange_spells
 DROP TABLE IF EXISTS `player_factionchange_spells`;
 CREATE TABLE IF NOT EXISTS `player_factionchange_spells` (
   `alliance_id` int(10) unsigned NOT NULL,
@@ -18,7 +18,7 @@ CREATE TABLE IF NOT EXISTS `player_factionchange_spells` (
   PRIMARY KEY (`alliance_id`,`horde_id`)
 ) ENGINE=MyISAM DEFAULT CHARSET=utf8;
 
--- Exportiere Daten aus Tabelle world2.player_factionchange_spells: 104 rows
+-- Exportiere Daten aus Tabelle world3.player_factionchange_spells: 108 rows
 DELETE FROM `player_factionchange_spells`;
 /*!40000 ALTER TABLE `player_factionchange_spells` DISABLE KEYS */;
 INSERT INTO `player_factionchange_spells` (`alliance_id`, `horde_id`) VALUES
@@ -87,6 +87,10 @@ INSERT INTO `player_factionchange_spells` (`alliance_id`, `horde_id`) VALUES
 	(48027, 35028),
 	(49359, 49358),
 	(49360, 49361),
+	(59785, 59788),
+	(59791, 59793),
+	(60114, 60116),
+	(60118, 60119),
 	(60424, 55531),
 	(60867, 60866),
 	(61229, 61230),
